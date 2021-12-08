@@ -3,6 +3,7 @@
 
 body{
 	background-image: url(images/backgroundblack.jpg);
+<<<<<<< Updated upstream
 	box-sizing: border-box;
 	font-family: Quicksand;
 }
@@ -45,4 +46,15 @@ a:visited{
 
 a:active{
 	color: #D46017;
+=======
+	color: white;
+    font-size: 16px;
+    font-family: quicksand;
+}
+
+h1{
+    font-style: bold;
+    font-size: 18px;
+    font-family: Rosario;
+>>>>>>> Stashed changes
 }
