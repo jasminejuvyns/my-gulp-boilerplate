@@ -15,6 +15,14 @@ body{
 	clear: both;
 }
 
+h1{
+    font-style: bold;
+    font-size: 18px;
+    font-family: Rosario;
+    color: white;
+}
+
+/*---------HEADER----------------*/
 header{
 	z-index: -1;
 }
@@ -24,7 +32,7 @@ header{
 	margin: 0 auto;
 }
 
-/*menu*/
+/*div container rond het menu*/
 .navigatie{
 	margin: 1% 2%;
 	padding: 1% 0;
@@ -33,66 +41,74 @@ header{
 	width: 800px;
 	float: right;
 	color: #F5CF80;
-	font-size: 24px;
+	font-size: 22px;
+	cursor: pointer;
 }
 
 li{
 	display: inline;
 }
 
-a {
+a:link{
 	color: #F5CF80;
 	padding: 5px 40px;	
 	text-decoration: none;
-	font-weight: bold;
+	
+}
+a:hover{
+	color: #766749;
 }
 
-
-
 a:visited{
-	color: #red;
+	color: #F5CF80;
 }
 
 a:active{
 	color: #F5CF80;
-    font-size: 16px;
-    font-family: quicksand;
+    font-size: 20px;
 }
 
-h1{
-    font-style: bold;
-    font-size: 18px;
-    font-family: Rosario;
-    color: white;
+/*highlightning menu text when your visiting the home-page */
+.home{
+	color: #766749;
 }
 
-.reservation_container{
-
-}
-
-
-/*reservatie tekst boven button-reservatie*/
-.header_text{
-	float: right;
-}
-
-/*button reserveren-header*/
-.button{
-	background-color: #DABC7D;
-	width:127px;
-	height: 45px;
-	font-size: 19px;
-	color: white;
-	cursor: pointer;
-	font-family: Rosario;
-	float: right;
-}
+/*---------EINDE HEADER----------------*/
 
 /*header tapas image*/
 .header_image{
 	float: left;
-	width: 70%;
+	width: 40%;
 	height: 5%;
 	margin-top: -150px;
 	z-index: 1;
+}
+
+/*---------RESERVATIE TEKST-KNOP----------------*/
+
+/*reservatie tekst boven button-reservatie*/
+.header_text{
+	float: right;
+	margin-top: 25%;
+	margin-right: 10%;
+	line-height: 30px;
+
+}
+
+/*button reserveren-header*/
+.button {
+	background-color: #DABC7D;
+	width:100px;
+	height: 40px;
+	font-size: 16px;
+	color: white;
+	cursor: pointer;
+	font-family: Rosario;
+	padding: 2%;
+	margin-left: 25%;
+}
+/*---------EINDE RESERVATIE TEKST-KNOP----------------*/
+
+.footer_container{
+	float: left;
 }

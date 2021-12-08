@@ -1,52 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style_header_footer.css">
     <link rel="stylesheet" href="style_body.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Home</title>
 </head>
 <body>
-    <!-- Logo - Menu - HeaderImage - Reservatieknop -->
-    <header class="header cf">
-        <div class="container">
-            <div class="navigatie">
-                <ul>
-                    <li><a class="homepage" href="../Sabor/index.html">HOME</a></li>
-                    <li><a class="aboutpage" href="../Sabor/over_ons.html">OVER ONS</a></li> 
-                    <li><a class="projectpage" href="">MENU</a></li> 
-                    <li><a class="contactpage" href="">CONTACT</a></li>
-                </ul>
-            </div>
-            <img class="header_image"src="images/headerimage.png" alt="header image">
-            <div class="reservation_container">
-                <p class="header_text">
-                    Gelieve onderstaande formulier te gebruiken om informatie of een reservatie te maken. <br>
-                    Wij proberen u zo spoedig mogelijk te antwoorden.
-                </p>
-                <a href="../Sabor/reservatie.html" class="button">Reserveren</a>
-            </div>
-        </div>
-    </header>
-    <section>
-       <div class="christmas_container">
-            <h1 class="christmas_menu">KERST MENU 3 GANGEN</h1>
-            <hr>
-             <p class="christmas_dishes">
-               TORTILLA OVENVan aardappel, prei, ui en kaas
-            </p>
-             <p class="christmas_dishes">
-                VITELLO TONNATOKalfsfricandeau met tonijnsaus (vlees/vis)
-            </p>
-            <p class="christmas_dishes">
-                GRAND DESSERT  Surprise van 4 dessertjes (v.a. 2 pers.)
-            </p>
-        </div>
-    </section>
     
-    <footer>
+    <!-------------------------HEADER IMAGE + MENU + RESERVATIE TEKST & KNOP -------->
+    <header class="container">
+        <div class="navigatie">
+            <ul>
+                <li><a class="home" href="../Sabor/index.html">HOME</a></li>
+                <li><a class="over_ons" href="../Sabor/over_ons.html">OVER ONS</a></li> 
+                <li><a class="menu" href="../Sabor/menu.html">MENU</a></li> 
+                <li><a class="contact" href="../Sabor/contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+
+        <img class="header_image"src="images/header_tapas1.png" alt="header image">
+    </header>
+   
+    <p class="header_text">
+        Gelieve onderstaande formulier in te vullen om een reservatie te maken. <br>
+        Wij proberen u zo spoedig mogelijk te antwoorden.
+        <br><br>
+        <a href="../Sabor/reservatie.html" class="button">RESERVEREN</a>
+    </p>
+       
+  
+    <!-------------------------KERST MENU BLOK--------------------------------------->
+    <section class="christmas_container">
+        <img class="christmas_ball_1" src="images/kerstballen_links.png" alt="kerstballen">
+        <img class="christmas_ball_2" src="images/kerstballen_links.png" alt="kerstballen">
+        <h1 class="christmas_menu">
+            KERST MENU 3 GANGEN
+        </h1>
+        <hr><br><br>
+         <p class="christmas_dishes">
+           TORTILLA OVEN Van aardappel, prei, ui en kaas
+        </p>
+         <p class="christmas_dishes">
+            VITELLO TONNATO Kalfsfricandeau met tonijnsaus (vlees/vis)
+        </p>
+        <p class="christmas_dishes">
+            GRAND DESSERT  Surprise van 4 dessertjes (v.a. 2 pers.)
+        </p>
+    </section>
+
+    <!-------------------------2 TAPAS FOTO'S LANG ELKAAR--------------------------------------->
+    <section>
+        <img class="tapas1" src="images/kip.jpg" alt="Warme tapas">
+        <img class="tapas2" src="images/wine.jpg" alt="Koude tapas">
+        <a href="../Sabor/reservatie.html" class="button-menu1">MENU</a>
+        <a href="../Sabor/reservatie.html" class="button-menu2">WIJNKAART</a>
+    </section>
+
+
+
+
+
+
+
+
+    <footer class="footer_container">
         <section>
             <h1>NIEUWBRIEF</h1>
             <p>Wees als eerste op de hoogte van onze nieuwe menu's en thema avonden.</p>
@@ -82,5 +101,12 @@
             <p>copyright</p>
         </section>
     </footer>
+
+
+
+
+
+
+
 </body>
 </html>
