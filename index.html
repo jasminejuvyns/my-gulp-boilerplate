@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style_header_footer.css">
     <link rel="stylesheet" href="style_body.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Home</title>
 </head>
 <body>
     <!-- Logo - Menu - HeaderImage - Reservatieknop -->
-    <header class="cf">
+    <header class="header cf">
         <div class="container">
             <div class="navigatie">
                 <ul>
@@ -19,7 +20,7 @@
                     <li><a class="contactpage" href="">CONTACT</a></li>
                 </ul>
             </div>
-            <img class="header_image"src="images/header_tapas.png" alt="header image">
+            <img class="header_image"src="images/headerimage.png" alt="header image">
             <div class="reservation_container">
                 <p class="header_text">
                     Gelieve onderstaande formulier te gebruiken om informatie of een reservatie te maken. <br>
@@ -30,31 +31,7 @@
         </div>
     </header>
     <section>
-        <div class="christmas_container">
-        <h1 class="christmas_menu">KERST MENU 3 GANGEN</h1>
-        <hr>
-         <p class="christmas_dishes">
-           TORTILLA OVENVan aardappel, prei, ui en kaas
-        </p>
-         <p class="christmas_dishes">
-            VITELLO TONNATOKalfsfricandeau met tonijnsaus (vlees/vis)
-        </p>
-        <p class="christmas_dishes">
-            GRAND DESSERT  Surprise van 4 dessertjes (v.a. 2 pers.)
-        </p>
-
-            <h1>KERSTMENU 3 GANGEN</h1>
-            <hr>
-            <p>
-                VITELLO TONNATOKalfsfricandeau met tonijnsaus (vlees/vis)
-            </p><br>
-            <p>
-                TORTILLA OVENVan aardappel, prei, ui en kaas
-            </p><br>
-            <p>
-                GRAND DESSERT  Surprise van 4 dessertjes (v.a. 2 pers.)
-            </p>
-        </div>
+        <h1>home Sabor</h1>
     </section>
     
     <footer>
@@ -64,11 +41,11 @@
             <form action="login.php" method="post">
                 <div class="formfield">
                    <label></label>
-                   <input type="text" name="naam" id="naam" required placeholder="Naam*">
+                   <input type="text" name="naam" id="naam" required placeholder="Naam*" class="formfield">
                 </div>
                 <div>
                    <label></label>
-                   <input type="text" name="email" id="email" required placeholder="Email*">
+                   <input type="text" name="email" id="email" required placeholder="Email*" class=>
                    <div>
                     <input type="submit" value="Verstuur" class="button">
                  </div>
@@ -78,9 +55,13 @@
 
         </section>
         <hr>
-        <section>
-            Social icons
-        </section>
+        
+            <aside class="icon-bar">
+                <button onclick="location.href='https://www.instagram.com/neletintel/'" class="buttonsocial"><i class="fa-brands fa-instagram"></i></button>
+                <button onclick="location.href='https://www.linkedin.com/in/nele-tintel-3901ab16/'" class="buttonsocial"><i class="fa-brands fa-linkedin"></i></button>
+                <button onclick="location.href='mailto:hello@neletintel.be'" class="buttonsocial"><i class="fa-regular fa-envelope"></i></button>
+            </aside>
+    
         <section>
             <address>kweetnogniwaar 67</address>
             <p>contact</p>
