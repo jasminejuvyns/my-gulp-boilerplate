@@ -5,6 +5,7 @@ body{
 	background-image: url(images/backgroundblack.jpg);
 	box-sizing: border-box;
 	font-family: Quicksand;
+	color: white;
 }
 
 .cf:after{
