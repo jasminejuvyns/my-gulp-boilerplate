@@ -5,13 +5,18 @@ body{
 	background-image: url(images/backgroundblack.jpg);
 	box-sizing: border-box;
 	font-family: Quicksand;
-	color: white;
+	color: white;.
+	margin: 0;
 }
 
 .cf:after{
 	content: "";
 	display: table;
 	clear: both;
+}
+
+header{
+	z-index: -1;
 }
 
 /*container van header-blok*/
@@ -78,8 +83,14 @@ h1{
 	font-size: 19px;
 	color: white;
 	cursor: pointer;
+	font-family: Rosario;
+	float: right;
 }
 
 .header_image{
 	float: left;
+	width: 120%;
+	height: 40%;
+	margin-top: -150px;
+	z-index: 1;
 }
