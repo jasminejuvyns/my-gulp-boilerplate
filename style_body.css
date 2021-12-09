@@ -247,3 +247,17 @@ hr{
 .review_text{
 	font-style: 14px;
 }
+
+/*-----------OVER ONS PAGINA----------*/
+
+.container-about{
+	
+	float:left;
+	text-align: center;
+	margin: 10%;
+}
+
+.foto-about{
+    margin-left: 10%;
+	margin-top: 40px;
+}
