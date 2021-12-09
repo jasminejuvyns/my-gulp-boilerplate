@@ -26,11 +26,9 @@ h1{
 .christmas_container{
 	border-style: solid;
 	border-color: #DABC7D;
-	width: 60%;
-	float: left;
-	margin: auto;
-	margin-top: 25%;
 	max-width: 60%;
+	float: left;
+	margin: 10% 17%;
 }
 
 .christmas_ball_1{
