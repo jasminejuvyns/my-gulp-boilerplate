@@ -89,8 +89,7 @@ a:active{
 	width: 20%;
 	height: 10%;
 	margin-left: 20%;
-	margin-top: -20px;
-
+	margin-top: 50px;
 }
 
 /*---------RESERVATIE TEKST-KNOP----------------*/
@@ -98,7 +97,7 @@ a:active{
 /*reservatie tekst boven button-reservatie*/
 .header_text{
 	float: right;
-	margin-top: 25%;
+	margin-top: 10%;
 	margin-right: 10%;
 	line-height: 30px;
 
