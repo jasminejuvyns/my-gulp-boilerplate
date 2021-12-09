@@ -30,7 +30,7 @@ header{
 
 /*container van header-blok*/
 .container{
-	margin: 0 auto;
+	margin: 0;
 }
 
 /*div container rond het menu*/

@@ -6,6 +6,10 @@
 	text-align: center;
 }
 
+.container2{
+	max-width: 960px;
+}
+
 h1{
 	font-style: bold;
     font-size: 24px;
@@ -84,12 +88,12 @@ hr{
 .tapas1{
 	width: 38%;
 	height: 28%;
-	margin-left: 7%;
+	margin: 0 2%;
 	margin-top: 10%;
 }
 
 .tapas2{
-	margin-left: 7%;
+	margin: 0 2%;
 	margin-top: 10%;
 }
 
@@ -126,7 +130,6 @@ hr{
 
 /*--------OVER ONS TEKST----------------*/
 .over-ons_container{
-	background-color: #333334;
 	padding: 2%;
 	margin-top: 10%;
 }
@@ -225,18 +228,19 @@ hr{
 
 .reviews_titel{
 	margin-top: 10%;
+	margin-left: 45%;
 }
 
 .reviews_container{
 	width: 90%;
 }
 
-.reviews-blok1{
+.reviews-blok1, .reviews-blok2, .reviews-blok3{
 	width: 30%;
 }
 
 .review_name{
-	font-size: 12px;
+	font-size: 13px;
 	font-weight: lighter;
 }
 
