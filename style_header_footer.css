@@ -73,7 +73,7 @@ a:active{
 	color: #766749;
 }
 
-/*---------EINDE HEADER----------------*/
+/*---------EINDE HEADER-------------------------*/
 
 /*header tapas image*/
 .header_image{
@@ -82,6 +82,15 @@ a:active{
 	height: 5%;
 	margin-top: -150px;
 	z-index: 1;
+}
+
+/*logo image*/
+.logo{
+	width: 20%;
+	height: 10%;
+	margin-left: 20%;
+	margin-top: -20px;
+
 }
 
 /*---------RESERVATIE TEKST-KNOP----------------*/
