@@ -1,6 +1,20 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;900&family=Quicksand:wght@300;400;500;600;700&family=Rosario:wght@400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
 
+/*---------ALGEMEEN----------------*/
+.titel-gecentreerd{
+	text-align: center;
+}
+
+h1{
+	font-style: bold;
+    font-size: 24px;
+    font-family: Rosario;
+    color: white;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
 /*---------KERST MENU----------------*/
 
 /*kerst menu kader*/
@@ -103,23 +117,11 @@ hr{
 	margin-left: 38%;
 }
 
+/*about pagina*/
 .container-about{
 	width: 80%;
 	float:left;
 	margin-top: 50px;;
-}
-
-.titel-gecentreerd{
-	text-align: center;
-}
-
-h1{
-	font-style: bold;
-    font-size: 24px;
-    font-family: Rosario;
-    color: white;
-	text-transform: uppercase;
-	margin-bottom: 20px;
 }
 
 /*--------OVER ONS TEKST----------------*/
@@ -159,12 +161,85 @@ h1{
 }
 
 /*--------OPENINGSUREN EN IMAGE----------------*/
-
-.openingsuren_container{
-
+.empty-row{
+	width: 30%;
+}
+.openinghours_container{
+	width: 90%;
+	margin-left: 10%;
+	margin-top: 10%;
 }
 
-.openignsuren-blok{
+.openignhours-blok{
 	float: left;
+	width: 90%;
 }
->>>>>>> Stashed changes
+
+.openinghours_line{
+	width: 20%;
+	margin-left: -2%;
+}
+
+.days{
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 10% 0;
+	text-align: left;
+}
+
+.hours{
+	margin-left: 150px;
+	text-align: right;
+}
+
+/*foto restaurant langs openignsuren*/
+.image_restaurant{
+	float: right;
+	width: 38%;
+	height: 20%;
+	margin-top: -55%;
+	margin-right: 10%;
+}
+
+.button-openinghours{
+	background-color: #DABC7D;
+	width:100px;
+	height: 40px;
+	font-size: 16px;
+	color: white;
+	cursor: pointer;
+	font-family: Rosario;
+	padding: 2%;
+	margin-left: 5%;
+}
+
+.endline_container{
+	margin-top: 5%;
+}
+
+/*---------------REVIEWS STARS-------------------------*/
+/*stars*/
+.checked {
+  color: #F5CF80;
+}
+
+.reviews_titel{
+	margin-top: 10%;
+}
+
+.reviews_container{
+	width: 90%;
+}
+
+.reviews-blok1{
+	width: 30%;
+}
+
+.review_name{
+	font-size: 12px;
+	font-weight: lighter;
+}
+
+.review_text{
+	font-style: 14px;
+}

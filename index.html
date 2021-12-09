@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style_header_footer.css">
     <link rel="stylesheet" href="style_body.css">
     <title>Home</title>
@@ -88,27 +89,55 @@
         </p>
         <a href="../Sabor/over_ons.html" class="button-overons">LEES MEER</a>
     </section>
+    <hr class="endline_container">
+
     <!-------------------------OPENINGSUREN EN IMAGE--------------------------------------->
-    <section class="openingsuren_container cf">
-        <div class="openignsuren-blok">
-            <h1 class="openingsuren_titel">
+    <section class="openinghours_container cf">
+        <div class="openignhours-blok">
+            <h1 class="openinghours_titel">
                 OPENINGSUREN
             </h1>
-            <hr class="openingsuren_line"> 
+            <hr class="openinghours_line"> 
             <table>
-                <tr><th>Sunday</th><td>Closed</td></tr>
-                <tr><th>Monday</th><td>9am - 5pm</td></tr>
-                <tr><th>Tuesday</th><td>9am - 5pm</td></tr>
-                <tr><th>Wednesday</th><td>9am - 5pm</td></tr>
-                <tr><th>Thursday</th><td>9am - 5pm</td></tr>
+                <tr><th class="days">Maandag</th><th class="empty-row"></th><td class="hours">Gesloten</td></tr>
+                <tr><th class="days">Dinsdag</th><th class="empty-row"></th><td class="hours">Gesloten</td></tr>
+                <tr><th class="days">Woensdag</th><th class="empty-row"></th><td class="hours">17:00 - 22:00</td></tr>
+                <tr><th class="days">Donderdag</th><th class="empty-row"></th><td class="hours">17:00 - 22:00</td></tr>
+                <tr><th class="days">Vrijdag</th><th class="empty-row"></th><td class="hours">17:00 - 22:00</td></tr>
+                <tr><th class="days">Zaterdag</th><th class="empty-row"></th><td class="hours">17:00 - 22:00</td></tr>
+                <tr><th class="days">Zondag</th><th class="empty-row"></th><td class="hours">17:00 - 22:00</td></tr>
             </table>
+            <a href="../Sabor/reservatie.html" class="button-openinghours">RESERVEREN</a>
+            <img class="image_restaurant" src="images/restaurant.jpg" alt="foto van het restaurant">
         </div>
     </section>
+    <hr class="endline_container">
+
+    <!-------------------------REVIEWS STARS--------------------------------------->
+    <section class="reviews_container">
+        <h1 class="reviews_titel">
+            REVIEWS
+        </h1>
+        <hr class="reviews_line"> 
+
+        <!-- review 1 -->
+        <div class="reviews-blok1">
+            <h2 class="review_name">Ellen Janssens</h2>
+            <div class="stars_1">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            </div>
+            <p class="review_text">
+                Absoluut geweldige tapas! We hebben het aanbevolen tapasmenu voor 2 personen besteld. De kwaliteit van het eten was geweldig en zo was de service.<br>
+                Er is niet veel ruimte binnen, maar het is nog steeds leuk en gezellig en zeer gezinsvriendelijk.
+            </p>
+        </div>
 
 
-
-
-
+    </section>
 
 
     <!-------------------------FOOTER--------------------------------------->
