@@ -25,12 +25,6 @@
         <img class="header_image"src="images/header_tapas1.png" alt="header image">
         <img class="logo" src="images/logo_wit.png" alt="Sabor logo">
         <p class="header_text">
-<<<<<<< Updated upstream
-            Gelieve onderstaande formulier in te vullen om een reservatie te maken. <br>
-            Wij proberen u zo spoedig mogelijk te antwoorden.
-            <br><br>
-            <a href="../Sabor/reservatie.html" class="button">RESERVEREN</a>
-=======
         Gelieve onderstaande formulier in te vullen om een reservatie te maken. <br>
         Wij proberen u zo spoedig mogelijk te antwoorden.
         <br><br>
@@ -39,46 +33,7 @@
     </header>
     <div class="container2 cf">
         
-    <!-------------------------KERST MENU BLOK--------------------------------------->
-    <section class="christmas_container">
-        <img class="christmas_ball_1" src="images/kerstballen_links.png" alt="kerstballen">
-        <img class="christmas_ball_2" src="images/kerstballen_links.png" alt="kerstballen">
-        <h1 class="christmas_menu">
-            KERST MENU 
-        </h1>
-        <h2 class="christmas_dates">
-            24/12 - 25/12 - 26-12
-        </h2>
-        <hr><br><br>
-         <p class="christmas_dishes">
-            Plato variado  -  € 7 p.p.<br>
-            Gemengd aperitiefbord.<br>
-            Queso manchego, chorizo serrano, salami van cecina de Leon, jamón serrano, Marcona amandelen, pan con tomate, diverse olijven, gemarineerde ansjovis, slaatje met pikante peper en kappertjes
-        </p>
-        <hr>
-         <p class="christmas_dishes">
-            Empanadillas rellenas de calamar en su propria tinta
-            Gevuld gebakje met inktvisvulling en inktsaus - 3 st. – € 6 p.p.<br><br>
-            Coliflor asada con hummus, espuma de limon y za’atar
-            Geroosterde bloemkool met hummus, citroenschuim en za’atar - € 6 p.p.<br><br>
-            Croquetas de champiñones y manchego con trufa
-            Kroketten van Parijse champignons en truffelmanchego - € 6,5 p.p.
-        </p>
-        <hr>
-        <p class="christmas_dishes">
-            Affogato con helado de cardamomo 5
-            Kardemomijs, ‘verdronken’ in espresso - € 5 p.p.
-        </p><br>
-         <a href="../Sabor/reservatie.html" class="button_kerst">RESERVEREN JOU KERSTMENU</a>
-    </section>
-
-    <!-------------------------2 TAPAS FOTO'S LANG ELKAAR--------------------------------------->
-    <section>
-        <img class="tapas1" src="images/kip.jpg" alt="Warme tapas">
-        <img class="tapas2" src="images/wine.jpg" alt="Koude tapas">
-        <a href="../Sabor/reservatie.html" class="button-menu1">MENU</a>
-        <a href="../Sabor/reservatie.html" class="button-menu2">WIJNKAART</a>
-    </section>
+    
 
     <!-------------------------OVER ONS TEKST--------------------------------------->
     <section class="over-ons_container">
@@ -92,7 +47,6 @@
             Spaanse culinaire traditie. 
             Kwaliteit staat hier voorop, evenals een respectvolle
             omgang met ingrediënten en producten.
->>>>>>> Stashed changes
         </p>
     </header>
 
@@ -232,41 +186,45 @@
     </div>
 
     <!-------------------------FOOTER--------------------------------------->
-    <footer class="footer_container">
-        <section>
-            <h1>NIEUWBRIEF</h1>
-            <p>Wees als eerste op de hoogte van onze nieuwe menu's en thema avonden.</p>
-            <form action="login.php" method="post">
+    <footer class="container cf">
+        <div class="container2 cf">
+            <div class="centreren">
+                <h1 class="titel-gecentreerd menutitel">NIEUWSBRIEF</h1>
+                <p>Wees als eerste op de hoogte van onze nieuwe menu's en thema avonden.</p>
+            </div>
+            <form action="login.php" method="post" class="centreren cf">
                 <div class="formfield">
-                   <label></label>
-                   <input type="text" name="naam" id="naam" required placeholder="Naam*" class="formfield">
+                    <label></label>
+                    <input type="text" name="naam" id="naam" required placeholder="Naam*">
                 </div>
-                <div>
-                   <label></label>
-                   <input type="text" name="email" id="email" required placeholder="Email*" class=>
-                   <div>
-                    <input type="submit" value="Verstuur" class="button">
-                 </div>
-              </form>
+                <div class="formfield">
+                    <label></label>
+                    <input type="text" name="email" id="email" required placeholder="Email*">
                 </div>
-            <hr>
+                <div class="formfield">
+                    <input type="submit" value="VERSTUUR">
+                </div>
 
-        </section>
-        <hr>
-        
-            <aside class="icon-bar">
+            </form>
+            <hr>
+            <aside class="icon-bar cf">
                 <button onclick="location.href=''" class="buttonsocial"><i class="fa-brands fa-instagram"></i></button>
-                <button onclick="location.href=''" class="buttonsocial"><i class="fa-brands fa-linkedin"></i></button>
-                <button onclick="location.href='mailto:info@sabor.be'" class="buttonsocial"><i class="fa-regular fa-envelope"></i></button>
+                <button onclick="location.href=''" class="buttonsocial"><i class="fab fa-facebook"></i></button>
+                <button onclick="location.href='mailto:info@sabor.be'" class="buttonsocial"><i
+                        class="fa-regular fa-envelope"></i></button>
+
             </aside>
-    
-        <section>
-            <address>kweetnogniwaar 67</address>
-            <p>contact</p>
-            <p>openingsuren</p>
-            <p>reserveringsvoorwaarden</p>
-            <p>copyright</p>
-        </section>
+            <section class="centreren">
+
+                <ul>
+                    <li><a class="adres">Tapaslaan 78 - 5670 Calamares</a></li>
+                    <li><a class="contact" href="../Sabor/contact.html">Contact</a></li>
+                    <li><a class="openingsuren">Openingsuren</a></li>
+                    <li><a class="voorwaarden">Voorwaarden</a></li>
+                </ul>
+
+            </section>
+        </div>
     </footer>
 </body>
 </html>
