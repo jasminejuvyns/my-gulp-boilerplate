@@ -5,7 +5,7 @@ body{
 	background-image: url(images/backgroundblack.jpg);
 	box-sizing: border-box;
 	font-family: Quicksand;
-	color: white;.
+	color: white;
 	margin: 0;
 }
 
@@ -20,6 +20,7 @@ h1{
     font-size: 18px;
     font-family: Rosario;
     color: white;
+	text-transform: uppercase;
 }
 
 /*---------HEADER----------------*/
@@ -119,4 +120,15 @@ a:active{
 
 .footer_container{
 	float: left;
+}
+
+.buttonsocial{
+	color: white;
+	border: none;
+	padding: 0px;
+	background: none;
+}
+
+.icon-bar{
+	text-align: center;
 }

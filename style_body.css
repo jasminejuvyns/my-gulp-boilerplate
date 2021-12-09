@@ -80,3 +80,23 @@ hr{
 	padding: 2%;
 	margin-left: 38%;
 }
+
+.container-about{
+	width: 80%;
+	float:left;
+	margin-top: 50px;;
+}
+
+.titel-gecentreerd{
+	text-align: center;
+}
+
+h1{
+	font-style: bold;
+    font-size: 24px;
+    font-family: Rosario;
+    color: white;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
