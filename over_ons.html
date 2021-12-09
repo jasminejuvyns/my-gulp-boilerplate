@@ -15,7 +15,7 @@
 <body>
 
     <!-------------------------HEADER IMAGE + MENU + RESERVATIE TEKST & KNOP -------->
-    <header class="container">
+    <header class="container cf ">
         <div class="navigatie">
             <ul>
                 <li><a class="home" href="../Sabor/index.html">HOME</a></li>
@@ -29,62 +29,78 @@
     </header>
 
     <!-------------------------TITEL + TEKSTBLOK -------->
-    <section class="container-about">
+    <section class="container2 cf">
         <h1 class="titel-gecentreerd">OVER ONS</h1>
         <hr>
-        <p>
-            Restaurant Sabor werd opgericht in 2021 door Jasmine Juvyns, Daniel Chepe en Nele Tintel, en is
-            gespecialiseerd in Spaanse authentieke tapas. De eigenaars hebben een aantal jaren in Zuid-Spanje gewoond,
-            en hebben daar bodega uitgebaat.
-            “Hierdoor heb ik uitgebreid van de Spaanse keuken kunnen proeven en les gehad in de welbekende bodega San
-            Juan in Torremolinos. Door te mogen werken met verse en eerlijke producten uit het mooie Andalucia, ben ik
-            helemaal verliefd geworden op de Spaanse cultuur. Terug in Nederland is het blijven kriebelen en heb ik mijn
-            Spaanse catering opgezet."
-        <p>Tapas eten doe je niet alleen</p>
-        <p>Daarom werken we met een avondvullend concept. De hele tafel is de hele middag of avond voor je gereserveerd.
-            Je bestelt per persoon een aantal tapas, en kan dan foodsharen met je tafelgenoten. De porties zijn klein,
-            en daarom kan u genieten van een heerlijk scala aan smaken.
-        </p>
+        <div class="over-ons-links">
+            <p>
+                Restaurant Sabor werd opgericht in 2021 door Jasmine Juvyns, Daniel Chepe en Nele Tintel, en is
+                gespecialiseerd in Spaanse authentieke tapas. De eigenaars hebben een aantal jaren in Zuid-Spanje
+                gewoond,
+                en hebben daar een bodega uitgebaat.
+                “Hierdoor heb ik uitgebreid van de Spaanse keuken kunnen proeven en les gehad in de welbekende bodega
+                San
+                Juan in Torremolinos. Door te mogen werken met verse en eerlijke producten uit het mooie Andalucia, ben
+                ik
+                helemaal verliefd geworden op de Spaanse cultuur. Terug in Nederland is het blijven kriebelen en heb ik
+                mijn
+                Spaanse catering opgezet."
+            </p>
+        </div>
+        <div class="over-ons-rechts">
+            <p>Tapas eten doe je niet alleen</p>
+            <p>Daarom werken we met een avondvullend concept. De hele tafel is de hele middag of avond voor je
+                gereserveerd.
+                Je bestelt per persoon een aantal tapas, en kan dan foodsharen met je tafelgenoten. De porties zijn
+                klein,
+                en daarom kan u genieten van een heerlijk scala aan smaken.
+            </p>
+        </div>
         <img src="images/team.jpeg" alt="team" class="foto-about">
     </section>
 
-    <footer>
-        <section>
-            <h1 class="titel-gecentreerd">NIEUWSBRIEF</h1>
-            <p>Wees als eerste op de hoogte van onze nieuwe menu's en thema avonden.</p>
-            <form action="login.php" method="post">
-                <div class="formfield">
-                    <label></label>
-                    <input type="text" name="naam" id="naam" required placeholder="Naam*" class="formfield">
-                </div>
-                <div>
-                    <label></label>
-                    <input type="text" name="email" id="email" required placeholder="Email*">
-                    <div>
+    <footer class="container">
+        <div class="container2">
+            <section class="cf">
+                <h1 class="titel-gecentreerd">NIEUWSBRIEF</h1>
+                <p>Wees als eerste op de hoogte van onze nieuwe menu's en thema avonden.</p>
+                <div class="nieuwsbrief cf">
+                <form action="login.php" method="post" class="cf">
+                    <div class="formfield">
+                        <label></label>
+                        <input type="text" name="naam" id="naam" required placeholder="Naam*" class="formfield">
+                    </div>
+                    <div class="formfield">
+                        <label></label>
+                        <input type="text" name="email" id="email" required placeholder="Email*">
+                    </div>
+                    <div class="formfield">
                         <input type="submit" value="Verstuur" class="button">
                     </div>
-            </form>
-            </div>
+                </div>
+                </form>
 
-        </section>
 
-        <hr>
+            </section>
 
-        <aside class="icon-bar">
-            <button onclick="location.href=''" class="buttonsocial"><i class="fa-brands fa-instagram"></i></button>
-            <button onclick="location.href=''" class="buttonsocial"><i class="fab fa-facebook"></i></button>
-            <button onclick="location.href='mailto:info@sabor.be'" class="buttonsocial"><i
-                    class="fa-regular fa-envelope"></i></button>
-        </aside>
+            <hr>
 
-        <section>
-            
-            <ul>
-                <li class="adres">Tapaslaan 78 - 5670 Calamares</li>
-                <li class="contact">Contact</li>
-                <li class="openingsuren">Openingsuren</li>
-                <li class="voorwaarden">Reserveringsvoorwaarden</li>
-            </ul>
-        
-        </section>
+            <aside class="icon-bar">
+                <button onclick="location.href=''" class="buttonsocial"><i class="fa-brands fa-instagram"></i></button>
+                <button onclick="location.href=''" class="buttonsocial"><i class="fab fa-facebook"></i></button>
+                <button onclick="location.href='mailto:info@sabor.be'" class="buttonsocial"><i
+                        class="fa-regular fa-envelope"></i></button>
+            </aside>
+
+            <section>
+
+                <ul>
+                    <li class="adres">Tapaslaan 78 - 5670 Calamares</li>
+                    <li class="contact">Contact</li>
+                    <li class="openingsuren">Openingsuren</li>
+                    <li class="voorwaarden">Reserveringsvoorwaarden</li>
+                </ul>
+
+            </section>
+        </div>
     </footer>

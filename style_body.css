@@ -17,7 +17,7 @@ h1{
     font-family: Rosario;
     color: white;
 	text-transform: uppercase;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 }
 
 /*-------INDEX PAGINA-------KERST MENU----------------*/
@@ -269,18 +269,13 @@ hr{
 
 /*-----------OVER ONS PAGINA----------*/
 
-.container-about{
-	
-	float:left;
-	text-align: center;
-	margin: 10%;
-}
 
 .foto-about{
-    margin-left: 10%;
+	margin:auto;
 	margin-top: 40px;
 }
 
+<<<<<<< Updated upstream
 
 
 
@@ -308,3 +303,16 @@ hr{
 	margin-left: 10%;
 }
 
+=======
+.over-ons-links{
+	float: left;
+	width: 45%;
+	margin-top: 20px;
+}
+
+.over-ons-rechts{
+	float: right;
+	width: 45%;
+	margin-top: 20px;
+}
+>>>>>>> Stashed changes
