@@ -20,7 +20,7 @@ h1{
 	margin-bottom: 20px;
 }
 
-/*---------KERST MENU----------------*/
+/*-------INDEX PAGINA-------KERST MENU----------------*/
 
 /*kerst menu kader*/
 .christmas_container{
@@ -86,8 +86,8 @@ hr{
 
 /*--------2 TAPAS FOTO'S LANGS ELKAAR----------------*/
 .tapas1{
-	width: 38%;
-	height: 28%;
+	width: 45%;
+	height: 45%;
 	margin: 0 2%;
 	margin-top: 10%;
 }
@@ -95,6 +95,8 @@ hr{
 .tapas2{
 	margin: 0 2%;
 	margin-top: 10%;
+	width: 45%;
+	height: 29%;
 }
 
 .button-menu1{
@@ -147,8 +149,8 @@ hr{
 }
 
 .over-ons_line{
-	width: 10%;
-	margin-left: 43%;
+	width: 16%;
+	margin-left: 42%;
 }
 
 .button-overons{
@@ -168,9 +170,10 @@ hr{
 	width: 30%;
 }
 .openinghours_container{
-	width: 90%;
-	margin-left: 10%;
 	margin-top: 10%;
+	margin: 10% 5%;
+	width: 90%;
+	
 }
 
 .openignhours-blok{
@@ -180,7 +183,7 @@ hr{
 
 .openinghours_line{
 	width: 20%;
-	margin-left: -2%;
+	margin-left: 1%;
 }
 
 .days{
@@ -197,11 +200,10 @@ hr{
 
 /*foto restaurant langs openignsuren*/
 .image_restaurant{
-	float: right;
-	width: 38%;
-	height: 20%;
-	margin-top: -55%;
-	margin-right: 10%;
+	width: 55%;
+	height: 40%;
+	margin-top: -85%;
+	margin-left: 58%;
 }
 
 .button-openinghours{
@@ -218,25 +220,37 @@ hr{
 
 .endline_container{
 	margin-top: 5%;
+	margin-left: 40%;
 }
 
 /*---------------REVIEWS STARS-------------------------*/
 /*stars*/
 .checked {
-  color: #F5CF80;
+  color: #85682E;
 }
 
 .reviews_titel{
 	margin-top: 10%;
-	margin-left: 45%;
+	margin-left: 50%;
 }
 
 .reviews_container{
 	width: 90%;
+	float: left;
 }
 
-.reviews-blok1, .reviews-blok2, .reviews-blok3{
+.reviews-blok1,.reviews-blok2{
 	width: 30%;
+	margin-top: 8%;
+	float: left;
+	padding: 0 4%;
+}
+
+.reviews-blok3{
+	width: 30%;
+	float: right;
+	margin-top: 8%;
+	margin-right: -8%;
 }
 
 .review_name{
@@ -245,8 +259,13 @@ hr{
 }
 
 .review_text{
-	font-style: 14px;
+	font-style: 13px;
 }
+.reviews_line{
+	margin-left: 41%;
+}
+/*---------------EINDE INDEX PAGINA-------------------------*/
+
 
 /*-----------OVER ONS PAGINA----------*/
 
@@ -261,3 +280,31 @@ hr{
     margin-left: 10%;
 	margin-top: 40px;
 }
+
+
+
+
+/*---------------BEGIN ANNULATIEVOORWAARDEN PAGINA-------------------------*/
+.annulatie_container{
+	padding: 2%;
+	margin-top: 10%;
+}
+
+.annulatie_titel{
+	margin-top: 2%;
+	margin-left: 28%;
+	font-family: Rosario;
+	padding: 0 5%;
+}
+
+.annulatie_text{
+	text-align: center;
+	padding: 0 8%;
+}
+
+.annulatie_image{
+	margin-top: 5%;
+	width: 80%;
+	margin-left: 10%;
+}
+

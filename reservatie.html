@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style_header_footer.css">
+    <link rel="stylesheet" href="style_body.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Reservatie</title>
+</head>
+<body>
+    <!-------------------------HEADER IMAGE + MENU + RESERVATIE TEKST & KNOP -------->
+    <header class="container cf">
+        <div class="navigatie">
+            <ul>
+                <li><a class="home" href="../Sabor/index.html">HOME</a></li>
+                <li><a class="over_ons" href="../Sabor/over_ons.html">OVER ONS</a></li> 
+                <li><a class="menu" href="../Sabor/menu.html">MENU</a></li> 
+                <li><a class="contact" href="../Sabor/contact.html">CONTACT</a></li>
+            </ul>
+        </div> 
+        <img class="header_image"src="images/header_tapas1.png" alt="header image">
+        <img class="logo" src="images/logo_wit.png" alt="Sabor logo">
+        <p class="header_text">
+            Gelieve onderstaande formulier in te vullen om een reservatie te maken. <br>
+            Wij proberen u zo spoedig mogelijk te antwoorden.<br><br>
+            Wil je weten waar wij gelegen zijn? Bekijk het hier.
+            <br><br>
+            <a href="../Sabor/contact.html" class="button">Contact</a>
+        </p>
+    </header>
+
+    <!-------------------------RESERVATIE FORMULIER EN IMAGE--------------------------------------->
+    <div class="container2 cf">
+        <section class="reservatie_container">
+            <h1 class="reservatie_titel">
+                RESERVEREN
+            </h1>
+            <hr class="over-ons_line"> 
+            <p class="over-ons_text">      
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+               quis nostrud exercitation ullamco laboris nisi.
+            </p>
+        </section>
+        <hr class="endline_container">
+    </div>
+    
+    <!-------------------------FOOTER--------------------------------------->
+    <footer class="footer_container">
+        <section>
+            <h1>NIEUWBRIEF</h1>
+            <p>Wees als eerste op de hoogte van onze nieuwe menu's en thema avonden.</p>
+            <form action="login.php" method="post">
+                <div class="formfield">
+                   <label></label>
+                   <input type="text" name="naam" id="naam" required placeholder="Naam*" class="formfield">
+                </div>
+                <div>
+                   <label></label>
+                   <input type="text" name="email" id="email" required placeholder="Email*" class=>
+                   <div>
+                    <input type="submit" value="Verstuur" class="button">
+                 </div>
+              </form>
+                </div>
+            <hr>
+
+        </section>
+        <hr>
+        
+            <aside class="icon-bar">
+                <button onclick="location.href=''" class="buttonsocial"><i class="fa-brands fa-instagram"></i></button>
+                <button onclick="location.href=''" class="buttonsocial"><i class="fa-brands fa-linkedin"></i></button>
+                <button onclick="location.href='mailto:info@sabor.be'" class="buttonsocial"><i class="fa-regular fa-envelope"></i></button>
+            </aside>
+    
+        <section>
+            <address>kweetnogniwaar 67</address>
+            <p>contact</p>
+            <p>openingsuren</p>
+            <p>reserveringsvoorwaarden</p>
+            <p>copyright</p>
+        </section>
+    </footer>
+</body>
+</html>
