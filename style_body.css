@@ -383,7 +383,7 @@ h3{
 /*---------------BEGIN ANNULATIEVOORWAARDEN PAGINA-------------------------*/
 .annulatie_container{
 	padding: 2%;
-	margin-top: 10%;
+	margin-top: 15%;
 }
 
 .annulatie_text{
@@ -398,6 +398,10 @@ h3{
 }
 
 /*---------------BEGIN RESERVATIE PAGINA-------------------------*/
+.reservatie_container{
+	margin-top: 10%;
+}
+
 .reservatie_titel{
 	margin-top: 2%;
 	margin-left: 37%;
@@ -408,6 +412,7 @@ h3{
 .reservatie_text{
 	text-align: center;
 	padding: 0 8%;
+
 }
 
 .button_reservatie{
