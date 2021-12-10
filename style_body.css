@@ -18,7 +18,7 @@ h1{
     font-family: Rosario;
     color: white;
 	text-transform: uppercase;
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 }
 
 /*-------INDEX PAGINA-------KERST MENU----------------*/
@@ -290,7 +290,7 @@ hr{
 	margin-top: 20px;
 }
 
-/*-----------MENU PAGINA----------*/
+/*-----------BEGIN MENU PAGINA----------*/
 
 .menutitel{
 	margin-top: 100px;
@@ -303,6 +303,7 @@ hr{
 	float:left;
 	width: 55%;
 	height: 350px;
+	font-size: 14px;
 }
 .menukader2{
 	border: 1px solid #DABC7D;
@@ -311,6 +312,7 @@ hr{
 	float:right;
 	width: 55%;
 	height: 350px;
+	font-size: 14px;
 }
 
 .menufoto1{
@@ -337,11 +339,13 @@ hr{
 .naamwijn{
 	float:left;
 	width: 60%;
+	font-size: 13px;
 }
 
 .prijswijn{
 	float:right;
-	width: 30%
+	width: 30%;
+	font-size: 13px;
 }
 
 .rodewijn{
@@ -360,6 +364,16 @@ hr{
 .wijnkaart{
 	border: 1px solid #DABC7D;
 	margin-top: 50px;
+}
+
+.titelkleur{
+	color:#DABC7D;
+	padding-bottom: 30px;
+}
+
+h3{
+	font-size: 15px;
+	margin-top: 20px;
 }
 
 

@@ -118,6 +118,8 @@ a:visited{
 }
 /*---------EINDE RESERVATIE TEKST-KNOP----------------*/
 
+/*---------BEGIN FOOTER----------------*/
+
 .footer_container{
 	float: left;
 }
@@ -132,3 +134,49 @@ a:visited{
 .icon-bar{
 	text-align: center;
 }
+
+.nieuwsbrief_naam{
+	margin: 1% 0 2% 15%;
+	width: 30%;
+	float:left;
+}
+
+.nieuwsbrief_email{	
+	margin: 1% 0 2% 1%;
+	width: 30%;
+	float:left;
+}
+
+.nieuwsbrief_verzendknop{
+	float:left;
+	margin: 10px 0 20px 10px; 
+}
+
+input[type=text]{
+	border: 1px solid #DABC7D;
+	background-image: url(images/backgroundformfields.jpg);
+	color: white;
+	outline: none;
+}
+
+input[type=email]{
+	border: 1px solid #DABC7D;
+	background-image: url(images/backgroundformfields.jpg);
+	color: white;
+	outline: none;
+}
+
+input[type=submit]{
+	background-color:#DABC7D;
+	font-size: 16px;
+	font-family: Rosario;
+	border: 1px solid #DABC7D;
+	padding: 12px 10px 12px 10px;
+}
+
+form{
+	margin-bottom: 50px;
+}
+
+
+/*---------EINDE FOOTER----------------*/
