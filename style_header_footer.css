@@ -52,11 +52,12 @@ li{
 
 a:link{
 	color: #F5CF80;
-	padding: 5px 40px;	
+	padding: 10px 40px;	
 	text-decoration: none;
-	
 }
-a:hover{
+
+
+.navigatie a:hover{
 	color: #766749;
 }
 
@@ -64,9 +65,10 @@ a:visited{
 	color: #F5CF80;
 }
 
-a:active{
+.active{
 	color: #F5CF80;
-    font-size: 20px;
+    font-size: 24px;
+	border-bottom: 1px solid #F5CF80;
 }
 
 /*highlightning menu text when your visiting the home-page */
