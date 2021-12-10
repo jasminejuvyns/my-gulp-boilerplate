@@ -371,13 +371,6 @@ hr{
 	margin-top: 10%;
 }
 
-.annulatie_titel{
-	margin-top: 2%;
-	margin-left: 28%;
-	font-family: Rosario;
-	padding: 0 5%;
-}
-
 .annulatie_text{
 	text-align: center;
 	padding: 0 8%;
@@ -397,8 +390,21 @@ hr{
 	padding: 0 5%;
 }
 
-.mail{
-	
+.reservatie_text{
+	text-align: center;
+	padding: 0 8%;
+}
+
+.button_reservatie{
+	width:80px;
+	height: 20px;
+	font-size: 15px;
+	color: white;
+	cursor: pointer;
+	font-family: Rosario;
+	padding: 10%;
+	margin-left: 42%;
+	margin-top: 30%;
 }
 
 .container3{
@@ -413,20 +419,29 @@ hr{
   width: 100%;
 }
 
+#uur, #selectie, #datum, #aantal{
+	color: white;
+	font-size: 14px;
+}
+
 input, select, textarea{
   border-radius: 2px;
   border: 2px solid #4E4C4C;
   box-sizing: border-box;
-  font-size: 1.25em;
+  font-size: 14px;
   font-family: 'Quicksand';
   width: 100%;
   padding: 10px;
   background-color: #4E4C4C;
 }
 
+textarea{
+	height: 250px;
+}
+
 ::placeholder{
 	color: white;
-	opacity: 0.8;
+	opacity: 0.9;
 	font-size: 13px;
 }
 
@@ -435,12 +450,14 @@ input, select, textarea{
 }
 
 .verzend-button{
-	background-color: #DABC7D;
-	width:100px;
+	width: 40%;
 	height: 40px;
-	font-size: 17px;
-	color: white;
-	cursor: pointer;
-	font-family: Rosario;
-	margin-top: 2%;
+	background: #F5CF80;
+	border: none;
+	color: #766749;
+	font-size: 16px;
+	font-family: 'Rosario';
+  	cursor: pointer;
+  	margin-top: 2%;
+  	margin-left: 30%;
 }
