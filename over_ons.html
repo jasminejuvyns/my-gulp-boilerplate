@@ -15,17 +15,23 @@
 <body>
 
     <!-------------------------HEADER IMAGE + MENU + RESERVATIE TEKST & KNOP -------->
-    <header class="container cf ">
+    <header class="container cf">
         <div class="navigatie">
             <ul>
                 <li><a class="home" href="../Sabor/index.html">HOME</a></li>
-                <li><a class="over_ons" href="../Sabor/over_ons.html">OVER ONS</a></li>
-                <li><a class="menu" href="../Sabor/menu.html">MENU</a></li>
+                <li><a class="over_ons" href="../Sabor/over_ons.html">OVER ONS</a></li> 
+                <li><a class="menu" href="../Sabor/menu.html">MENU</a></li> 
                 <li><a class="contact" href="../Sabor/contact.html">CONTACT</a></li>
             </ul>
-        </div>
-
-        <img class="header_image" src="images/header_tapas1.png" alt="header image">
+        </div> 
+        <img class="header_image"src="images/header_tapas1.png" alt="header image">
+        <img class="logo" src="images/logo_wit.png" alt="Sabor logo">
+        <p class="header_text">
+        Gelieve onderstaande formulier in te vullen om een reservatie te maken. <br>
+        Wij proberen u zo spoedig mogelijk te antwoorden.
+        <br><br>
+        <a href="../Sabor/reservatie.html" class="button">RESERVEREN</a>
+    </p>
     </header>
 
     <!-------------------------TITEL + TEKSTBLOK -------->
@@ -59,46 +65,42 @@
         <img src="images/team.jpeg" alt="team" class="foto-about">
     </section>
 
-    <footer class="container">
-        <div class="container2">
-            <section class="cf">
-                <h1 class="titel-gecentreerd">NIEUWSBRIEF</h1>
+     <!-------------------------FOOTER--------------------------------------->
+    <footer class="container cf">
+        <div class="container2 cf">
+            <div class="centreren">
+                <h1 class="titel-gecentreerd menutitel">NIEUWSBRIEF</h1>
                 <p>Wees als eerste op de hoogte van onze nieuwe menu's en thema avonden.</p>
-                <div class="nieuwsbrief cf">
-                <form action="login.php" method="post" class="cf">
-                    <div class="formfield">
-                        <label></label>
-                        <input type="text" name="naam" id="naam" required placeholder="Naam*" class="formfield">
-                    </div>
-                    <div class="formfield">
-                        <label></label>
-                        <input type="text" name="email" id="email" required placeholder="Email*">
-                    </div>
-                    <div class="formfield">
-                        <input type="submit" value="Verstuur" class="button">
-                    </div>
+            </div>
+            <form action="login.php" method="post" class="centreren cf">
+                <div class="formfield">
+                    <label></label>
+                    <input type="text" name="naam" id="naam" required placeholder="Naam*">
                 </div>
-                </form>
+                <div class="formfield">
+                    <label></label>
+                    <input type="text" name="email" id="email" required placeholder="Email*">
+                </div>
+                <div class="formfield">
+                    <input type="submit" value="VERSTUUR">
+                </div>
 
-
-            </section>
-
+            </form>
             <hr>
-
-            <aside class="icon-bar">
+            <aside class="icon-bar cf">
                 <button onclick="location.href=''" class="buttonsocial"><i class="fa-brands fa-instagram"></i></button>
                 <button onclick="location.href=''" class="buttonsocial"><i class="fab fa-facebook"></i></button>
                 <button onclick="location.href='mailto:info@sabor.be'" class="buttonsocial"><i
                         class="fa-regular fa-envelope"></i></button>
-            </aside>
 
-            <section>
+            </aside>
+            <section class="centreren">
 
                 <ul>
-                    <li class="adres">Tapaslaan 78 - 5670 Calamares</li>
-                    <li class="contact">Contact</li>
-                    <li class="openingsuren">Openingsuren</li>
-                    <li class="voorwaarden">Reserveringsvoorwaarden</li>
+                    <li><a class="adres">Tapaslaan 78 - 5670 Calamares</a></li>
+                    <li><a class="contact" href="../Sabor/contact.html">Contact</a></li>
+                    <li><a class="openingsuren">Openingsuren</a></li>
+                    <li><a class="voorwaarden">Voorwaarden</a></li>
                 </ul>
 
             </section>

@@ -120,42 +120,46 @@
 
 
     
-    <!-------------------------FOOTER--------------------------------------->
-    <footer class="footer_container">
-        <section>
-            <h1>NIEUWBRIEF</h1>
-            <p>Wees als eerste op de hoogte van onze nieuwe menu's en thema avonden.</p>
-            <form action="login.php" method="post">
+     <!-------------------------FOOTER--------------------------------------->
+    <footer class="container cf">
+        <div class="container2 cf">
+            <div class="centreren">
+                <h1 class="titel-gecentreerd menutitel">NIEUWSBRIEF</h1>
+                <p>Wees als eerste op de hoogte van onze nieuwe menu's en thema avonden.</p>
+            </div>
+            <form action="login.php" method="post" class="centreren cf">
                 <div class="formfield">
-                   <label></label>
-                   <input type="text" name="naam" id="naam" required placeholder="Naam*" class="formfield">
+                    <label></label>
+                    <input type="text" name="naam" id="naam" required placeholder="Naam*">
                 </div>
-                <div>
-                   <label></label>
-                   <input type="text" name="email" id="email" required placeholder="Email*" class=>
-                   <div>
-                    <input type="submit" value="Verstuur" class="button">
-                 </div>
-              </form>
+                <div class="formfield">
+                    <label></label>
+                    <input type="text" name="email" id="email" required placeholder="Email*">
                 </div>
-            <hr>
+                <div class="formfield">
+                    <input type="submit" value="VERSTUUR">
+                </div>
 
-        </section>
-        <hr>
-        
-            <aside class="icon-bar">
+            </form>
+            <hr>
+            <aside class="icon-bar cf">
                 <button onclick="location.href=''" class="buttonsocial"><i class="fa-brands fa-instagram"></i></button>
-                <button onclick="location.href=''" class="buttonsocial"><i class="fa-brands fa-linkedin"></i></button>
-                <button onclick="location.href='mailto:info@sabor.be'" class="buttonsocial"><i class="fa-regular fa-envelope"></i></button>
+                <button onclick="location.href=''" class="buttonsocial"><i class="fab fa-facebook"></i></button>
+                <button onclick="location.href='mailto:info@sabor.be'" class="buttonsocial"><i
+                        class="fa-regular fa-envelope"></i></button>
+
             </aside>
-    
-        <section>
-            <address>kweetnogniwaar 67</address>
-            <p>contact</p>
-            <p>openingsuren</p>
-            <p>reserveringsvoorwaarden</p>
-            <p>copyright</p>
-        </section>
+            <section class="centreren">
+
+                <ul>
+                    <li><a class="adres">Tapaslaan 78 - 5670 Calamares</a></li>
+                    <li><a class="contact" href="../Sabor/contact.html">Contact</a></li>
+                    <li><a class="openingsuren">Openingsuren</a></li>
+                    <li><a class="voorwaarden">Voorwaarden</a></li>
+                </ul>
+
+            </section>
+        </div>
     </footer>
 </body>
 </html>
