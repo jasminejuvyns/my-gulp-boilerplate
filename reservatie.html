@@ -41,85 +41,79 @@
             </h1>
             <hr class="over-ons_line"> 
             <p class="over-ons_text">      
-               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-               quis nostrud exercitation ullamco laboris nisi.
+              Beste klant, Indien het online reserveren niet lukt gelieve ons een mail te sturen met daarin uw naam, gewenste datum en uur op<a class="mail" href="mailto:info@sabor.be">info@sabor.be</a>met vermelding van uw gsm-nummer dan contacteren wij u om te kijken wanneer het kan. Tot gauw, Het Sabor-Team!
             </p>
         </section>
         <hr class="endline_container">
-    </div>
 
     <!--------------------------- FORMULIER----------------------------------->
-    <form action="reservation.php" method="post">
-      <div class="elem-group">
-        <label for="name"></label>
-        <input type="text" id="name" name="visitor_name" placeholder="Voornaam" required>
-      </div>
+    <div class="container3">
+        <form action="reservation.php" method="post">
 
-      <div class="elem-group">
-        <label for="name"></label>
-        <input type="text" id="name" name="visitor_name" placeholder="Achternaam" required>
-      </div>
+            <div class="groep-keuze">
+                <select id="selectie" name="keuze" required>
+                    <option value="">Maak jou keuze:</option>
+                    <option value="connecting">Kerst-menu</option>
+                    <option value="adjoining">Reserveer jou tapatafel</option>
+                    <option value="adjacent">Reservatie annuleren</option>
+                </select>
+            </div>
 
-      <div class="elem-group">
-        <label for="email"></label>
-        <input type="email" id="email" name="visitor_email" placeholder="E-mail" required>
-      </div>
+            <div class="groep-aantal">
+                <label for="aantal">Aantal personen:</label>
+                <input type="number" id="aantal" name="totaal_aantal" placeholder="2" min="1" required>
+            </div>
 
-      <div class="elem-group">
-        <label for="phone">Your Phone</label>
-        <input type="tel" id="phone" name="visitor_phone" placeholder="498-348-3872" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
-      </div>
+            <div class="groep-datum">
+                <label for="datum">Datum:</label>
+                <input type="date" id="datum" name="datum" required>
+            </div>
 
-      <hr>
+            <div class="groep-uur">
+                <label for="uur">Kies jou uur:</label>
+                <select id="uur" name="uur" required>
+                    <option value="">Kies jou uur</option>
+                    <option value="connecting">17:00</option>
+                    <option value="adjoining">18:00</option>
+                    <option value="adjacent">19:00</option>
+                    <option value="adjoining">20:00</option>
+                    <option value="adjacent">21:00</option>
+                    <option value="adjacent">22:00</option>
+                </select>
+            </div>
 
-      <div class="elem-group inlined">
-        <label for="adult">Adults</label>
-        <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
-      </div>
+            <hr>
 
-      <div class="elem-group inlined">
-        <label for="child">Children</label>
-        <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
-      </div>
+            <div class="groep-name">
+                <label for="name"></label>
+                <input type="text" id="name" name="name-visitor" placeholder="Voornaam" required>
+            </div>
 
-      <div class="elem-group inlined">
-        <label for="checkin-date">Check-in Date</label>
-        <input type="date" id="checkin-date" name="checkin" required>
-      </div>
+            <div class="groep-name">
+                <label for="name"></label>
+                <input type="text" id="name" name="name-visitor" placeholder="Achternaam" required>
+            </div>
 
-      <div class="elem-group inlined">
-        <label for="checkout-date">Check-out Date</label>
-        <input type="date" id="checkout-date" name="checkout" required>
-      </div>
+            <div class="groep-contactgegevens">
+                <label for="email"></label>
+                <input type="email" id="email" name="email-visitor" placeholder="E-mail" required>
+            </div>
 
-      <div class="elem-group">
-        <label for="room-selection">Select Room Preference</label>
-        <select id="room-selection" name="room_preference" required>
-            <option value="">Choose a Room from the List</option>
-            <option value="connecting">Connecting</option>
-            <option value="adjoining">Adjoining</option>
-            <option value="adjacent">Adjacent</option>
-        </select>
-      </div>
+            <div class="groep-contactgegevens">
+                <label for="phone"></label>
+                <input type="tel" id="phone" name="phone-visitor" placeholder="Telefoonnummer"required>
+            </div>
 
-      <hr>
+            <hr>
 
-      <div class="elem-group">
-        <label for="message">Anything Else?</label>
-        <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important." required></textarea>
-      </div>
+            <div class="groep-bericht">
+                <label for="bericht">Heb je nog vragen of opmerkingen over allergieën?</label>
+                <textarea id="bericht" name="bericht" placeholder="Laat hier je bericht achter:" required></textarea>
+            </div>
 
-      <button type="submit">Verzenden</button>
-</form>
-
-
-
-
-
-
-
-    
+            <button class="verzend-button" type="submit">Verzenden</button>
+        </form>
+    </div>
      <!-------------------------FOOTER--------------------------------------->
     <footer class="container cf">
         <div class="container2 cf">
@@ -159,7 +153,7 @@
                 </ul>
 
             </section>
-        </div>
     </footer>
+    </div>
 </body>
 </html>
