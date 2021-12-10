@@ -76,8 +76,6 @@ a:visited{
 	color: #766749;
 }
 
-/*---------EINDE HEADER-------------------------*/
-
 /*header tapas image*/
 .header_image{
 	float: left;
@@ -91,7 +89,7 @@ a:visited{
 .logo{
 	width: 20%;
 	height: 10%;
-	margin-left: 20%;
+	margin-left: 18%;
 	margin-top: 50px;
 }
 
@@ -100,15 +98,15 @@ a:visited{
 /*reservatie tekst boven button-reservatie*/
 .header_text{
 	float: right;
-	margin-top: 10%;
+	margin-top: 6%;
 	margin-right: 10%;
 	line-height: 30px;
-
 }
 
 /*button reserveren-header*/
+
 .button {
-	background-color: #DABC7D;
+	background-color: #766749;
 	width:100px;
 	height: 40px;
 	font-size: 16px;
