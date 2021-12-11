@@ -6,9 +6,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style_header_footer.css">
     <link rel="stylesheet" href="style_body.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Reservatie</title>
 </head>
 <body>
@@ -120,45 +117,71 @@
         </form>
     </div>
      <!-------------------------FOOTER--------------------------------------->
-    <footer class="container cf">
-        <div class="container2 cf">
-            <div class="centreren">
-                <h1 class="titel-gecentreerd menutitel">NIEUWSBRIEF</h1>
-                <p>Wees als eerste op de hoogte van onze nieuwe menu's en thema avonden.</p>
-            </div>
-            <form action="login.php" method="post" class="centreren cf">
-                <div class="formfield">
-                    <label></label>
-                    <input type="text" name="naam" id="naam" required placeholder="Naam*">
-                </div>
-                <div class="formfield">
-                    <label></label>
-                    <input type="text" name="email" id="email" required placeholder="Email*">
-                </div>
-                <div class="formfield">
-                    <input type="submit" value="VERSTUUR">
-                </div>
+     <br>
 
-            </form>
-            <hr>
-            <aside class="icon-bar cf">
-                <button onclick="location.href=''" class="buttonsocial"><i class="fa-brands fa-instagram"></i></button>
-                <button onclick="location.href=''" class="buttonsocial"><i class="fab fa-facebook"></i></button>
-                <button onclick="location.href='mailto:info@sabor.be'" class="buttonsocial"><i
-                        class="fa-regular fa-envelope"></i></button>
+     <button onclick="topFunction()" id="myBtn" title="Go to top" class="fa fa-caret-up"></button>
 
-            </aside>
-            <section class="centreren">
+</div>
+<footer class="container cf">
+ <div class="container2 centreren cf">
+     <hr class="nieuwsbrief">
+     <h1 class="menutitel">NIEUWSBRIEF</h1>
+     <p>Wees als eerste op de hoogte van onze nieuwe menu's en reservatiemogelijkheden.</p>
 
-                <ul>
-                    <li><a class="adres">Tapaslaan 78 - 5670 Calamares</a></li>
-                    <li><a class="contact" href="../Sabor/contact.html">Contact</a></li>
-                    <li><a class="openingsuren">Openingsuren</a></li>
-                    <li><a class="voorwaarden">Voorwaarden</a></li>
-                </ul>
+     <form action="login.php" method="post">
+         <div class="cf">
+             <div class="nieuwsbrief_naam">
+                 <label for="naam"></label>
+                 <input type="text" id="naam" name="newsletter" placeholder="Naam" required>
+             </div>
 
-            </section>
-    </footer>
-    </div>
+             <div class="nieuwsbrief_email">
+                 <label for="email"></label>
+                 <input type="email" id="email" name="email-visitor" placeholder="E-mail" required>
+             </div>
+
+             <div class="nieuwsbrief_verzendknop">
+                 <input type="submit" value="VERSTUUR">
+             </div>
+         </div>
+     </form>
+     <hr class="nieuwsbrief">
+     <aside class="icon-bar cf">
+         <a href="#" class="fa fa-facebook"></a>
+         <a href="#" class="fa fa-instagram"></a>
+         <a href="#" class="fa fa-envelope"></a>
+     </aside>
+     
+ </div>
+ <section class="centreren">
+     <ul>
+         <li><a class="adres" href="../Sabor/contact.html">Tapaslaan 78 - 5670 Calamares</a></li>
+         <li><a class="contact" href="../Sabor/contact.html">Contact</a></li>
+         <li><a class="openingsuren" href="../Sabor/contact.html">Openingsuren</a></li>
+         <li><a class="voorwaarden" href="./Sabor/annuleringsvoorwaarden.html">Voorwaarden</a></li>
+     </ul>
+ </section>
+</footer>
+<script>
+ //Get the button:
+ mybutton = document.getElementById("myBtn");
+
+ // When the user scrolls down 20px from the top of the document, show the button
+ window.onscroll = function () { scrollFunction() };
+
+ function scrollFunction() {
+     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+         mybutton.style.display = "block";
+     } else {
+         mybutton.style.display = "none";
+     }
+ }
+
+ // When the user clicks on the button, scroll to the top of the document
+ function topFunction() {
+     document.body.scrollTop = 0; // For Safari
+     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+ }
+</script>
 </body>
 </html>

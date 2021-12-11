@@ -9,7 +9,8 @@
 .container2{
 	max-width: 960px;
 	margin: auto;
-	margin-top: -10%;
+	margin-top: 10%;
+	
 }
 
 h1{
@@ -20,6 +21,25 @@ h1{
 	text-transform: uppercase;
 	margin-bottom: 20px;
 }
+
+#myBtn {
+	position: fixed; /* Fixed/sticky position */
+	bottom: 550px; /* Place the button at the bottom of the page */
+	right: 30px; /* Place the button 30px from the right */
+	z-index: 99; /* Make sure it does not overlap */
+	border: none; /* Remove borders */
+	outline: none; /* Remove outline */
+	color: white; /* Text color */
+	background-color: #766749;
+	cursor: pointer; /* Add a mouse pointer on hover */
+	padding: 15px; /* Some padding */
+	font-size: 24px; /* Increase font size */
+  }
+
+  #myBtn:hover {
+	opacity: 0.7;
+  }
+  
 
 /*-------INDEX PAGINA-------KERST MENU----------------*/
 
@@ -84,7 +104,7 @@ hr{
     border-color: #DABC7D;
     width: 20%;
 	margin-bottom: 40px;
-	margin-top: 30px;
+	margin-top: 40px;
 }
 
 /*--------2 TAPAS FOTO'S LANGS ELKAAR----------------*/
@@ -227,14 +247,15 @@ hr{
 }
 
 /*---------------REVIEWS STARS-------------------------*/
+
 /*stars*/
 .checked {
   color: #85682E;
 }
 
 .reviews_titel{
-	margin-top: 10%;
-	margin-left: 50%;
+	margin-bottom: 50px;
+	margin-top: 50px;
 }
 
 .reviews_container{
@@ -246,14 +267,16 @@ hr{
 	width: 30%;
 	margin-top: 8%;
 	float: left;
-	padding: 0 4%;
+	padding: 0 2%;
+	text-align: center;
 }
 
 .reviews-blok3{
 	width: 30%;
-	float: right;
+	float: left;
 	margin-top: 8%;
-	margin-right: -8%;
+	
+	text-align: center;
 }
 
 .review_name{
@@ -264,9 +287,7 @@ hr{
 .review_text{
 	font-style: 13px;
 }
-.reviews_line{
-	margin-left: 41%;
-}
+
 /*---------------EINDE INDEX PAGINA-------------------------*/
 
 
@@ -280,7 +301,7 @@ hr{
 
 .over-ons-links{
 	float: left;
-	width: 45%;
+	width: 50%;
 	margin-top: 20px;
 }
 
@@ -293,7 +314,7 @@ hr{
 /*-----------BEGIN MENU PAGINA----------*/
 
 .menutitel{
-	margin-top: 100px;
+	margin-top: 50px;
 }
 
 .menukader1{
@@ -374,8 +395,10 @@ hr{
 h3{
 	font-size: 15px;
 	margin-top: 20px;
+	font-family: Rosario;
+	text-transform: uppercase;
 }
-
+ 
 
 /*-----------EINDE MENU PAGINA----------*/
 

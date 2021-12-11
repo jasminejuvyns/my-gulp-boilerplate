@@ -82,7 +82,7 @@ a:visited{
 	width: 40%;
 	height: 5%;
 	margin-top: -150px;
-	z-index: 1;
+	z-index: -1;
 }
 
 /*logo image*/
@@ -124,15 +124,39 @@ a:visited{
 	float: left;
 }
 
-.buttonsocial{
-	color: white;
-	border: none;
-	padding: 0px;
-	background: none;
+.icon-bar{
+	text-align: center;	
 }
 
-.icon-bar{
-	text-align: center;
+aside{
+	margin: 50px 0;
+}
+
+.fa.icon{
+	margin-right: 10px;
+	padding: 20px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa.fa-facebook {
+	color: white;
+	padding: 10px;
+	font-size: 32px;
+  }
+    
+.fa.fa-instagram{
+	color:white;
+	padding: 10px;
+	font-size: 32px;
+}
+
+.fa.fa-envelope{
+	color: white;
+	padding: 10px;
+	font-size: 28px;
 }
 
 .nieuwsbrief_naam{
@@ -149,33 +173,76 @@ a:visited{
 
 .nieuwsbrief_verzendknop{
 	float:left;
-	margin: 10px 0 20px 10px; 
+	padding: 8px 9px;
+	box-sizing: border-box;
+	color: white;
 }
 
 input[type=text]{
-	border: 1px solid #DABC7D;
+	border: 1px solid #766749 ;
 	background-image: url(images/backgroundformfields.jpg);
 	color: white;
 	outline: none;
 }
 
 input[type=email]{
-	border: 1px solid #DABC7D;
+	border: 1px solid #766749;
 	background-image: url(images/backgroundformfields.jpg);
 	color: white;
 	outline: none;
 }
 
 input[type=submit]{
-	background-color:#DABC7D;
-	font-size: 16px;
+	background-color:#766749;
+	font-size: 14px;
 	font-family: Rosario;
-	border: 1px solid #DABC7D;
-	padding: 12px 10px 12px 10px;
+	border: 1px solid #766749;
+	color:white;
+	margin-top: 2px;
 }
 
-form{
+input[type=submit]:hover{
+	opacity: 0.7;
+}
+
+hr.nieuwsbrief{
+    border-color: #766749;
+    width: 20%;
+	margin-bottom: 60px;
+	margin-top: 60px;
+}
+
+.adres{
+	text-transform: uppercase;
+	margin: 20px 20px 20px 0;
+}
+
+.contact{
+	margin: 20px 20px 20px 0;
+	text-transform: uppercase;
+}
+
+.openingsuren{
+	margin: 20px 20px 20px 0;
+	text-transform: uppercase;
+}
+
+.voorwaarden{
+	margin: 20px 0px 20px 20px;;
+	text-transform: uppercase;
+}
+
+ul{
 	margin-bottom: 50px;
+}
+
+footer a:link{
+	color:white;
+}
+
+footer a:link:hover{
+	color:#766749;	
+	opacity: 0.7;
 }
 
 
