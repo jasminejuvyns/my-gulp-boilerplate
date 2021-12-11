@@ -15,9 +15,9 @@
 
 h1{
 	font-style: bold;
-    font-size: 24px;
-    font-family: Rosario;
-    color: white;
+  font-size: 24px;
+  font-family: Rosario;
+  color: white;
 	text-transform: uppercase;
 	margin-bottom: 20px;
 }
@@ -66,8 +66,8 @@ h1{
 
 /*Titel kerst menu*/
 .christmas_menu{
-    font-family: Rosario;
-    margin-left: 38%; 
+  font-family: Rosario;
+  margin-left: 38%; 
 }
 
 /*kerst datums*/
@@ -87,7 +87,7 @@ h1{
 }
 
 .button_kerst{
-	background-color: #766749;
+	background-color: #B69E6B;
 	width:100px;
 	height: 40px;
 	font-size: 16px;
@@ -123,7 +123,7 @@ hr{
 }
 
 .button-menu1{
-	background-color: #766749;
+	background-color: #B69E6B;
 	width:100px;
 	height: 40px;
 	font-size: 16px;
@@ -135,7 +135,7 @@ hr{
 }
 
 .button-menu2{
-	background-color: #766749;
+	background-color: #B69E6B;
 	width:100px;
 	height: 40px;
 	font-size: 16px;
@@ -177,7 +177,7 @@ hr{
 }
 
 .button-overons{
-	background-color: #766749;
+	background-color: #B69E6B;
 	width:100px;
 	height: 40px;
 	font-size: 16px;
@@ -230,7 +230,7 @@ hr{
 }
 
 .button-openinghours{
-	background-color: #766749;
+	background-color: #B69E6B;
 	width:100px;
 	height: 40px;
 	font-size: 16px;

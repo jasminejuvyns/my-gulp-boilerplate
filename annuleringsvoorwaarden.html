@@ -79,46 +79,47 @@
         <img class="annulatie_image" src="images/annulatie.jpg" alt="foto van medewerker van Sabor">
     </div>
 
-     <!-------------------------FOOTER--------------------------------------->
+    <!-------------------------FOOTER--------------------------------------->
+
     <footer class="container cf">
-        <div class="container2 cf">
-            <div class="centreren">
-                <h1 class="titel-gecentreerd menutitel">NIEUWSBRIEF</h1>
-                <p>Wees als eerste op de hoogte van onze nieuwe menu's en thema avonden.</p>
-            </div>
-            <form action="login.php" method="post" class="centreren cf">
-                <div class="formfield">
-                    <label></label>
-                    <input type="text" name="naam" id="naam" required placeholder="Naam*">
-                </div>
-                <div class="formfield">
-                    <label></label>
-                    <input type="text" name="email" id="email" required placeholder="Email*">
-                </div>
-                <div class="formfield">
-                    <input type="submit" value="VERSTUUR">
-                </div>
+        <div class="container2 centreren cf">
+            <hr class="nieuwsbrief">
+            <h1 class="menutitel">NIEUWSBRIEF</h1>
+            <p>Wees als eerste op de hoogte van onze nieuwe menu's en reservatiemogelijkheden.</p>
 
+            <form action="login.php" method="post">
+                <div class="cf">
+                    <div class="nieuwsbrief_naam">
+                        <label for="naam"></label>
+                        <input type="text" id="naam" name="newsletter" placeholder="Naam" required>
+                    </div>
+
+                    <div class="nieuwsbrief_email">
+                        <label for="email"></label>
+                        <input type="email" id="email" name="email-visitor" placeholder="E-mail" required>
+                    </div>
+
+                    <div class="nieuwsbrief_verzendknop">
+                        <input type="submit" value="VERSTUUR">
+                    </div>
+                </div>
             </form>
-            <hr>
+            <hr class="nieuwsbrief">
             <aside class="icon-bar cf">
-                <button onclick="location.href=''" class="buttonsocial"><i class="fa-brands fa-instagram"></i></button>
-                <button onclick="location.href=''" class="buttonsocial"><i class="fab fa-facebook"></i></button>
-                <button onclick="location.href='mailto:info@sabor.be'" class="buttonsocial"><i
-                        class="fa-regular fa-envelope"></i></button>
-
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-envelope"></a>
             </aside>
-            <section class="centreren">
 
-                <ul>
-                    <li><a class="adres">Tapaslaan 78 - 5670 Calamares</a></li>
-                    <li><a class="contact" href="../Sabor/contact.html">Contact</a></li>
-                    <li><a class="openingsuren">Openingsuren</a></li>
-                    <li><a class="voorwaarden">Voorwaarden</a></li>
-                </ul>
-
-            </section>
         </div>
+        <section class="centreren">
+            <ul>
+                <li><a class="adres" href="../Sabor/contact.html">Tapaslaan 78 - 5670 Calamares</a></li>
+                <li><a class="contact" href="../Sabor/contact.html">Contact</a></li>
+                <li><a class="openingsuren" href="../Sabor/contact.html">Openingsuren</a></li>
+                <li><a class="voorwaarden" href="./Sabor/annuleringsvoorwaarden.html">Voorwaarden</a></li>
+            </ul>
+        </section>
     </footer>
 </body>
 </html>
