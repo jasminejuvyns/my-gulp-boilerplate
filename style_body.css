@@ -487,3 +487,10 @@ textarea {
 .map {
 	margin-top: 100px;
 }
+.contact-button {
+	margin:  10px;
+	float: right;
+}
+.contactgegevens a{
+	padding-left: 0;
+}
