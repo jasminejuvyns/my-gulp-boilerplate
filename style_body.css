@@ -188,6 +188,18 @@ hr{
 	margin-left: 42%;
 }
 
+/*--------SLIDESHOW----------------*/
+.slides{
+	width: 75%;
+	border: 2px solid #766749;
+	margin-left: 12%;
+}
+
+
+.hiddenSlides{
+	display: none;
+}
+
 /*--------OPENINGSUREN EN IMAGE----------------*/
 .empty-row{
 	width: 30%;
@@ -545,3 +557,5 @@ textarea{
 .map {
 	margin-top: 100px;;
 }
+
+
