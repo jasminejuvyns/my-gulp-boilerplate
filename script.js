@@ -1,13 +1,12 @@
 //slideshow
-
-
-var myIndex = 0;
+"use strict";
+let myIndex = 0;
 content();
 
 function content() {
     try{
-        var i;
-        var x = document.getElementsByClassName("slides");
+        let i;
+        let x = document.getElementsByClassName("slides");
         for (i = 0; i < x.length; i++) {
             x[i].style.display = "none";  
         }
