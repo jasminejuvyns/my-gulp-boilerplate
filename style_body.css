@@ -495,21 +495,14 @@ textarea{
 .verzend-button{
 	width: 40%;
 	height: 40px;
-<<<<<<< Updated upstream
 	background: #F5CF80;
 	border: none;
-	color: #766749;
 	font-size: 16px;
 	font-family: 'Rosario';
   	cursor: pointer;
   	margin-top: 2%;
   	margin-left: 30%;
-=======
-	font-size: 17px;
 	color: white;
-	cursor: pointer;
-	font-family: Rosario;
-	margin-top: 2%;
 }
 
 
@@ -551,5 +544,4 @@ textarea{
 /* ----------CONTACTFORM-------- */
 .map {
 	margin-top: 100px;;
->>>>>>> Stashed changes
 }
