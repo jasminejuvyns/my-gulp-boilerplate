@@ -2,280 +2,202 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;900&family=Quicksand:wght@300;400;500;600;700&family=Rosario:wght@400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
 
 /*---------ALGEMEEN----------------*/
-.titel-gecentreerd{
+.titel-gecentreerd {
 	text-align: center;
 }
 
-.container2{
+.container2 {
 	max-width: 960px;
 	margin: auto;
-	margin-top: 10%;
-	
+	margin-top: 50px;
 }
 
-h1{
+h1 {
 	font-style: bold;
-  font-size: 24px;
-  font-family: Rosario;
-  color: white;
+	font-size: 24px;
+	font-family: Rosario;
+	color: white;
 	text-transform: uppercase;
 	margin-bottom: 20px;
 }
 
-#myBtn {
-	position: fixed; /* Fixed/sticky position */
-	bottom: 550px; /* Place the button at the bottom of the page */
-	right: 30px; /* Place the button 30px from the right */
-	z-index: 99; /* Make sure it does not overlap */
-	border: none; /* Remove borders */
-	outline: none; /* Remove outline */
-	color: white; /* Text color */
-	background-color: #766749;
-	cursor: pointer; /* Add a mouse pointer on hover */
-	padding: 15px; /* Some padding */
-	font-size: 24px; /* Increase font size */
-  }
+.button-body {
+	border: 0.7px solid #DABC7D;
+	color: #DABC7D;
+	cursor: pointer;
+	font-family: Rosario;
+	padding: 10px 20px;
+	text-decoration: none;
+	background-color: rgb(30, 30, 3O);
+}
 
-  #myBtn:hover {
+.space{
+	margin-top: 40px; 
+	margin-bottom: 100px;
+}
+
+#myBtn {
+	position: fixed;
+	/* Fixed/sticky position */
+	bottom: 550px;
+	/* Place the button at the bottom of the page */
+	right: 30px;
+	/* Place the button 30px from the right */
+	z-index: 99;
+	/* Make sure it does not overlap */
+	border: none;
+	/* Remove borders */
+	outline: none;
+	/* Remove outline */
+	color: white;
+	/* Text color */
+	background-color: #766749;
+	cursor: pointer;
+	/* Add a mouse pointer on hover */
+	padding: 15px;
+	/* Some padding */
+	font-size: 24px;
+	/* Increase font size */
+}
+
+#myBtn:hover {
 	opacity: 0.7;
-  }
-  
+}
+
 
 /*-------INDEX PAGINA-------KERST MENU----------------*/
 
 /*kerst menu kader*/
-.christmas_container{
+.christmas_container {
 	border-style: solid;
 	border-color: #DABC7D;
-	max-width: 60%;
-	float: left;
-	margin: 10% 20%;
+	max-width: 70%;
 }
 
-.christmas_ball_1{
+.christmas_ball_1 {
 	width: 45%;
 	height: 20%;
 }
 
-.christmas_ball_2{
+.christmas_ball_2 {
 	width: 45%;
 	height: 20%;
 	margin-left: 1%;
 }
 
 
-/*Titel kerst menu*/
-.christmas_menu{
-  font-family: Rosario;
-  margin-left: 38%; 
-}
-
 /*kerst datums*/
-.christmas_dates{
-	font-size: 13px;
+.christmas_dates {
+	font-size: 14px;
 	font-weight: 100;
-	margin-left: 40%;
+	color: #DABC7D;
 }
 
 /*gerechten kerstmenu*/
-.christmas_dishes{
-	font-size: 12px;
-	margin-left: 2%;
-	margin-bottom: 10%;
-	text-align: center;
+.christmas_dishes {
+	font-size: 14px;
 	padding: 0 8%;
-}
-
-.button_kerst{
-	background-color: #B69E6B;
-	width:100px;
-	height: 40px;
-	font-size: 16px;
-	color: white;
-	cursor: pointer;
-	font-family: Rosario;
-	padding: 2%;
-	margin-left: 25%;
-	margin-top: 2%;
 }
 
 /*line*/
 hr{
-    border-color: #DABC7D;
-    width: 20%;
-	margin-bottom: 40px;
-	margin-top: 40px;
+	border-color: #766749;
+	width: 20%;
+	margin-bottom: 30px;
+	margin-top:30px;
 }
 
 /*--------2 TAPAS FOTO'S LANGS ELKAAR----------------*/
-.tapas1{
-	width: 45%;
-	height: 45%;
-	margin: 0 2%;
+
+.menufoto {
+	float: left;
+	width: 50%;
 	margin-top: 10%;
 }
 
-.tapas2{
-	margin: 0 2%;
-	margin-top: 10%;
-	width: 45%;
-	height: 29%;
-}
-
-.button-menu1{
-	background-color: #B69E6B;
-	width:100px;
-	height: 40px;
-	font-size: 16px;
-	color: white;
-	cursor: pointer;
-	font-family: Rosario;
-	padding: 2%;
-	margin-left: 17%;
-}
-
-.button-menu2{
-	background-color: #B69E6B;
-	width:100px;
-	height: 40px;
-	font-size: 16px;
-	color: white;
-	cursor: pointer;
-	font-family: Rosario;
-	padding: 2%;
-	margin-left: 35%;
-}
 
 /*about pagina*/
-.container-about{
+.container-about {
 	width: 80%;
-	float:left;
-	margin-top: 50px;;
+	float: left;
+	margin-top: 50px;
+	;
 }
 
 /*--------OVER ONS TEKST----------------*/
-.over-ons_container{
-	padding: 2%;
-	margin-top: 10%;
-}
-
-.over-ons_titel{
-	margin-top: 2%;
-	margin-left: 40%;
-	font-family: Rosario;
-	padding: 0 5%;
-}
-
-.over-ons_text{
-	text-align: center;
-	padding: 0 8%;
-}
-
-.over-ons_line{
-	width: 16%;
-	margin-left: 42%;
-}
-
-.button-overons{
-	background-color: #B69E6B;
-	width:100px;
-	height: 40px;
-	font-size: 16px;
-	color: white;
-	cursor: pointer;
-	font-family: Rosario;
-	padding: 2%;
-	margin-left: 42%;
+.ons {
+	margin: 20px 0;
 }
 
 /*--------SLIDESHOW----------------*/
 .slides{
-	width: 75%;
+	width: 50%;
 	border: 2px solid #766749;
-	margin-left: 12%;
 }
-
 
 .hiddenSlides{
 	display: none;
 }
 
 /*--------OPENINGSUREN EN IMAGE----------------*/
-.empty-row{
-	width: 30%;
-}
-.openinghours_container{
-	margin-top: 10%;
-	margin: 10% 5%;
-	width: 90%;
-	
+.empty-row {
+	width: 35%;
 }
 
-.openignhours-blok{
+
+.openinghours-blok {
 	float: left;
-	width: 90%;
+	width: 60%;
+	margin: 30px 0;
+
 }
 
-.openinghours_line{
+.openinghours_line {
 	width: 20%;
-	margin-left: 1%;
 }
 
-.days{
+.days {
 	text-transform: uppercase;
+	font-family: Rosario;
 	text-decoration: none;
-	padding: 10% 0;
+	padding: 6% 0;
 	text-align: left;
 }
 
-.hours{
+.hours {
 	margin-left: 150px;
 	text-align: right;
 }
 
 /*foto restaurant langs openignsuren*/
-.image_restaurant{
-	width: 55%;
-	height: 40%;
-	margin-top: -85%;
-	margin-left: 58%;
+.image_restaurant {
+	width: 40%;
+	float: left;
+	margin: 30px 0;
 }
 
-.button-openinghours{
-	background-color: #B69E6B;
-	width:100px;
-	height: 40px;
-	font-size: 16px;
-	color: white;
-	cursor: pointer;
-	font-family: Rosario;
-	padding: 2%;
-	margin-left: 5%;
-}
 
-.endline_container{
-	margin-top: 5%;
-	margin-left: 40%;
-}
+
+
 
 /*---------------REVIEWS STARS-------------------------*/
 
 /*stars*/
 .checked {
-  color: #85682E;
+	color: #85682E;
 }
 
-.reviews_titel{
+.reviews_titel {
 	margin-bottom: 50px;
 	margin-top: 50px;
 }
 
-.reviews_container{
+.reviews_container {
 	width: 90%;
 	float: left;
 }
 
-.reviews-blok1,.reviews-blok2{
+.reviews-blok1, .reviews-blok2 {
 	width: 30%;
 	margin-top: 8%;
 	float: left;
@@ -283,20 +205,20 @@ hr{
 	text-align: center;
 }
 
-.reviews-blok3{
+.reviews-blok3 {
 	width: 30%;
 	float: left;
 	margin-top: 8%;
-	
+
 	text-align: center;
 }
 
-.review_name{
+.review_name {
 	font-size: 13px;
 	font-weight: lighter;
 }
 
-.review_text{
+.review_text {
 	font-style: 13px;
 }
 
@@ -306,18 +228,18 @@ hr{
 /*-----------BEGIN OVER ONS PAGINA----------*/
 
 
-.foto-about{
-	margin:auto;
+.foto-about {
+	margin: auto;
 	margin-top: 40px;
 }
 
-.over-ons-links{
+.over-ons-links {
 	float: left;
 	width: 50%;
 	margin-top: 20px;
 }
 
-.over-ons-rechts{
+.over-ons-rechts {
 	float: right;
 	width: 45%;
 	margin-top: 20px;
@@ -325,133 +247,134 @@ hr{
 
 /*-----------BEGIN MENU PAGINA----------*/
 
-.menutitel{
+.menutitel {
 	margin-top: 50px;
 }
 
-.menukader1{
+.menukader1 {
 	border: 1px solid #DABC7D;
 	padding: 20px;
 	margin: 0 30px 0 0;
-	float:left;
+	float: left;
 	width: 55%;
 	height: 350px;
 	font-size: 14px;
 }
-.menukader2{
+
+.menukader2 {
 	border: 1px solid #DABC7D;
 	padding: 20px;
 	margin: 0 0 30px 0;
-	float:right;
+	float: right;
 	width: 55%;
 	height: 350px;
 	font-size: 14px;
 }
 
-.menufoto1{
-	float:right;
+.menufoto1 {
+	float: right;
 	width: 35%;
 	height: 392px;
 }
 
-.menufoto2{
-	float:left;
+.menufoto2 {
+	float: left;
 	width: 35%;
 	height: 392px;
 }
 
-.deelmenu{
+.deelmenu {
 	margin: 100px 0;
 }
 
-.centreren{
-	margin:auto;
+.centreren {
+	margin: auto;
 	text-align: center;
 }
 
-.naamwijn{
-	float:left;
+.naamwijn {
+	float: left;
 	width: 60%;
 	font-size: 13px;
 }
 
-.prijswijn{
-	float:right;
+.prijswijn {
+	float: right;
 	width: 30%;
 	font-size: 13px;
 }
 
-.rodewijn{
-	float:left;
+.rodewijn {
+	float: left;
 	width: 45%;
 	padding: 30px 10px 15px 30px;
 	border-right: 1px solid #DABC7D;
 }
 
-.wittewijn{
-	float:right;
-	width:45%;
+.wittewijn {
+	float: right;
+	width: 45%;
 	padding: 30px 15px 10px 30px;
 }
 
-.wijnkaart{
+.wijnkaart {
 	border: 1px solid #DABC7D;
 	margin-top: 50px;
 }
 
-.titelkleur{
-	color:#DABC7D;
+.titelkleur {
+	color: #DABC7D;
 	padding-bottom: 30px;
 }
 
-h3{
+h3 {
 	font-size: 15px;
 	margin-top: 20px;
 	font-family: Rosario;
 	text-transform: uppercase;
 }
- 
+
 
 /*-----------EINDE MENU PAGINA----------*/
 
 
 /*---------------BEGIN ANNULATIEVOORWAARDEN PAGINA-------------------------*/
-.annulatie_container{
+.annulatie_container {
 	padding: 2%;
 	margin-top: 15%;
 }
 
-.annulatie_text{
+.annulatie_text {
 	text-align: center;
 	padding: 0 8%;
 }
 
-.annulatie_image{
+.annulatie_image {
 	margin-top: 5%;
 	width: 80%;
 	margin-left: 10%;
 }
 
 /*---------------BEGIN RESERVATIE PAGINA-------------------------*/
-.reservatie_container{
+.reservatie_container {
 	margin-top: 10%;
 }
 
-.reservatie_titel{
+.reservatie_titel {
 	margin-top: 2%;
 	margin-left: 37%;
 	font-family: Rosario;
 	padding: 0 5%;
 }
 
-.reservatie_text{
+.reservatie_text {
 	text-align: center;
 	padding: 0 8%;
 
 }
 
-.button_reservatie{
-	width:80px;
+.button_reservatie {
+	width: 80px;
 	height: 20px;
 	font-size: 15px;
 	color: white;
@@ -460,60 +383,61 @@ h3{
 	padding: 10%;
 	margin-left: 42%;
 	margin-top: 30%;
+	text-decoration: none;
 }
 
-.container3{
+.container3 {
 	max-width: 450px;
 	margin: auto;
 }
 
 /*forumulier reserveren*/
-.groep-name,.groep-contactgegevens, .groep-uur{
-  margin: 10px 0;
-  display: inline-block;
-  width: 100%;
+.groep-name, .groep-contactgegevens, .groep-uur {
+	margin: 10px 0;
+	display: inline-block;
+	width: 100%;
 }
 
-#uur, #selectie, #datum, #aantal{
+#uur, #selectie, #datum, #aantal {
 	color: white;
 	font-size: 14px;
 }
 
-input, select, textarea{
-  border-radius: 2px;
-  border: 2px solid #4E4C4C;
-  box-sizing: border-box;
-  font-size: 14px;
-  font-family: 'Quicksand';
-  width: 100%;
-  padding: 10px;
-  background-color: #4E4C4C;
+input, select, textarea {
+	border-radius: 2px;
+	border: 2px solid #766749;
+	box-sizing: border-box;
+	font-size: 14px;
+	font-family: 'Quicksand';
+	width: 100%;
+	padding: 10px;
+	background-color: #766749;
 }
 
-textarea{
+textarea {
 	height: 250px;
 }
 
-::placeholder{
+::placeholder {
 	color: white;
 	opacity: 0.9;
 	font-size: 13px;
 }
 
-.groep-bericht{
+.groep-bericht {
 	height: 10%;
 }
 
-.verzend-button{
+.verzend-button {
 	width: 40%;
 	height: 40px;
-	background: #F5CF80;
+	background: #766749;
 	border: none;
 	font-size: 16px;
 	font-family: 'Rosario';
-  	cursor: pointer;
-  	margin-top: 2%;
-  	margin-left: 30%;
+	cursor: pointer;
+	margin-top: 2%;
+	margin-left: 30%;
 	color: white;
 }
 
@@ -525,37 +449,41 @@ textarea{
 .contactgegevens_titel {
 	text-align: center;
 }
+
 .gegevens {
 
 	width: 360px;
 	float: left;
 
 }
+
 /* ----------CONTACTFORM-------- */
 .contact_titel {
 	text-align: center;
 }
+
 .contact-form {
 	/* background-color: pink; */
 	width: 360px;
 	float: left;
 }
+
 .input-contact {
 	margin: 10px;
 }
 
 .cont-name {
-	width:	45%;
-	float:left;
+	width: 45%;
+	float: left;
 	margin: 0 10px 0 0;
 }
+
 .cont-lastname {
 	width: 45%;
 	float: left;
 }
+
 /* ----------CONTACTFORM-------- */
 .map {
-	margin-top: 100px;;
+	margin-top: 100px;
 }
-
-

@@ -13,7 +13,7 @@
 
 <body>
     <!-------------------------HEADER IMAGE + MENU + RESERVATIE TEKST & KNOP -------->
-    <header class="container cf">
+    <header class="container centreren cf">
         <div class="navigatie">
             <ul>
                 <li><a class="home active" href="../Sabor/index.html">HOME</a></li>
@@ -22,32 +22,41 @@
                 <li><a class="contact" href="../Sabor/contact.html">CONTACT</a></li>
             </ul>
         </div>
+
         <img class="header_image" src="images/header_tapas1.png" alt="header image">
         <img class="logo" src="images/logo_wit.png" alt="Sabor logo">
-        <p class="header_text">
-            Gelieve onderstaande formulier in te vullen om een reservatie te maken. <br>
-            Wij proberen u zo spoedig mogelijk te antwoorden.
-            <br><br>
-            <a class="button" href="../Sabor/reservatie.html">RESERVEREN</a>
-        </p>
+
+        <div class="reserveren">
+            <p>
+                Gelieve onderstaande formulier in te vullen om een reservatie te maken. <br>
+                Wij proberen u zo spoedig mogelijk te antwoorden.
+                <br><br>
+            </p>
+            <div class="space">
+                <a class="button-body" href="../Sabor/reservatie.html">RESERVEREN</a>
+            </div>
+        </div>
     </header>
     <div class="container2 cf">
         <!-------------------------KERST MENU BLOK--------------------------------------->
         <div class="cf">
-            <section class="christmas_container ">
-                <img class="christmas_ball_1" src="images/kerstballen_links.png" alt="kerstballen">
-                <img class="christmas_ball_2" src="images/kerstballen_links.png" alt="kerstballen">
-                <h1 class="christmas_menu">
-                    KERST MENU
+            <section class="christmas_container centreren cf">
+                <div>
+                    <img class="christmas_ball_1" src="images/kerstballen_links.png" alt="kerstballen">
+                    <img class="christmas_ball_2" src="images/kerstballen_links.png" alt="kerstballen">
+                </div>
+                <h1>
+                    KERSTMENU
                 </h1>
                 <h2 class="christmas_dates">
                     24/12 - 25/12 - 26-12
                 </h2>
-                <hr><br><br>
+                <hr>
                 <p class="christmas_dishes">
                     Plato variado - € 7 p.p.<br>
-                    Gemengd aperitiefbord.<br>
-                    Queso manchego, chorizo serrano, salami van cecina de Leon, jamón serrano, Marcona amandelen, pan
+                    Gemengd aperitiefbord<br><br>
+                    Queso manchego, chorizo serrano, salami van cecina de Leon, jamón serrano, Marcona amandelen,
+                    pan
                     con tomate, diverse olijven, gemarineerde ansjovis, slaatje met pikante peper en kappertjes
                 </p>
                 <hr>
@@ -61,95 +70,68 @@
                 </p>
                 <hr>
                 <p class="christmas_dishes">
-                    Affogato con helado de cardamomo 5
+                    Affogato con helado de cardamomo<br>
                     Kardemomijs, ‘verdronken’ in espresso - € 5 p.p.
                 </p><br>
-                <a href="../Sabor/reservatie.html" class="button_kerst">RESERVEER JOU KERSTMENU</a>
+                <div class="space">
+                    <a href="../Sabor/reservatie.html" class="button-body">RESERVEER JE KERSTMENU</a>
+                </div>
             </section>
 
             <!-------------------------2 TAPAS FOTO'S LANG ELKAAR--------------------------------------->
-            <section>
-                <img class="tapas1" src="images/kip.jpg" alt="Warme tapas">
-                <img class="tapas2" src="images/wine.jpg" alt="Koude tapas">
-                <a href="../Sabor/menu.html" class="button-menu1">MENU</a>
-                <a href="../Sabor/menu.html" class="button-menu2">WIJNKAART</a>
+            <section class="centreren cf">
+                <div class="menufoto">
+                    <img class="tapas" src="images/menu_home.jpg" alt="Warme tapas">
+                    <div class="space">
+                        <a href="../Sabor/menu.html" class="button-body">MENU</a>
+                    </div>
+                </div>
+                <div class="menufoto">
+                    <img class="tapas" src="images/home_wine.jpg" alt="Koude tapas">
+                    <div class="space">
+                        <a href="../Sabor/menu.html" class="button-body">WIJNKAART</a>
+                    </div>
+                </div>
             </section>
 
             <!-------------------------OVER ONS TEKST--------------------------------------->
-            <section class="over-ons_container">
-                <h1 class="over-ons_titel">
+           
+           <div class="space">
+            <section class="ons centreren">
+                <h1>
                     OVER ONS
                 </h1>
-                <hr class="over-ons_line">
-                <p class="over-ons_text">
+                <hr>
+                <p>
                     Sinds 1977 brengt ristorante Sabor u eenvoudige en
                     lekkere gerechten met een vleugje
                     Spaanse culinaire traditie.
                     Kwaliteit staat hier voorop, evenals een respectvolle
                     omgang met ingrediënten en producten.
                 </p>
-                <br><br>
-                <a href="../Sabor/over_ons.html" class="button-overons">LEES MEER</a>
-            </section>
-            <hr class="endline_container">
-
-            <!-------------------------SLIDESHOW--------------------------------------->
-            <img class="slides" src="images/slide1.jpg">
-            <img class="slides hiddenSlides" src="images/slide2.jpg">
-            <img class="slides hiddenSlides" src="images/slide3.jpg">
-            <img class="slides hiddenSlides" src="images/slide4.jpg">
-            <img class="slides hiddenSlides" src="images/slide5.jpg">
-
-            <!-------------------------OPENINGSUREN EN IMAGE--------------------------------------->
-            <section class="openinghours_container cf">
-                <div class="openignhours-blok">
-                    <h1 class="openinghours_titel">
-                        OPENINGSUREN
-                    </h1>
-                    <hr class="openinghours_line">
-                    <table>
-                        <tr>
-                            <th class="days">Maandag</th>
-                            <th class="empty-row"></th>
-                            <td class="hours">Gesloten</td>
-                        </tr>
-                        <tr>
-                            <th class="days">Dinsdag</th>
-                            <th class="empty-row"></th>
-                            <td class="hours">Gesloten</td>
-                        </tr>
-                        <tr>
-                            <th class="days">Woensdag</th>
-                            <th class="empty-row"></th>
-                            <td class="hours">17:00 - 22:00</td>
-                        </tr>
-                        <tr>
-                            <th class="days">Donderdag</th>
-                            <th class="empty-row"></th>
-                            <td class="hours">17:00 - 22:00</td>
-                        </tr>
-                        <tr>
-                            <th class="days">Vrijdag</th>
-                            <th class="empty-row"></th>
-                            <td class="hours">17:00 - 22:00</td>
-                        </tr>
-                        <tr>
-                            <th class="days">Zaterdag</th>
-                            <th class="empty-row"></th>
-                            <td class="hours">17:00 - 22:00</td>
-                        </tr>
-                        <tr>
-                            <th class="days">Zondag</th>
-                            <th class="empty-row"></th>
-                            <td class="hours">17:00 - 22:00</td>
-                        </tr>
-                    </table>
-                    <br><br>
-                    <a href="../Sabor/reservatie.html" class="button-openinghours">RESERVEREN</a>
-                    <img class="image_restaurant" src="images/restaurant.jpg" alt="foto van het restaurant">
+                <div class="space">
+                    <a href="../Sabor/over_ons.html" class=" centreren button-body">LEES MEER</a>
                 </div>
             </section>
-            <hr class="endline_container">
+        </div>
+            <div class="space">
+                <hr>
+            </div>
+            <!-------------------------SLIDESHOW--------------------------------------->
+<div class="space">
+            <section class="centreren">
+                <div class="slideshow">
+                    <img class="slides centreren" src="images/slide1.jpg">
+                    <img class="slides centreren hiddenSlides" src="images/slide2.jpg">
+                    <img class="slides centreren hiddenSlides" src="images/slide3.jpg">
+                    <img class="slides centreren hiddenSlides" src="images/slide4.jpg">
+                    <img class="slides centreren hiddenSlides" src="images/slide5.jpg">
+                </div>
+            </section>
+        </div>
+            <div class="space">
+                <hr>
+            </div>
 
             <!-------------------------REVIEWS STARS--------------------------------------->
             <section class="reviews centreren cf">
@@ -205,14 +187,72 @@
                 </div>
             </section>
         </div>
-
+        <div class="space">
+            <hr>
+        </div>
         <button onclick="topFunction()" id="myBtn" title="Go to top" class="fa fa-caret-up"></button>
 
     </div>
 
+
     <!-------------------------FOOTER--------------------------------------->
 
     <footer class="container cf">
+        <div class="container2 centreren cf">
+            <!-------------------------OPENINGSUREN EN IMAGE--------------------------------------->
+            <section class="cf">
+                <div class="openinghours-blok">
+                    <h1 class="centreren">
+                        OPENINGSUREN
+                    </h1>
+                    <hr>
+                    <table class="centreren">
+                        <tr>
+                            <th class="days">Maandag</th>
+                            <th class="empty-row"></th>
+                            <td class="hours">Gesloten</td>
+                        </tr>
+                        <tr>
+                            <th class="days">Dinsdag</th>
+                            <th class="empty-row"></th>
+                            <td class="hours">Gesloten</td>
+                        </tr>
+                        <tr>
+                            <th class="days">Woensdag</th>
+                            <th class="empty-row"></th>
+                            <td class="hours">17:00 - 22:00</td>
+                        </tr>
+                        <tr>
+                            <th class="days">Donderdag</th>
+                            <th class="empty-row"></th>
+                            <td class="hours">17:00 - 22:00</td>
+                        </tr>
+                        <tr>
+                            <th class="days">Vrijdag</th>
+                            <th class="empty-row"></th>
+                            <td class="hours">17:00 - 22:00</td>
+                        </tr>
+                        <tr>
+                            <th class="days">Zaterdag</th>
+                            <th class="empty-row"></th>
+                            <td class="hours">17:00 - 22:00</td>
+                        </tr>
+                        <tr>
+                            <th class="days">Zondag</th>
+                            <th class="empty-row"></th>
+                            <td class="hours">17:00 - 22:00</td>
+                        </tr>
+                    </table>
+                    <div class="centreren">
+                        <div class="space">
+                            <a href="../Sabor/reservatie.html" class="button-body">RESERVEREN</a>
+                        </div>
+                    </div>
+                </div>
+                <img class="image_restaurant" src="images/restaurant.jpg" alt="foto van het restaurant">
+            </section>
+
+        </div>
         <div class="container2 centreren cf">
             <hr class="nieuwsbrief">
             <h1 class="menutitel">NIEUWSBRIEF</h1>
@@ -235,8 +275,10 @@
                     </div>
                 </div>
             </form>
-            <hr class="nieuwsbrief">
-            <aside class="icon-bar cf">
+            
+                <hr>
+            
+            <aside class="cf">
                 <a href="#" class="fa fa-facebook"></a>
                 <a href="#" class="fa fa-instagram"></a>
                 <a href="#" class="fa fa-envelope"></a>
@@ -244,12 +286,14 @@
 
         </div>
         <section class="centreren">
-            <ul>
-                <li><a class="adres" href="../Sabor/contact.html">Tapaslaan 78 - 5670 Calamares</a></li>
-                <li><a class="contact" href="../Sabor/contact.html">Contact</a></li>
-                <li><a class="openingsuren" href="../Sabor/contact.html">Openingsuren</a></li>
-                <li><a class="voorwaarden" href="./Sabor/annuleringsvoorwaarden.html">Voorwaarden</a></li>
-            </ul>
+            <div class="footernav">
+                <ul>
+                    <li><a class="adres" href="../Sabor/contact.html">Tapaslaan 78 - 5670 Calamares</a></li>
+                    <li><a class="contact" href="../Sabor/contact.html">Contact</a></li>
+                    <li><a class="openingsuren" href="../Sabor/contact.html">Openingsuren</a></li>
+                    <li><a class="voorwaarden" href="../Sabor/annuleringsvoorwaarden.html">Voorwaarden</a></li>
+                </ul>
+            </div>
         </section>
     </footer>
     <script>

@@ -41,7 +41,6 @@ header{
 	font-family: Rosario;
 	width: 800px;
 	float: right;
-	color: #F5CF80;
 	font-size: 22px;
 	cursor: pointer;
 }
@@ -51,29 +50,20 @@ li{
 }
 
 a:link{
-	color: #F5CF80;
 	padding: 10px 40px;	
 	text-decoration: none;
 }
-
 
 .navigatie a:hover{
 	color: #766749;
 }
 
-a:visited{
+.navigatie a:visited{
 	color: #F5CF80;
 }
 
-.active{
-	color: #F5CF80;
-    font-size: 24px;
+header .active{
 	border-bottom: 1px solid #F5CF80;
-}
-
-/*highlightning menu text when your visiting the home-page */
-.home{
-	color: #766749;
 }
 
 /*header tapas image*/
@@ -87,49 +77,18 @@ a:visited{
 
 /*logo image*/
 .logo{
-	width: 20%;
-	height: 10%;
-	margin-left: 18%;
-	margin-top: 50px;
+	width: 30%;
+	height: 20%;
 }
 
-/*---------RESERVATIE TEKST-KNOP----------------*/
-
-/*reservatie tekst boven button-reservatie*/
-.header_text{
-	float: right;
-	margin-top: 6%;
-	margin-right: 10%;
-	line-height: 30px;
+.reserveren{
+	margin-top: 150px;
 }
-
-/*button reserveren-header*/
-
-.button {
-	background-color: #B69E6B;
-	width:100px;
-	height: 40px;
-	font-size: 16px;
-	color: white;
-	cursor: pointer;
-	font-family: Rosario;
-	padding: 2%;
-	margin-left: 25%;
-}
-/*---------EINDE RESERVATIE TEKST-KNOP----------------*/
 
 /*---------BEGIN FOOTER----------------*/
 
-.footer_container{
-	float: left;
-}
-
-.icon-bar{
-	text-align: center;	
-}
-
 aside{
-	margin: 50px 0;
+	margin-bottom: 50px;
 }
 
 .fa.icon{
@@ -145,18 +104,24 @@ aside{
 	color: white;
 	padding: 10px;
 	font-size: 32px;
+	text-decoration: none;
+	cursor:pointer;
   }
     
 .fa.fa-instagram{
 	color:white;
 	padding: 10px;
 	font-size: 32px;
+	text-decoration: none;
+	cursor:pointer;
 }
 
 .fa.fa-envelope{
 	color: white;
 	padding: 10px;
 	font-size: 28px;
+	text-decoration: none;
+	cursor:pointer;
 }
 
 .nieuwsbrief_naam{
@@ -205,45 +170,16 @@ input[type=submit]:hover{
 	opacity: 0.7;
 }
 
-hr.nieuwsbrief{
-    border-color: #766749;
-    width: 20%;
-	margin-bottom: 60px;
-	margin-top: 60px;
-}
-
-.adres{
+.adres .contact .openingsuren .voorwaarden{
 	text-transform: uppercase;
 	margin: 20px 20px 20px 0;
-}
-
-.contact{
-	margin: 20px 20px 20px 0;
-	text-transform: uppercase;
-}
-
-.openingsuren{
-	margin: 20px 20px 20px 0;
-	text-transform: uppercase;
-}
-
-.voorwaarden{
-	margin: 20px 0px 20px 20px;;
-	text-transform: uppercase;
 }
 
 ul{
 	margin-bottom: 50px;
 }
 
-footer a:link{
-	color:white;
-}
 
-footer a:link:hover{
-	color:#766749;	
-	opacity: 0.7;
-}
 
 
 /*---------EINDE FOOTER----------------*/
