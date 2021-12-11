@@ -175,6 +175,10 @@ input[type=submit]:hover{
 	margin: 20px 20px 20px 0;
 }
 
+ #footernav ul a{
+	color: #fff;
+}
+
 ul{
 	margin-bottom: 50px;
 }
