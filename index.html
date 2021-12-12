@@ -16,24 +16,30 @@
     <header class="container centreren cf">
         <div class="navigatie">
             <ul>
-                <li><a class="home active" href="../Sabor/index.html">HOME</a></li>
-                <li><a class="over_ons" href="../Sabor/over_ons.html">OVER ONS</a></li>
-                <li><a class="menu" href="../Sabor/menu.html">MENU</a></li>
-                <li><a class="contact" href="../Sabor/contact.html">CONTACT</a></li>
+                <li><a class="home underline active" href="../Sabor/index.html">HOME</a></li>
+                <li><a class="over_ons underline" href="../Sabor/over_ons.html">OVER ONS</a></li>
+                <li><a class="menu underline" href="../Sabor/menu.html">MENU</a></li>
+                <li><a class="contact underline" href="../Sabor/contact.html">CONTACT</a></li>
             </ul>
         </div>
 
         <img class="header_image" src="images/header_tapas1.png" alt="header image">
-        <img class="logo" src="images/logo_wit.png" alt="Sabor logo">
-
+        <a href="../Sabor/index.html">
+            <img class="logo" src="images/logo_wit.png" alt="Sabor logo"></a>
+            <div class="quote">
+            <p>Nothing brings people together like good tapas<br>
+            Join us for love at first bite</p>
+        </div>
         <div class="reserveren">
             <p>
-                Gelieve onderstaande formulier in te vullen om een reservatie te maken. <br>
-                Wij proberen u zo spoedig mogelijk te antwoorden.
+                In ons gezellige tapasrestaurant ben je welkom met of zonder reservatie.<br>
+                Wil je zeker zijn van een tafeltje? Boek dan nu meteen online
                 <br><br>
             </p>
             <div class="space">
                 <a class="button-body" href="../Sabor/reservatie.html">RESERVEREN</a>
+                <a class="button-body" href="#anchor-openingsuren">OPENINGSUREN</a>
+
             </div>
         </div>
     </header>
@@ -83,13 +89,13 @@
                 <div class="menufoto">
                     <img class="tapas" src="images/menu_home.jpg" alt="Warme tapas">
                     <div class="space">
-                        <a href="../Sabor/menu.html" class="button-body">MENU</a>
+                        <a href="menu.html#menu-tapas" class="button-body">MENU</a>
                     </div>
                 </div>
                 <div class="menufoto">
                     <img class="tapas" src="images/home_wine.jpg" alt="Koude tapas">
                     <div class="space">
-                        <a href="../Sabor/menu.html" class="button-body">WIJNKAART</a>
+                        <a href="menu.html#wijnkaart" class="button-body">WIJNKAART</a>
                     </div>
                 </div>
             </section>
@@ -197,9 +203,8 @@
 
     <!-------------------------FOOTER--------------------------------------->
 
-    <footer class="container cf">
+    <footer class="container cf" id="anchor-openingsuren">
         <div class="container2 centreren cf">
-            <!-------------------------OPENINGSUREN EN IMAGE--------------------------------------->
             <section class="cf">
                 <div class="openinghours-blok">
                     <h1 class="centreren">
@@ -275,48 +280,28 @@
                     </div>
                 </div>
             </form>
-            
-                <hr>
-            
+
+            <hr>
+
             <aside class="cf">
                 <a href="#" class="fa fa-facebook"></a>
                 <a href="#" class="fa fa-instagram"></a>
-                <a href="#" class="fa fa-envelope"></a>
+                <a href="mailto:info@sabor.be" class="fa fa-envelope"></a>
             </aside>
 
         </div>
         <section class="centreren">
             <div id="footernav">
                 <ul>
-                    <li><a class="adres" href="../Sabor/contact.html">Tapaslaan 78 - 5670 Calamares</a></li>
-                    <li><a class="contact" href="../Sabor/contact.html">Contact</a></li>
-                    <li><a class="openingsuren" href="../Sabor/contact.html">Openingsuren</a></li>
-                    <li><a class="voorwaarden" href="../Sabor/annuleringsvoorwaarden.html">Voorwaarden</a></li>
+                    <li><a href="contact.html#anchor-map">Tapaslaan 78 - 5670 Calamares</a></li>
+                    <li><a href="../Sabor/contact.html" class="hover">Contact</a></li>
+                    <li><a href="#anchor-openingsuren">Openingsuren</a></li>
+                    <li><a href="../Sabor/annuleringsvoorwaarden.html">Algemene voorwaarden</a></li>
                 </ul>
             </div>
         </section>
     </footer>
-    <script>
-        //Get the button:
-        mybutton = document.getElementById("myBtn");
 
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function () { scrollFunction() };
-
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                mybutton.style.display = "block";
-            } else {
-                mybutton.style.display = "none";
-            }
-        }
-
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-            document.body.scrollTop = 0; // For Safari
-            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-        }
-    </script>
 </body>
 
 </html>

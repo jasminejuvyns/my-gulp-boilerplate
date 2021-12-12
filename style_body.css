@@ -14,7 +14,7 @@
 
 h1 {
 	font-style: bold;
-	font-size: 24px;
+	font-size: 22px;
 	font-family: Rosario;
 	color: white;
 	text-transform: uppercase;
@@ -29,6 +29,10 @@ h1 {
 	padding: 10px 20px;
 	text-decoration: none;
 	background-color: rgb(30, 30, 3O);
+}
+
+.button-body:hover{
+	opacity: 0.7;
 }
 
 .space{
@@ -360,38 +364,25 @@ h3 {
 	margin-top: 10%;
 }
 
-.reservatie_titel {
-	margin-top: 2%;
-	margin-left: 37%;
-	font-family: Rosario;
-	padding: 0 5%;
-}
-
-.reservatie_text {
-	text-align: center;
-	padding: 0 8%;
-
-}
-
 .button_reservatie {
-	width: 80px;
-	height: 20px;
 	font-size: 15px;
-	color: white;
+	color: #DABC7D;
 	cursor: pointer;
 	font-family: Rosario;
 	padding: 10%;
-	margin-left: 42%;
-	margin-top: 30%;
 	text-decoration: none;
 }
 
+.button-reservatie:hover{
+	opacity: 0.7;
+}
+
 .container3 {
-	max-width: 450px;
+	max-width: 50%;
 	margin: auto;
 }
 
-/*forumulier reserveren*/
+/*formulier reserveren*/
 .groep-name, .groep-contactgegevens, .groep-uur {
 	margin: 10px 0;
 	display: inline-block;
@@ -403,19 +394,19 @@ h3 {
 	font-size: 14px;
 }
 
-input, select, textarea {
+input, select, textarea, select, option {
 	border-radius: 2px;
-	border: 2px solid #766749;
+	border: 1px solid #766749;
 	box-sizing: border-box;
 	font-size: 14px;
 	font-family: 'Quicksand';
 	width: 100%;
 	padding: 10px;
-	background-color: #766749;
+	background-image: url(images/backgroundformfields.jpg);
 }
 
 textarea {
-	height: 250px;
+	height: 150px;
 }
 
 ::placeholder {
@@ -424,23 +415,26 @@ textarea {
 	font-size: 13px;
 }
 
-.groep-bericht {
-	height: 10%;
-}
-
 .verzend-button {
-	width: 40%;
-	height: 40px;
-	background: #766749;
-	border: none;
-	font-size: 16px;
-	font-family: 'Rosario';
+	border: 0.7px solid #DABC7D;
+	color: #DABC7D;
 	cursor: pointer;
-	margin-top: 2%;
-	margin-left: 30%;
-	color: white;
+	font-family: Rosario;
+	padding: 10px 20px;
+	text-decoration: none;
+	background-image: url(images/backgroundformfields.jpg);
+	text-transform: uppercase;
 }
 
+.verzend-button:hover{
+	opacity: 0.7;
+}
+
+#mail{
+	color: white;
+	text-decoration:underline;
+	margin: 0;
+}
 
 /* ----------CONTACTGEGEVENS + CONTACTFORM-------- */
 
@@ -486,6 +480,7 @@ textarea {
 /* ----------CONTACTFORM-------- */
 .map {
 	margin-top: 100px;
+	margin-bottom: 100px;
 }
 .contact-button {
 	margin:  10px;

@@ -7,28 +7,41 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style_header_footer.css">
     <link rel="stylesheet" href="style_body.css">
-    <title>MENU</title>
+    <script type="text/javascript" src="script.js"></script>
+    <title>Home</title>
 </head>
 
 <body>
     <!-------------------------HEADER IMAGE + MENU + RESERVATIE TEKST & KNOP -------->
-    <header class="container cf">
+    <header class="container centreren cf">
         <div class="navigatie">
             <ul>
-                <li><a class="home" href="../Sabor/index.html">HOME</a></li>
-                <li><a class="over_ons" href="../Sabor/over_ons.html">OVER ONS</a></li>
-                <li><a class="menu active" href="../Sabor/menu.html">MENU</a></li>
-                <li><a class="contact" href="../Sabor/contact.html">CONTACT</a></li>
+                <li><a class="home underline" href="../Sabor/index.html">HOME</a></li>
+                <li><a class="over_ons underline" href="../Sabor/over_ons.html">OVER ONS</a></li>
+                <li><a class="menu underline active" href="../Sabor/menu.html">MENU</a></li>
+                <li><a class="contact underline" href="../Sabor/contact.html">CONTACT</a></li>
             </ul>
         </div>
+
         <img class="header_image" src="images/header_tapas1.png" alt="header image">
-        <img class="logo" src="images/logo_wit.png" alt="Sabor logo">
-        <p class="header_text">
-            Gelieve onderstaande formulier in te vullen om een reservatie te maken. <br>
-            Wij proberen u zo spoedig mogelijk te antwoorden.
-            <br><br>
-            <a href="../Sabor/reservatie.html" class="button">RESERVEREN</a>
-        </p>
+        <a href="../Sabor/index.html">
+            <img class="logo" src="images/logo_wit.png" alt="Sabor logo"></a>
+            <div class="quote">
+            <p>Nothing brings people together like good tapas<br>
+            Join us for love at first bite</p>
+        </div>
+        <div class="reserveren">
+            <p>
+                In ons gezellige tapasrestaurant ben je welkom met of zonder reservatie.<br>
+                Wil je zeker zijn van een tafeltje? Boek dan nu meteen online
+                <br><br>
+            </p>
+            <div class="space">
+                <a class="button-body" href="../Sabor/reservatie.html">RESERVEREN</a>
+                <a class="button-body" href="#anchor-openingsuren">OPENINGSUREN</a>
+
+            </div>
+        </div>
     </header>
     <div class="container2 cf">
         <p>We hernieuwen onze kaart regelmatig met enkele lekkere tapas. Zo kunnen we steeds werken met
@@ -37,233 +50,289 @@
             dag suggesties aan die te lezen zijn op het krijtbord boven de bar. Onze tapas worden steeds geserveerd in
             kleine porties. Om de gezelligheid van de avond te garanderen, deelt men best de tapas onder gezelschap.
             Wees gulzig noch gierig, bijbestellen is altijd mogelijk!</p>
-            <div class="centreren">
-                <h1 class="titel-gecentreerd menutitel">MENU</h1>
-                <p>Bekijk hier het overzicht van al onze menu's</p>
-                <hr>
+        <div class="centreren" id="menu-tapas">
+            <h1 class="titel-gecentreerd menutitel">MENU</h1>
+            <p>Bekijk hier het overzicht van al onze menu's</p>
+            <hr>
+        </div>
+        <section class="deelmenu cf">
+            <div class="menukader1">
+                <h2>Tapas de pescado</h2>
+                <p>
+                    Gambas Con Mantequilla de Chorizo Y Olivas Negras<br>
+                    Reuzengarnalen met chorizoboter en zwarte olijven
+                </p>
+                <p>Langostinos a la plancha / guacamole<br>
+                    Gegrilde gambas / guacamole
+                </p>
+                <p>Gambas Al Ajillo<br>
+                    Reuzengarnalen in knoflookolie
+                </p>
+                <p>Mejillones Gratinados con Manteauilla de Ajo<br>
+                    Gegratineerde groene schelpmosel met groene kruiden</p>
+                <p>Empanadillas rellenas de calamar en su propria tinta<br>
+                    Gevuld gebakje met inktvisvulling en inktsaus</p>
             </div>
-            <section class="deelmenu cf">
-                <div class="menukader1">
-                    <h2>Tapas de pescado</h2>
-                    <p>
-                        Gambas Con Mantequilla de Chorizo Y Olivas Negras<br>
-                        Reuzengarnalen met chorizoboter en zwarte olijven
-                    </p>
-                    <p>Langostinos a la plancha / guacamole<br>
-                        Gegrilde gambas / guacamole
-                    </p>
-                    <p>Gambas Al Ajillo<br>
-                        Reuzengarnalen in knoflookolie
-                    </p>
-                    <p>Mejillones Gratinados con Manteauilla de Ajo<br>
-                        Gegratineerde groene schelpmosel met groene kruiden</p>
-                    <p>Empanadillas rellenas de calamar en su propria tinta<br>
-                        Gevuld gebakje met inktvisvulling en inktsaus</p>
-                </div>
 
-                <img src="images/grilled-fish.jpg" alt="ansjovis" class="menufoto1">
-            </section>
+            <img src="images/grilled-fish.jpg" alt="ansjovis" class="menufoto1">
+        </section>
 
-            <section class="deelmenu cf">
-                <img src="images/tapasdecarne.jpg" alt="ansjovis" class="menufoto2">
+        <section class="deelmenu cf">
+            <img src="images/tapasdecarne.jpg" alt="ansjovis" class="menufoto2">
 
-                <div class="menukader2">
-                    <h2>Tapas de carne</h2>
-                    <p>
-                        Costillas de Cerdo BBQ / miel/ Nueces<br>
-                        BBQ spare ribs / honing / walnoot
-                    </p>
-                    <p>Solomillo de Cerdo con pesto de aceitunas negras / Manchego<br>
-                        Medallon van varkenshaas met pesto van zwarte olijf en Manchego
-                    </p>
-                    <p>Carpaccio de Vacuno / Champinones marinados / Trufa<br>
-                        Rundcarpaccio / gemarineerde champignons / truffel
-                    </p>
-                    <p>Jamon Serrano / Queso Manchego / Tomates Secos<br>
-                        Serrano ham / Manchegosnippers / zongedroogde tomaatjes
-                    </p>
-                    <p>Alitas de pollo con salsa de soya y gingebra<br>
-                        Kippenvleugeltjes met sojasaus en gember
-                    </p>
-                </div>
+            <div class="menukader2">
+                <h2>Tapas de carne</h2>
+                <p>
+                    Costillas de Cerdo BBQ / miel/ Nueces<br>
+                    BBQ spare ribs / honing / walnoot
+                </p>
+                <p>Solomillo de Cerdo con pesto de aceitunas negras / Manchego<br>
+                    Medallon van varkenshaas met pesto van zwarte olijf en Manchego
+                </p>
+                <p>Carpaccio de Vacuno / Champinones marinados / Trufa<br>
+                    Rundcarpaccio / gemarineerde champignons / truffel
+                </p>
+                <p>Jamon Serrano / Queso Manchego / Tomates Secos<br>
+                    Serrano ham / Manchegosnippers / zongedroogde tomaatjes
+                </p>
+                <p>Alitas de pollo con salsa de soya y gingebra<br>
+                    Kippenvleugeltjes met sojasaus en gember
+                </p>
+            </div>
 
-            </section>
+        </section>
 
-            <section class="deelmenu cf">
-                <div class="menukader1">
-                    <h2>Tapas vegetarian</h2>
-                    <p>
-                        Queso Iberico “3 Leches”<br>
-                        Jonge kaas van 3 soorten melk: koe, schaap en geit.
-                    </p>
-                    <p>Alcachofa Frita, huevo HUEVO 65°C, Trufa de temporada<br>
-                        Gefrituurde artisjok met ei (65%) en seizoenstruffel
-                    </p>
-                    <p>Verduras a la brasa al romero<br>
-                        Gegrilde groenten op houtskool oven met Romesco saus
-                    </p>
-                    <p>Patatas Bravas<br>
-                        Aardappelen met pikante tomatensaus
-                    </p>
-                </div>
+        <section class="deelmenu cf">
+            <div class="menukader1">
+                <h2>Tapas vegetarian</h2>
+                <p>
+                    Queso Iberico “3 Leches”<br>
+                    Jonge kaas van 3 soorten melk: koe, schaap en geit.
+                </p>
+                <p>Alcachofa Frita, huevo HUEVO 65°C, Trufa de temporada<br>
+                    Gefrituurde artisjok met ei (65%) en seizoenstruffel
+                </p>
+                <p>Verduras a la brasa al romero<br>
+                    Gegrilde groenten op houtskool oven met Romesco saus
+                </p>
+                <p>Patatas Bravas<br>
+                    Aardappelen met pikante tomatensaus
+                </p>
+            </div>
 
-                <img src="images/tapasvegetaria.jpg" alt="tapaskip" class="menufoto1">
-            </section>
+            <img src="images/tapasvegetaria.jpg" alt="tapaskip" class="menufoto1">
+        </section>
 
-            <section class="deelmenu cf">
-                <img src="images/tapasdepostre.jpg" alt="ansjovis" class="menufoto2">
+        <section class="deelmenu cf">
+            <img src="images/tapasdepostre.jpg" alt="ansjovis" class="menufoto2">
 
-                <div class="menukader2">
-                    <h2>Tapas de postre</h2>
-                    <p>
-                        Manzanas al Horno con Tomilla<br>
-                        Appelpartjes uit de oven met tijm
-                    </p>
-                    <p>Pastel con Ciruelas e Higos<br>
-                        Cake met pruimen en vijgen
-                    </p>
-                    <p>Tarta de Chocolate con Frutos Rojos<br>
-                        Chocoladetaart met rode vruchten
-                    </p>
-                    <p>Tarteletas con Chocolate Caramelo y Frutos secos<br>
-                        taartjes met chocolade, karamel, noten en cranberries
-                    </p>
-                    <p>Crema Catalan<br>
-                        Huisbereide crema catalan met kaneel en zeste van citroen.</p>
-                </div>
+            <div class="menukader2">
+                <h2>Tapas de postre</h2>
+                <p>
+                    Manzanas al Horno con Tomilla<br>
+                    Appelpartjes uit de oven met tijm
+                </p>
+                <p>Pastel con Ciruelas e Higos<br>
+                    Cake met pruimen en vijgen
+                </p>
+                <p>Tarta de Chocolate con Frutos Rojos<br>
+                    Chocoladetaart met rode vruchten
+                </p>
+                <p>Tarteletas con Chocolate Caramelo y Frutos secos<br>
+                    taartjes met chocolade, karamel, noten en cranberries
+                </p>
+                <p>Crema Catalan<br>
+                    Huisbereide crema catalan met kaneel en zeste van citroen.</p>
+            </div>
 
-            </section>
-            <section class="centreren cf">
-                <h1>Wijnkaart</h1>
-                <p>Maak een keuze uit de meest voortreffelijke wereldwijnen</p>
-                <hr>
-            </section>
-            <section class="wijnkaart cf">
-                <section class="rodewijn cf">
-                    <section class="cf">
-                        <h1 class="centreren titelkleur">rode wijn</h1>
-                        <h3>Argentinië</h3>
-                        <div class="naamwijn">
-                            <p>Cara Sur, Barreal, Valle de Calingasta<br>100% Bonnarda</p>
-                        </div>
-                        <div class="prijswijn">
-                            <p>€36,00 (75 cl)</p>
-                        </div>
-                        <div class="naamwijn">
-                            <p>Zuccardi 'Polignonos' San Pablo <br>100% Malbec</p>
-                        </div>
-                        <div class="prijswijn">
-                            <p>€41,00 (75 cl)</p>
-                        </div>
-                    </section>
-
-                    <section class="cf">
-                        <h3>Australië</h3>
-                        <div class="naamwijn">
-                            <p>Tahbilk 'GSM', Victoria<br>100% Shiraz</p>
-                        </div>
-                        <div class="prijswijn">
-                            <p>€33,00 (75 cl)</p>
-                        </div>
-                        <div class="naamwijn">
-                            <p>Grenache, Shiraz, Mourvèdre<br>100% Shiraz</p>
-                        </div>
-                        <div class="prijswijn">
-                            <p>€41,00 (75 cl)</p>
-                        </div>
-                    </section>
-                    <section class="cf">
-                        <h3>Chili</h3>
-                        <div class="naamwijn">
-                            <p>De Martino, Legado, D.O. Maipo Valley<br>100% Carmenère</p>
-                        </div>
-                        <div class="prijswijn">
-                            <p>€32,00 (75 cl)</p>
-                        </div>
-                    </section>
-                    <section class="cf">
-                        <h3>Frankrijk</h3>
-                        <div class="naamwijn">
-                            <p>Bourgogne. Chassagne Montrachet, Vieilles Vignes, Domaine Paul Pillot<br>100% Pinot Noir
-                            </p>
-                        </div>
-                        <div class="prijswijn">
-                            <p>€59,00 (75 cl)</p>
-                        </div>
-                        <div class="naamwijn">
-                            <p>Gevrey Chambertin<br>100% Pinot Noir</p>
-                        </div>
-                        <div class="prijswijn">
-                            <p>€105,00 (75 cl)</p>
-                        </div>
-                        <div class="naamwijn">
-                            <p>Beaujolais Saint-Amour 'Aux Anges' Pierre Dupond<br>100% Pinot Noir</p>
-                        </div>
-                        <div class="prijswijn">
-                            <p>€105,00 (75 cl)</p>
-                        </div>
-                    </section>
-
-                </section>
-
-                <section class="wittewijn cf">
-                    <h1 class="centreren titelkleur">witte wijn</h1>
+        </section>
+        <section class="centreren cf" id="wijnkaart">
+            <h1>Wijnkaart</h1>
+            <p>Maak een keuze uit de meest voortreffelijke wereldwijnen</p>
+            <hr>
+        </section>
+        <section class="wijnkaart cf">
+            <section class="rodewijn cf">
+                <section class="cf">
+                    <h1 class="centreren titelkleur">rode wijn</h1>
                     <h3>Argentinië</h3>
-                    <section class="cf">
-                        <div class="naamwijn">
-                            <p>Bodega Catena Zapata ALTA, Mendoza<br>100% Chardonnay</p>
-                        </div>
-                        <div class="prijswijn">
-                            <p>€54,00 (75 cl)</p>
-                        </div>
-                    </section>
-                    <section class="cf">
-                        <h3>Australië</h3>
-                        <div class="naamwijn">
-                            <p>Tulloch Vineyard Selection, Hunter Valley.<br>100% Semillon</p>
-                        </div>
-                        <div class="prijswijn">
-                            <p>€39,00 (75 cl)</p>
-                        </div>
-                    </section>
-                    <section class="cf">
-                        <h3>België</h3>
-                        <div class="naamwijn">
-                            <p>Entre-Deux-Monts, Heuvelland, Bacquart<br>Pinot Gris, Pinot Auxerrois, Chardonnay</p>
-                        </div>
-                        <div class="prijswijn">
-                            <p>€39,00 (75 cl)</p>
-                        </div>
-                        <div class="naamwijn">
-                            <p>Genoels-Elderen Goud<br>100% Chardonnay</p>
-                        </div>
-                        <div class="prijswijn">
-                            <p>€67,00 (75 cl)</p>
-                        </div>
-                        <div class="naamwijn">
-                            <p>Clos d’Opleeuw<br>100% Chardonnay</p>
-                        </div>
-                        <div class="prijswijn">
-                            <p>€70,00 (75 cl)</p>
-                        </div>
-                    </section>
-                    <section class="cf">
-                        <h3>Frankrijk</h3>
-                        <div class="naamwijn">
-                            <p>Châteauneuf-du-Pape<br>Rousanne, Grenache, Clairette, Bourbelenc</p>
-                        </div>
-                        <div class="prijswijn">
-                            <p>€69,00 (75 cl)</p>
-                        </div>
-                    </section>
+                    <div class="naamwijn">
+                        <p>Cara Sur, Barreal, Valle de Calingasta<br>100% Bonnarda</p>
+                    </div>
+                    <div class="prijswijn">
+                        <p>€36,00 (75 cl)</p>
+                    </div>
+                    <div class="naamwijn">
+                        <p>Zuccardi 'Polignonos' San Pablo <br>100% Malbec</p>
+                    </div>
+                    <div class="prijswijn">
+                        <p>€41,00 (75 cl)</p>
+                    </div>
+                </section>
+
+                <section class="cf">
+                    <h3>Australië</h3>
+                    <div class="naamwijn">
+                        <p>Tahbilk 'GSM', Victoria<br>100% Shiraz</p>
+                    </div>
+                    <div class="prijswijn">
+                        <p>€33,00 (75 cl)</p>
+                    </div>
+                    <div class="naamwijn">
+                        <p>Grenache, Shiraz, Mourvèdre<br>100% Shiraz</p>
+                    </div>
+                    <div class="prijswijn">
+                        <p>€41,00 (75 cl)</p>
+                    </div>
+                </section>
+                <section class="cf">
+                    <h3>Chili</h3>
+                    <div class="naamwijn">
+                        <p>De Martino, Legado, D.O. Maipo Valley<br>100% Carmenère</p>
+                    </div>
+                    <div class="prijswijn">
+                        <p>€32,00 (75 cl)</p>
+                    </div>
+                </section>
+                <section class="cf">
+                    <h3>Frankrijk</h3>
+                    <div class="naamwijn">
+                        <p>Bourgogne. Chassagne Montrachet, Vieilles Vignes, Domaine Paul Pillot<br>100% Pinot Noir
+                        </p>
+                    </div>
+                    <div class="prijswijn">
+                        <p>€59,00 (75 cl)</p>
+                    </div>
+                    <div class="naamwijn">
+                        <p>Gevrey Chambertin<br>100% Pinot Noir</p>
+                    </div>
+                    <div class="prijswijn">
+                        <p>€105,00 (75 cl)</p>
+                    </div>
+                    <div class="naamwijn">
+                        <p>Beaujolais Saint-Amour 'Aux Anges' Pierre Dupond<br>100% Pinot Noir</p>
+                    </div>
+                    <div class="prijswijn">
+                        <p>€105,00 (75 cl)</p>
+                    </div>
+                </section>
+
+            </section>
+
+            <section class="wittewijn cf">
+                <h1 class="centreren titelkleur">witte wijn</h1>
+                <h3>Argentinië</h3>
+                <section class="cf">
+                    <div class="naamwijn">
+                        <p>Bodega Catena Zapata ALTA, Mendoza<br>100% Chardonnay</p>
+                    </div>
+                    <div class="prijswijn">
+                        <p>€54,00 (75 cl)</p>
+                    </div>
+                </section>
+                <section class="cf">
+                    <h3>Australië</h3>
+                    <div class="naamwijn">
+                        <p>Tulloch Vineyard Selection, Hunter Valley.<br>100% Semillon</p>
+                    </div>
+                    <div class="prijswijn">
+                        <p>€39,00 (75 cl)</p>
+                    </div>
+                </section>
+                <section class="cf">
+                    <h3>België</h3>
+                    <div class="naamwijn">
+                        <p>Entre-Deux-Monts, Heuvelland, Bacquart<br>Pinot Gris, Pinot Auxerrois, Chardonnay</p>
+                    </div>
+                    <div class="prijswijn">
+                        <p>€39,00 (75 cl)</p>
+                    </div>
+                    <div class="naamwijn">
+                        <p>Genoels-Elderen Goud<br>100% Chardonnay</p>
+                    </div>
+                    <div class="prijswijn">
+                        <p>€67,00 (75 cl)</p>
+                    </div>
+                    <div class="naamwijn">
+                        <p>Clos d’Opleeuw<br>100% Chardonnay</p>
+                    </div>
+                    <div class="prijswijn">
+                        <p>€70,00 (75 cl)</p>
+                    </div>
+                </section>
+                <section class="cf">
+                    <h3>Frankrijk</h3>
+                    <div class="naamwijn">
+                        <p>Châteauneuf-du-Pape<br>Rousanne, Grenache, Clairette, Bourbelenc</p>
+                    </div>
+                    <div class="prijswijn">
+                        <p>€69,00 (75 cl)</p>
+                    </div>
                 </section>
             </section>
-            <br>
+        </section>
+        <br>
 
-            <button onclick="topFunction()" id="myBtn" title="Go to top" class="fa fa-caret-up"></button>
+        <button onclick="topFunction()" id="myBtn" title="Go to top" class="fa fa-caret-up"></button>
 
     </div>
-    <footer class="container cf">
+    <!-------------------------FOOTER--------------------------------------->
+
+    <footer class="container cf" id="anchor-openingsuren">
+        <div class="container2 centreren cf">
+            <section class="cf">
+                <div class="openinghours-blok">
+                    <h1 class="centreren">
+                        OPENINGSUREN
+                    </h1>
+                    <hr>
+                    <table class="centreren">
+                        <tr>
+                            <th class="days">Maandag</th>
+                            <th class="empty-row"></th>
+                            <td class="hours">Gesloten</td>
+                        </tr>
+                        <tr>
+                            <th class="days">Dinsdag</th>
+                            <th class="empty-row"></th>
+                            <td class="hours">Gesloten</td>
+                        </tr>
+                        <tr>
+                            <th class="days">Woensdag</th>
+                            <th class="empty-row"></th>
+                            <td class="hours">17:00 - 22:00</td>
+                        </tr>
+                        <tr>
+                            <th class="days">Donderdag</th>
+                            <th class="empty-row"></th>
+                            <td class="hours">17:00 - 22:00</td>
+                        </tr>
+                        <tr>
+                            <th class="days">Vrijdag</th>
+                            <th class="empty-row"></th>
+                            <td class="hours">17:00 - 22:00</td>
+                        </tr>
+                        <tr>
+                            <th class="days">Zaterdag</th>
+                            <th class="empty-row"></th>
+                            <td class="hours">17:00 - 22:00</td>
+                        </tr>
+                        <tr>
+                            <th class="days">Zondag</th>
+                            <th class="empty-row"></th>
+                            <td class="hours">17:00 - 22:00</td>
+                        </tr>
+                    </table>
+                    <div class="centreren">
+                        <div class="space">
+                            <a href="../Sabor/reservatie.html" class="button-body">RESERVEREN</a>
+                        </div>
+                    </div>
+                </div>
+                <img class="image_restaurant" src="images/restaurant.jpg" alt="foto van het restaurant">
+            </section>
+
+        </div>
         <div class="container2 centreren cf">
             <hr class="nieuwsbrief">
             <h1 class="menutitel">NIEUWSBRIEF</h1>
@@ -286,43 +355,28 @@
                     </div>
                 </div>
             </form>
-            <hr class="nieuwsbrief">
-            <aside class="icon-bar cf">
-                <a href="#" class="fa fa-facebook icon"></a>
-                <a href="#" class="fa fa-instagram icon"></a>
-                <a href="#" class="fa fa-envelope icon"></a>
+
+            <hr>
+
+            <aside class="cf">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="mailto:info@sabor.be" class="fa fa-envelope"></a>
             </aside>
-            
+
         </div>
         <section class="centreren">
-            <ul>
-                <li><a class="adres" href="../Sabor/contact.html">Tapaslaan 78 - 5670 Calamares</a></li>
-                <li><a class="contact" href="../Sabor/contact.html">Contact</a></li>
-                <li><a class="openingsuren" href="../Sabor/contact.html">Openingsuren</a></li>
-                <li><a class="voorwaarden" href="./Sabor/annuleringsvoorwaarden.html">Voorwaarden</a></li>
-            </ul>
+            <div id="footernav">
+                <ul>
+                    <li><a href="contact.html#anchor-map">Tapaslaan 78 - 5670 Calamares</a></li>
+                    <li><a href="../Sabor/contact.html" class="hover">Contact</a></li>
+                    <li><a href="#anchor-openingsuren">Openingsuren</a></li>
+                    <li><a href="../Sabor/annuleringsvoorwaarden.html">Algemene voorwaarden</a></li>
+                </ul>
+            </div>
         </section>
     </footer>
-    <script>
-        //Get the button:
-        mybutton = document.getElementById("myBtn");
 
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function () { scrollFunction() };
-
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                mybutton.style.display = "block";
-            } else {
-                mybutton.style.display = "none";
-            }
-        }
-
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-            document.body.scrollTop = 0; // For Safari
-            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-        }
-    </script>
 </body>
+
 </html>

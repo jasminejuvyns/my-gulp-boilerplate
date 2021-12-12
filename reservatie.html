@@ -1,52 +1,56 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style_header_footer.css">
     <link rel="stylesheet" href="style_body.css">
-    <title>Reservatie</title>
+    <script type="text/javascript" src="script.js"></script>
+    <title>Home</title>
 </head>
+
 <body>
     <!-------------------------HEADER IMAGE + MENU + RESERVATIE TEKST & KNOP -------->
-    <header class="container cf">
+    <header class="container centreren cf">
         <div class="navigatie">
             <ul>
-                <li><a class="home" href="../Sabor/index.html">HOME</a></li>
-                <li><a class="over_ons" href="../Sabor/over_ons.html">OVER ONS</a></li> 
-                <li><a class="menu" href="../Sabor/menu.html">MENU</a></li> 
-                <li><a class="contact" href="../Sabor/contact.html">CONTACT</a></li>
+                <li><a class="home underline" href="../Sabor/index.html">HOME</a></li>
+                <li><a class="over_ons underline" href="../Sabor/over_ons.html">OVER ONS</a></li>
+                <li><a class="menu underline" href="../Sabor/menu.html">MENU</a></li>
+                <li><a class="contact underline" href="../Sabor/contact.html">CONTACT</a></li>
             </ul>
-        </div> 
-        <img class="header_image"src="images/header_tapas1.png" alt="header image">
-        <img class="logo" src="images/logo_wit.png" alt="Sabor logo">
-        <p class="header_text">
-            Gelieve onderstaande formulier in te vullen om een reservatie te maken. <br>
-            Wij proberen u zo spoedig mogelijk te antwoorden.<br><br>
-            Wil je weten waar wij gelegen zijn? Bekijk het hier.
-            <br><br>
-            <a href="../Sabor/contact.html" class="button">Contact</a>
-        </p>
-    </header>
+        </div>
 
+        <img class="header_image" src="images/header_tapas1.png" alt="header image">
+        <a href="../Sabor/index.html">
+            <img class="logo" src="images/logo_wit.png" alt="Sabor logo"></a>
+            <div class="quote">
+            <p>Nothing brings people together like good tapas<br>
+            Join us for love at first bite</p>
+        </div>
+        
+    </header>
     <!-------------------------RESERVATIE TEKST EN IMAGE-------------------------->
     <div class="container2 cf">
-        <section class="reservatie_container">
-            <h1 class="reservatie_titel">
+        <section class="reservatie_container centreren">
+            <h1>
                 RESERVEREN
             </h1>
             <hr> 
-            <p class="reservatie_text">      
-              Beste klant, Indien het online reserveren niet lukt gelieve ons een mail te sturen met daarin uw naam, gewenste datum en uur op<a class="mail" href="mailto:info@sabor.be">info@sabor.be</a>met vermelding van uw gsm-nummer dan contacteren wij u om te kijken wanneer het kan. Tot gauw, Het Sabor-Team!
+            <p>      
+              Indien het online reserveren niet lukt, gelieve een mail te sturen naar<a id="mail" href="mailto:info@sabor.be">info@sabor.be</a>met vermelding van uw naam, telefoonnummer, de gewenste datum en uur van reservatie. Dan contacteren wij u om uw reservatie te voltooien.</p>
+            <p>Tot gauw, Het Sabor-Team!</p>
             </p>
             <br><br>
-            <p class="centreren">      
-              Als u graag uw reservatie wil annuleren, bekijk dan zeker onze voorwaarden:
+            <p>      
+              U kan een reservatie kosteloos annuleren tot 2 dagen voor de gereserveerde datum. Hierna kan er een supplement aangerekend worden.
             </p>
-            <a href="../Sabor/annuleringsvoorwaarden.html" class="button_reservatie">LEES HIER</a>
+            <div class="space">
+            <a href="annuleringsvoorwaarden.html#anchor-annulatie" class="button_reservatie">ANNULATIEVOORWAARDEN</a>
+        </div>
         </section>
-        <hr class="endline_container">
 
     <!--------------------------- FORMULIER----------------------------------->
     <div class="container3">
@@ -54,9 +58,9 @@
 
             <div class="groep-keuze">
                 <select id="selectie" name="keuze" required>
-                    <option value="">Maak jou keuze:</option>
+                    <option value="">Maak je keuze:</option>
                     <option value="connecting">Kerst-menu</option>
-                    <option value="adjoining">Reserveer jou tapatafel</option>
+                    <option value="adjoining">Reserveer je tapatafel</option>
                     <option value="adjacent">Reservatie annuleren</option>
                 </select>
             </div>
@@ -72,9 +76,9 @@
             </div>
 
             <div class="groep-uur">
-                <label for="uur">Kies jou uur:</label>
+                <label for="uur">Kies je uur:</label>
                 <select id="uur" name="uur" required>
-                    <option value="">Kies jou uur</option>
+                    <option value="">Kies je uur</option>
                     <option value="connecting">17:00</option>
                     <option value="adjoining">18:00</option>
                     <option value="adjacent">19:00</option>
@@ -106,14 +110,13 @@
                 <input type="tel" id="phone" name="phone-visitor" placeholder="Telefoonnummer"required>
             </div>
 
-            <hr>
+            <hr class="space">
 
-            <div class="groep-bericht">
-                <label for="bericht">Heb je nog vragen of opmerkingen over allergieën?</label>
-                <textarea id="bericht" name="bericht" placeholder="Laat hier je bericht achter:"></textarea>
-            </div>
-
-            <button class="verzend-button" type="submit">Verzenden</button>
+                <label for="bericht"></label>
+                <textarea id="bericht" name="bericht" placeholder="Heb je nog vragen of opmerkingen? Laat hier je bericht achter"></textarea>
+<div class="centreren">
+            <button class="verzend-button space" type="submit">Verzenden</button>
+        </div>
         </form>
     </div>
      <!-------------------------FOOTER--------------------------------------->
@@ -122,66 +125,107 @@
      <button onclick="topFunction()" id="myBtn" title="Go to top" class="fa fa-caret-up"></button>
 
 </div>
-<footer class="container cf">
- <div class="container2 centreren cf">
-     <hr class="nieuwsbrief">
-     <h1 class="menutitel">NIEUWSBRIEF</h1>
-     <p>Wees als eerste op de hoogte van onze nieuwe menu's en reservatiemogelijkheden.</p>
+<!-------------------------FOOTER--------------------------------------->
 
-     <form action="login.php" method="post">
-         <div class="cf">
-             <div class="nieuwsbrief_naam">
-                 <label for="naam"></label>
-                 <input type="text" id="naam" name="newsletter" placeholder="Naam" required>
-             </div>
+<footer class="container cf" id="anchor-openingsuren">
+    <div class="container2 centreren cf">
+        <section class="cf">
+            <div class="openinghours-blok">
+                <h1 class="centreren">
+                    OPENINGSUREN
+                </h1>
+                <hr>
+                <table class="centreren">
+                    <tr>
+                        <th class="days">Maandag</th>
+                        <th class="empty-row"></th>
+                        <td class="hours">Gesloten</td>
+                    </tr>
+                    <tr>
+                        <th class="days">Dinsdag</th>
+                        <th class="empty-row"></th>
+                        <td class="hours">Gesloten</td>
+                    </tr>
+                    <tr>
+                        <th class="days">Woensdag</th>
+                        <th class="empty-row"></th>
+                        <td class="hours">17:00 - 22:00</td>
+                    </tr>
+                    <tr>
+                        <th class="days">Donderdag</th>
+                        <th class="empty-row"></th>
+                        <td class="hours">17:00 - 22:00</td>
+                    </tr>
+                    <tr>
+                        <th class="days">Vrijdag</th>
+                        <th class="empty-row"></th>
+                        <td class="hours">17:00 - 22:00</td>
+                    </tr>
+                    <tr>
+                        <th class="days">Zaterdag</th>
+                        <th class="empty-row"></th>
+                        <td class="hours">17:00 - 22:00</td>
+                    </tr>
+                    <tr>
+                        <th class="days">Zondag</th>
+                        <th class="empty-row"></th>
+                        <td class="hours">17:00 - 22:00</td>
+                    </tr>
+                </table>
+                <div class="centreren">
+                    <div class="space">
+                        <a href="../Sabor/reservatie.html" class="button-body">RESERVEREN</a>
+                    </div>
+                </div>
+            </div>
+            <img class="image_restaurant" src="images/restaurant.jpg" alt="foto van het restaurant">
+        </section>
 
-             <div class="nieuwsbrief_email">
-                 <label for="email"></label>
-                 <input type="email" id="email" name="email-visitor" placeholder="E-mail" required>
-             </div>
+    </div>
+    <div class="container2 centreren cf">
+        <hr class="nieuwsbrief">
+        <h1 class="menutitel">NIEUWSBRIEF</h1>
+        <p>Wees als eerste op de hoogte van onze nieuwe menu's en reservatiemogelijkheden.</p>
 
-             <div class="nieuwsbrief_verzendknop">
-                 <input type="submit" value="VERSTUUR">
-             </div>
-         </div>
-     </form>
-     <hr class="nieuwsbrief">
-     <aside class="icon-bar cf">
-         <a href="#" class="fa fa-facebook"></a>
-         <a href="#" class="fa fa-instagram"></a>
-         <a href="#" class="fa fa-envelope"></a>
-     </aside>
-     
- </div>
- <section class="centreren">
-     <ul>
-         <li><a class="adres" href="../Sabor/contact.html">Tapaslaan 78 - 5670 Calamares</a></li>
-         <li><a class="contact" href="../Sabor/contact.html">Contact</a></li>
-         <li><a class="openingsuren" href="../Sabor/contact.html">Openingsuren</a></li>
-         <li><a class="voorwaarden" href="./Sabor/annuleringsvoorwaarden.html">Voorwaarden</a></li>
-     </ul>
- </section>
+        <form action="login.php" method="post">
+            <div class="cf">
+                <div class="nieuwsbrief_naam">
+                    <label for="naam"></label>
+                    <input type="text" id="naam" name="newsletter" placeholder="Naam" required>
+                </div>
+
+                <div class="nieuwsbrief_email">
+                    <label for="email"></label>
+                    <input type="email" id="email" name="email-visitor" placeholder="E-mail" required>
+                </div>
+
+                <div class="nieuwsbrief_verzendknop">
+                    <input type="submit" value="VERSTUUR">
+                </div>
+            </div>
+        </form>
+
+        <hr>
+
+        <aside class="cf">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="mailto:info@sabor.be" class="fa fa-envelope"></a>
+        </aside>
+
+    </div>
+    <section class="centreren">
+        <div id="footernav">
+            <ul>
+                <li><a href="contact.html#anchor-map">Tapaslaan 78 - 5670 Calamares</a></li>
+                <li><a href="../Sabor/contact.html" class="hover">Contact</a></li>
+                <li><a href="#anchor-openingsuren">Openingsuren</a></li>
+                <li><a href="../Sabor/annuleringsvoorwaarden.html">Algemene voorwaarden</a></li>
+            </ul>
+        </div>
+    </section>
 </footer>
-<script>
- //Get the button:
- mybutton = document.getElementById("myBtn");
 
- // When the user scrolls down 20px from the top of the document, show the button
- window.onscroll = function () { scrollFunction() };
-
- function scrollFunction() {
-     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-         mybutton.style.display = "block";
-     } else {
-         mybutton.style.display = "none";
-     }
- }
-
- // When the user clicks on the button, scroll to the top of the document
- function topFunction() {
-     document.body.scrollTop = 0; // For Safari
-     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
- }
-</script>
 </body>
+
 </html>
