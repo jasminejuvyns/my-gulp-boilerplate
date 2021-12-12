@@ -452,8 +452,9 @@ textarea {
 }
 
 /* ----------CONTACTFORM-------- */
-.contact_titel {
+.contact_titel  {
 	text-align: center;
+	
 }
 
 .contact-form {
@@ -478,9 +479,13 @@ textarea {
 }
 
 /* ----------CONTACTFORM-------- */
-.map {
-	margin-top: 100px;
-	margin-bottom: 100px;
+.map iframe{
+	margin-top: 5px;
+	margin-bottom: 10px;
+	height: 450px;
+	width: 940px;
+	border: 20px;
+	/* width="960" height="450" style="border:20;" allowfullscreen="" loading="lazy" */
 }
 .contact-button {
 	margin:  10px;
