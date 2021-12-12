@@ -494,8 +494,12 @@ textarea {
 }
 .contactgegevens a{
 	padding-left: 0;
+	margin-left: 0;
 }
 .input-contact{
 	margin-bottom: 0;
 	margin-right: 0;
+}
+.contactgegevens p {
+	margin-top: 10px;
 }
