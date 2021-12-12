@@ -398,6 +398,10 @@ h3 {
 	font-size: 14px;
 }
 
+#selectie, #uur{
+	background-color: #333;
+}
+
 input, select, textarea, select, option {
 	border-radius: 2px;
 	border: 1px solid #766749;
