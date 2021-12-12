@@ -450,7 +450,9 @@ textarea {
 
 /* ----------CONTACTGEGEVENS + CONTACTFORM-------- */
 
-
+.gegevens hr {
+	width: 200px;
+}
 
 .contactgegevens_titel {
 	text-align: center;
@@ -458,7 +460,7 @@ textarea {
 
 .gegevens {
 
-	width: 360px;
+	width: 50%;
 	float: left;
 
 }
@@ -468,10 +470,12 @@ textarea {
 	text-align: center;
 	
 }
-
+#form hr {
+	width: 100px;;
+}
 .contact-form {
 	/* background-color: pink; */
-	width: 360px;
+	width: 50%;
 	float: left;
 }
 
@@ -484,30 +488,33 @@ textarea {
 	float: left;
 	margin: 0 10px 0 0;
 }
-
+.cont-phone{
+	margin: 10px 0 0 10px;
+}
 .cont-lastname {
 	width: 45%;
 	float: left;
+	margin-bottom: 10px;
 }
 
-/* ----------CONTACTFORM-------- */
+/* ----------GEGEVENS-MAP-------- */
 .map iframe{
 	margin-top: 5px;
-	margin-bottom: 10px;
+	margin: 50px;
 	height: 450px;
 	width: 940px;
 	border: 20px;
-	/* width="960" height="450" style="border:20;" allowfullscreen="" loading="lazy" */
+	border: solid #DABC7D;
 }
 .contact-button {
 	margin:  10px;
 	float: right;
 	padding: 10px;
 }
-.contactgegevens a{
-	padding-left: 0;
-	margin-left: 0;
+.contactgegevens{
+	text-align: center;
 }
+
 .input-contact{
 	margin-bottom: 0;
 	margin-right: 0;
