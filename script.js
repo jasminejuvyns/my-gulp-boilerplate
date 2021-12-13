@@ -22,28 +22,28 @@ function content() {
 }
 
 
-//---------  BEGIN SCROLL TO TOP -------------//
-        //Get the button:
-        mybutton = document.getElementById("myBtn");
+//---------  BEGIN SCROLL TO TOP -------------
+//Get the button:
+mybutton = document.getElementById("myBtn");
 
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function () { scrollFunction() };
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () { scrollFunction() };
 
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                mybutton.style.display = "block";
-            } else {
-                mybutton.style.display = "none";
-            }
-        }
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+}
 
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-            document.body.scrollTop = 0; // For Safari
-            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-        }
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
 
-        //---------  EINDE SCROLL TO TOP -------------//
+//---------  EINDE SCROLL TO TOP -------------
 
 
 //----------------RESERVERINGSFORMULIER----------------------------------------------
@@ -90,7 +90,7 @@ function controleerVoorwaardenEmail(){
 }
 
 //-------FUNCTIE  TELEFOONNUMMER --------------------------------------------------------
-function controleerVoorwaardenEmail(){
+function controleerVoorwaardenTelefoon(){
     let regExp=/^[+]*[(]{0,1}[0-9]{1,3}[)]{0,1}[-\s\./0-9]*$/;
     if(regExp.test(telefoonTxt) == false){
         document.getElementById("telefoonnummer_error").innerHTML="Dit is niet correct!";
@@ -100,11 +100,6 @@ function controleerVoorwaardenEmail(){
         document.getElementById("telefoonnummer_error").innerHTML="";
     }
 }
-
-
-
-
-
 
 
 //-----------------FUNCTIE----------------
@@ -147,3 +142,4 @@ function verstuur() {
     //deze if blijft altijd allerlaatst in de verstuur() functie
     if (allesCorrectIngevuld) {
         document.write("Naam is correct ingevuld");
+    }
