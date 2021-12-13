@@ -388,7 +388,7 @@ h3 {
 	width: 100%;
 }
 
-#uur, #selectie, #datum, #aantal {
+#uur, #selectie, #datum, #aantal, #telefoonnummer, #bericht {
 	color: white;
 	font-size: 14px;
 }

@@ -8,34 +8,33 @@
     <link rel="stylesheet" href="style_header_footer.css">
     <link rel="stylesheet" href="style_body.css">
     <link rel="shortcut icon" href="images/favicon.png">
-    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="scroll_button.js"></script>
     <title>Home</title>
 </head>
 
 <body>
-    <!-------------------------HEADER IMAGE + MENU + RESERVATIE TEKST & KNOP -------->
+     <!-------------------------HEADER IMAGE + MENU + RESERVATIE TEKST & KNOP -------->
     <header class="container centreren cf">
         <div class="navigatie">
             <ul>
-                <li><a class="home underline" href="../sabor/index.html">HOME</a></li>
+                <li><a class="home underline active" href="../sabor/index.html">HOME</a></li>
                 <li><a class="over_ons underline" href="../sabor/over_ons.html">OVER ONS</a></li>
                 <li><a class="menu underline" href="../sabor/menu.html">MENU</a></li>
                 <li><a class="contact underline" href="../sabor/contact.html">CONTACT</a></li>
             </ul>
         </div>
 
-        <img class="header_image2" src="images/header_tapas3.png" alt="header image">
+        <img class="header_image" src="images/header_tapas3.png" alt="header image">
         <a href="../sabor/index.html">
-            <img class="logo2 logospace" src="images/logovector.png" alt="Sabor logo"></a>
+            <img class="logo logospace" src="images/logovector.png" alt="Sabor logo"></a>
         <div class="quote1">
             <p> Tapas - Wine - Foodsharing</p>
         </div>
         <div class="quotespace">
-            <div class="quote2">
-                <p>Nothing brings people together like good food</p>
-            </div>
+        <div class="quote2">
+            <p>Nothing brings people together like good food</p>
         </div>
-      
+    </div>
     </header>
     <!-------------------------RESERVATIE TEKST EN IMAGE-------------------------->
     <div class="container2 cf">
@@ -78,11 +77,13 @@
                 <div class="groep-aantal">
                     <label for="aantal">Aantal personen:</label>
                     <input type="number" id="aantal" name="totaal_aantal" placeholder="2" min="1">
+                    <span class="error" id="aantal_error"></span>
                 </div>
 
                 <div class="groep-datum">
                     <label for="datum">Datum:</label>
                     <input type="date" id="datum" name="datum">
+                    <span class="error" id="datum_error"></span>
                 </div>
 
                 <div class="groep-uur">
@@ -96,28 +97,33 @@
                         <option value="adjacent">21:00</option>
                         <option value="adjacent">22:00</option>
                     </select>
+                    <span class="error" id="uur_error"></span>
                 </div>
 
                 <hr>
 
                 <div class="groep-name">
-                    <label for="fname"></label>
-                    <input type="text" id="fname" name="name-visitor" placeholder="Voornaam">
+                    <label for="voornaam"></label>
+                    <input type="text" id="voornaam" name="name-visitor" placeholder="Voornaam">
+                    <span class="error" id="voornaam_error"></span>
                 </div>
 
                 <div class="groep-name">
-                    <label for="lname"></label>
-                    <input type="text" id="lname" name="name-visitor" placeholder="Achternaam">
+                    <label for="achternaam"></label>
+                    <input type="text" id="achternaam" name="name-visitor" placeholder="Achternaam">
+                    <span class="error" id="achternaam_error"></span>
                 </div>
 
                 <div class="groep-contactgegevens">
-                    <label for="Email"></label>
+                    <label for="email"></label>
                     <input type="email" id="email" name="email-visitor" placeholder="E-mail">
+                    <span class="error" id="email_error"></span>
                 </div>
 
                 <div class="groep-contactgegevens">
-                    <label for="phone"></label>
-                    <input type="tel" id="phone" name="phone-visitor" placeholder="Telefoonnummer">
+                    <label for="telefoonnummer"></label>
+                    <input type="tel" id="telefoonnummer" name="phone-visitor" placeholder="Telefoonnummer">
+                    <span class="error" id="telefoonnummer_error"></span>
                 </div>
 
                 <hr class="space">
@@ -125,12 +131,12 @@
                 <label for="bericht"></label>
                 <textarea id="bericht" name="bericht"
                     placeholder="Heb je nog vragen of opmerkingen? Laat hier je bericht achter"></textarea>
+                <span class="error" id="bericht_error"></span>
                 <div class="centreren">
-                    <button class="verzend-button space" type="submit">Verzenden</button>
+                    <button class="button-body space" type="submit">Verzenden</button>
                 </div>
             </form>
         </div>
-        <!-------------------------FOOTER--------------------------------------->
         <br>
 
         <button onclick="topFunction()" id="myBtn" title="Go to top" class="fa fa-caret-up"></button>
