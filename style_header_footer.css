@@ -61,10 +61,11 @@ a:link{
 	color: #F5CF80;
 }
 
-
 .active{
 	border-bottom: 0.3px solid #F5CF80;
 }
+
+/*bewegende streepjes onder hoofdnavigatie bij hover*/
 
 .underline{
 	position: relative;
