@@ -143,3 +143,15 @@ function verstuur() {
     if (allesCorrectIngevuld) {
         document.write("Naam is correct ingevuld");
     }
+
+
+
+    //----------------BEGIN NIEUWSBRIEFFORMULIER----------------------------------------------//
+
+
+
+
+
+
+
+    //----------------BEGIN NIEUWSBRIEFFORMULIER----------------------------------------------//
