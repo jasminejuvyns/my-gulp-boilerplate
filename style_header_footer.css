@@ -91,25 +91,49 @@ a:link{
 /*header tapas image*/
 .header_image{
 	float: left;
-	width: 40%;
-	height: 5%;
 	margin-top: -150px;
 	z-index: -1;
+	width: 40%;
+}
+
+.header_image2{
+	float: left;
+	margin-top: -150px;
+	z-index: -1;
+	width: 30%;
 }
 
 /*logo image*/
 .logo{
-	width: 20%;
-	height: 15%;
+	width: 20%;	
+	opacity: 0.9;
 }
 
-.reserveren{
-	margin-top: 100px;
+.logo2{
+	width: 15%;	
+	opacity: 0.9;
 }
 
-.quote{
+.logospace{
+	margin-top: 30px;
+	margin-bottom: 15px;
+}
+
+.quotespace{
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+
+.quote1{
 	font-family: yesteryear;
 	font-size: 24px;
+	opacity: 0.9;
+}
+
+.quote2{
+	font-family: yesteryear;
+	font-size: 32px;
+	opacity: 0.9;
 }
 
 /*---------BEGIN FOOTER----------------*/

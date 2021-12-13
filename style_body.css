@@ -2,9 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;900&family=Quicksand:wght@300;400;500;600;700&family=Rosario:wght@400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
 
 /*---------ALGEMEEN----------------*/
-body {
-	background-attachment: fixed;
-}
 .titel-gecentreerd {
 	text-align: center;
 }
@@ -32,7 +29,7 @@ h1 {
 	font-family: Rosario;
 	padding: 10px 20px;
 	text-decoration: none;
-	background-color: rgb(30, 30, 3O);
+	background: url(images/chalkboard.jpg);
 }
 
 .button-body:hover{
@@ -59,7 +56,7 @@ h1 {
 	/* Remove outline */
 	color: white;
 	/* Text color */
-	background-color: #766749;
+	background-color: #DABC7D;
 	cursor: pointer;
 	/* Add a mouse pointer on hover */
 	padding: 15px;
@@ -72,10 +69,6 @@ h1 {
 	opacity: 0.7;
 }
 
-.header_image {
-	width: 50%;
-}
-
 
 /*-------INDEX PAGINA-------KERST MENU----------------*/
 
@@ -86,17 +79,9 @@ h1 {
 	max-width: 70%;
 }
 
-.christmas_ball_1 {
-	width: 49%;
-	height: 20%;
+.christmas_balls{
+	width:100%;
 }
-
-.christmas_ball_2 {
-	width: 49%;
-	height: 20%;
-	margin-left: 1%;
-}
-
 
 /*kerst datums*/
 .christmas_dates {
@@ -304,32 +289,32 @@ hr{
 	text-align: center;
 }
 
-.naamwijn {
+.naamdrank {
 	float: left;
 	width: 60%;
 	font-size: 13px;
 }
 
-.prijswijn {
+.prijsdrank {
 	float: right;
-	width: 30%;
+	width: 25%;
 	font-size: 13px;
 }
 
-.rodewijn {
+.linkerkolomdrank {
 	float: left;
 	width: 45%;
 	padding: 30px 10px 15px 30px;
 	border-right: 1px solid #DABC7D;
 }
 
-.wittewijn {
+.rechterkolomdrank {
 	float: right;
 	width: 45%;
 	padding: 30px 15px 10px 30px;
 }
 
-.wijnkaart {
+.drankkaart {
 	border: 1px solid #DABC7D;
 	margin-top: 50px;
 }
@@ -344,6 +329,11 @@ h3 {
 	margin-top: 20px;
 	font-family: Rosario;
 	text-transform: uppercase;
+}
+
+.zwevend{
+	margin-top: 40px; 
+	margin-bottom: 40px;
 }
 
 
