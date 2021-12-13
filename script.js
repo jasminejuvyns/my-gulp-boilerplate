@@ -1,4 +1,4 @@
-//slideshow
+//-----------------SLIDESHOW--------------------------
 "use strict";
 let myIndex = 0;
 content();
@@ -22,7 +22,7 @@ function content() {
 }
 
 
-//---------  BEGIN SCROLL TO TOP -------------
+//---------------  BEGIN SCROLL TO TOP --------------------------------
 //Get the button:
 mybutton = document.getElementById("myBtn");
 
@@ -43,19 +43,17 @@ function topFunction() {
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-//---------  EINDE SCROLL TO TOP -------------
-
-
-//----------------RESERVERINGSFORMULIER----------------------------------------------
-//-----------------HOOFDSCRIPT------------
+//------------------------RESERVERINGSFORMULIER---------------------------------------
 let voornaamTxt;
 let achternaamTxt;
 let emailTxt;
 let telefoonTxt;
+let geselecteerdeKeuze;
+let selectieTxt;
 
 let allesCorrectIngevuld=true;
 
-//-------FUNCTIE  VOORNAAM --------------------------------------------------------
+//----------functie voornaam--------------------------------------------------------
 function controleerVoorwaardenVoornaam() {
     if (voornaamTxt.length < 2){
         document.getElementById("voornaam_error").innerHTML="Minstens 2 karakters lang!";
@@ -66,7 +64,7 @@ function controleerVoorwaardenVoornaam() {
     }
 }
 
-//-------FUNCTIE  ACHTERNAAM --------------------------------------------------------
+//-------functie achternaam --------------------------------------------------------
 function controleerVoorwaardenAchternaam(){
     if(achternaamTxt.length < 2 ){ 
       document.getElementById("achternaam_error").innerHTML="Minstens 2 karakters lang!";
@@ -77,7 +75,7 @@ function controleerVoorwaardenAchternaam(){
     }
 }
 
-//-------FUNCTIE  EMAIL --------------------------------------------------------
+//-------functie email --------------------------------------------------------
 function controleerVoorwaardenEmail(){
     let regExp=/^[A-Za-z][\.A-Za-z0-9+_-]+@[\.A-Za-z0-9-]+\.[A-Za-z]{2,20}$/;
     if(regExp.test(emailTxt) == false){
@@ -89,7 +87,7 @@ function controleerVoorwaardenEmail(){
     }
 }
 
-//-------FUNCTIE  TELEFOONNUMMER --------------------------------------------------------
+//-------functie telefoonnummer --------------------------------------------------------
 function controleerVoorwaardenTelefoon(){
     let regExp=/^[+]*[(]{0,1}[0-9]{1,3}[)]{0,1}[-\s\./0-9]*$/;
     if(regExp.test(telefoonTxt) == false){
@@ -102,12 +100,14 @@ function controleerVoorwaardenTelefoon(){
 }
 
 
-//-----------------FUNCTIE----------------
+//----------------- functie verstuur ---------------------------------
 function verstuur() {
     voornaamTxt=document.getElementById("voornaam").value;
     achternaamTxt=document.getElementById("achternaam").value;
     emailTxt=document.getElementById("email").value;
     telefoonTxt=document.getElementById("telefoonnummer").value;
+    geselecteerdeKeuze=document.getElementById("keuze").selectedIndex;
+    selectieTxt=document.getElementById("keuze").value;
     if (voornaamTxt.length==0){
         document.getElementById("voornaam_error").innerHTML="Vul in a.u.b.";
         //uit de span in html
@@ -137,7 +137,13 @@ function verstuur() {
     else{
         controleerVoorwaardenTelefoon();
     }
-
+    if(geselecteerdeKeuze==0){
+        document.getElementById("selectie_error").innerHTML="Kies a.u.b.";
+        allesCorrectIngevuld = false;
+    }
+    else{
+    document.getElementById("selectie_error").innerHTML="";
+    }
     //uiteindelijk controleren of alles correct is
     //deze if blijft altijd allerlaatst in de verstuur() functie
     if (allesCorrectIngevuld) {
