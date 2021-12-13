@@ -8,6 +8,7 @@ body{
 	font-family: Quicksand;
 	color: white;
 	margin: 0;
+	background-attachment: fixed;
 }
 
 .cf:after{
