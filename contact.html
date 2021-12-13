@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/6e362c2c6d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style_header_footer.css">
     <link rel="stylesheet" href="style_body.css">
     <link rel="shortcut icon" href="images/favicon.png">
@@ -60,9 +61,18 @@
 
                 <div class="contactgegevens">
                     <div class="left">
-                        <a href="mailto:info@sabor.be">info@sabor.be</a><br>
-                        <a href="tel:+32476800915">+32476800915</a><br>
-                        <p>Tapaslaan 78 - 5670 Calamares</p>
+                        <i class="far fa-envelope"></i>
+                       <div class="cont-geg">
+                            <a href="mailto:info@sabor.be">info@sabor.be</a><br>
+                        </div>
+                        <i class="fas fa-phone-square-alt"></i>
+                        <div class="cont-geg">
+                            <a href="tel:+32476800915">+32476800915</a><br>
+                        </div>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="cont-geg">
+                             <p>Tapaslaan 78 - 5670 Calamares</p>
+                        </div>
                     </div>
                 </div>
                 <hr class="contact_line">
@@ -75,7 +85,7 @@
                 <div class="contact-lastname">
 
                     <div class="cont-name">
-                        <input type="text" id="Name" name="Name" class="input-contact" required placeholder="Voornaam">
+                        <input type="text" id="Name" name="Name" class="input-contact" required placeholder="First Name">
                     </div>
                 </div>
                 <div class="contact-lastname">
@@ -88,7 +98,7 @@
                 <div class="cont-phone">
 
                     <div class="input-group">
-                        <input type="tel" id="phone" name="phone" placeholder="telephone Number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                        <input type="tel" id="phone" class="phone" name="phone" placeholder="Telephone Number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
                     </div>
                 </div>
                 <div class="contact-email">
@@ -102,15 +112,13 @@
                 <div class="contact-message">
                     <div>
                         <textarea id="Message" name="Message" class="input-contact" rows="6" maxlength="3000" required
-                            placeholder="Jouw bericht"></textarea>
+                            placeholder="Your Message"></textarea>
                     </div>
                 </div>
 
-                <div class="contact-button">
-
-                    <a href="#" class="button-body">SEND</a>
+                <div id="contact-btn">
+                    <button class="button-body">SEND</button>
                 </div>
-
             </form>
             <div class="map" id="anchor-map">
                 <iframe

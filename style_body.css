@@ -11,6 +11,7 @@
 	margin: auto;
 	margin-top: 50px;
 
+
 }
 
 h1 {
@@ -452,10 +453,12 @@ textarea {
 
 	width: 50%;
 	float: left;
+	/* background-color: rgb(180, 143, 143); */
 
 }
 
 /* ----------CONTACTFORM-------- */
+
 .contact_titel  {
 	text-align: center;
 	
@@ -474,37 +477,56 @@ textarea {
 }
 
 .cont-name {
-	width: 45%;
+	width: 49%;
 	float: left;
-	margin: 0 10px 0 0;
+	margin: 0 2% 0 0;
 }
-.cont-phone{
-	margin: 10px 0 0 10px;
+.phone{
+	margin: 0 0 0 10px;
 }
 .cont-lastname {
-	width: 45%;
+	width: 49%;
 	float: left;
 	margin-bottom: 10px;
 }
 
 /* ----------GEGEVENS-MAP-------- */
 .map iframe{
-	margin-top: 5px;
-	margin: 50px;
-	height: 450px;
-	width: 940px;
+	margin: 10px 0 20px 0;
+	height: 300px;
+	width: 960px;
 	border: 20px;
 	border: solid #DABC7D;
-}
-.contact-button {
-	margin:  10px;
-	float: right;
-	padding: 10px;
-}
-.contactgegevens{
-	text-align: center;
+	text-align: right;
 }
 
+.contactgegevens{
+	text-align: center;
+	margin-top: 50px;
+	
+	
+}
+.contactgegevens i {
+	color: #DABC7D;
+	
+}
+.contactgegevens a {
+	color: #fff;
+	padding: 0;
+	margin: 0;
+}
+.cont-geg {
+	/* background-color: red; */
+	margin: 10px 0 20px 0;
+}
+#contact-btn {
+	float: right;
+	margin:50px -10px 50px 0;
+
+}
+#contact-btn .button-body {
+	margin: 0 0 0 0;
+}
 .input-contact{
 	margin-bottom: 0;
 	margin-right: 0;
