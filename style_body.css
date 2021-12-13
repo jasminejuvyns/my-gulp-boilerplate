@@ -487,7 +487,7 @@ textarea {
 .cont-lastname {
 	width: 49%;
 	float: left;
-	margin-bottom: 10px;
+	
 }
 
 /* ----------GEGEVENS-MAP-------- */
@@ -495,8 +495,8 @@ textarea {
 	margin: 10px 0 20px 0;
 	height: 300px;
 	width: 960px;
-	border: 20px;
-	border: solid #DABC7D;
+
+	border: solid 5px #DABC7D;
 	text-align: right;
 }
 
@@ -530,6 +530,11 @@ textarea {
 .input-contact{
 	margin-bottom: 0;
 	margin-right: 0;
+}
+.input-contact:focus{
+	border-color: #DABC7D;
+	color: white;
+
 }
 .contactgegevens p {
 	margin-top: 10px;
