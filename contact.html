@@ -105,7 +105,7 @@
                 </div>
                 <div class="contact-message">
                     <div>
-                        <textarea id="bericht" name="Message" class="input-contact" rows="6" maxlength="3000" placeholder="Laat hier jouw opmerkingen achter:"></textarea>
+                        <textarea id="bericht" name="bericht" class="input-contact" rows="6" maxlength="3000" placeholder="Laat hier jouw opmerkingen achter:"></textarea>
                     </div>
                 </div>
                 <div id="contact-btn">
@@ -221,34 +221,6 @@
             </div>
         </section>
     </footer>
-
-<script type="text/javascript">
-aantal = controleAantal(aantal);
-"use strict"
-function sendMail() {
-    let link = "mailto:" + encodeURIComponent("jasmine_juvyns@hotmail.com;")
-    + encodeURIComponent(document.getElementById('email').value)
-    + "&subject=" + encodeURIComponent("Onderwerp van het bericht")
-    + "&body="
-    + "voornaam:"
-    + encodeURIComponent(document.getElementById('voornaam').value)
-    + encodeURIComponent("\r\n\n")
-    + "achternaam:"
-    + encodeURIComponent(document.getElementById('achternaam').value)
-    + encodeURIComponent("\r\n\n")
-    + "telefoonnummer:"
-    + encodeURIComponent(document.getElementById('telefoonnummer').value)
-    + encodeURIComponent("\r\n\n")
-    + "email:"
-    + encodeURIComponent(document.getElementById('email').value)
-    + encodeURIComponent("\r\n\n")
-    + "bericht:"
-    + encodeURIComponent(document.getElementById('bericht').value);
-    window.location.href = link;
-}
-</script>
-
-
 </body>
 
 </html>

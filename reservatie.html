@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="images/favicon.png">
     <script src="scroll_button.js"></script>
     <script src="reservatie.js"></script>
-    <title>Home</title>
+    <title>Reservatie</title>
 </head>
 
 <body>
@@ -132,8 +132,9 @@
                 <label for="bericht"></label>
                 <textarea id="bericht" name="bericht" placeholder="Heb je nog vragen of opmerkingen? Laat hier je bericht achter"></textarea>
                 <span class="error" id="bericht_error"></span>
+
                 <div class="centreren">
-                    <input type="button" value="Verstuur" id="knop_verstuur" class="button-body space" onclick="verstuur();" />
+                    <button onclick="verstuur();" id="knop_verstuur" class="button-body">VERZENDEN</button>
                 </div>
             </form>
         </div>
