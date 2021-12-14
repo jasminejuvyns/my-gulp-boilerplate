@@ -5,17 +5,12 @@ let geselecteerdeKeuze;
 let aantalTxt;
 let datumTxt;
 let uurTxt;
-<<<<<<< Updated upstream
 let voornaamTxt;
 let achternaamTxt;
 let emailTxt;
 let telefoonnummerTxt;
 let berichtTxt;
 let allesCorrectIngevuld=true;
-=======
-
-let allesCorrectIngevuld = true;
->>>>>>> Stashed changes
 
 //-------FUNCTIE  AANTAL PERSONEN --------------------------------------------------------
 function controleerVoorwaardenAantal(){
@@ -106,8 +101,6 @@ function controleerVoorwaardenBericht() {
 	}
 }
 
-<<<<<<< Updated upstream
-=======
 //-------FUNCTIE  AANTAL PERSONEN --------------------------------------------------------
 function controleerVoorwaardenAantal() {
 	if (aantalTxt > 5) {
@@ -118,7 +111,6 @@ function controleerVoorwaardenAantal() {
 		document.getElementById("aantal_error").innerHTML = "";
 	}
 }
->>>>>>> Stashed changes
 
 
 //functie verstuur
@@ -133,16 +125,11 @@ function verstuur() {
 	aantalTxt = document.getElementById("aantal").value;
 	datumTxt = document.getElementById("datum").value;
 	
-<<<<<<< Updated upstream
-	if(geselecteerdeKeuze == 0){
-		document.getElementById("selectie_error").innerHTML="Kies a.u.b.";
-=======
 	allesCorrectIngevuld = true;
 
 
 	if (geselecteerdeKeuze == 0) {
 		document.getElementById("selectie_error").innerHTML = "Kies a.u.b.";
->>>>>>> Stashed changes
 		allesCorrectIngevuld = false;
 	}
 	else {
@@ -162,14 +149,9 @@ function verstuur() {
 	else {
 		document.getElementById("datum_error").innerHTML = "";
 	}
-<<<<<<< Updated upstream
-	if(voornaamTxt.length==0){
-		document.getElementById("voornaam_error").innerHTML="Vul in a.u.b.";
-=======
 	
 	if (voornaamTxt.length == 0) {
 		document.getElementById("voornaam_error").innerHTML = "Vul in a.u.b.";
->>>>>>> Stashed changes
 		allesCorrectIngevuld = false;
 	}
 	else {
@@ -189,48 +171,6 @@ function verstuur() {
 	else {
 		controleerVoorwaardenEmail();
 	}
-<<<<<<< Updated upstream
-	if(telefoonnummerTxt.length > 0){
-		document.getElementById("telefoonnummer_error").innerHTML="Telefoonnummer niet compleet. Voorbeeld: +32479161520";
-		allesCorrectIngevuld = false;
-	}
-	else{
-		controleerVoorwaardenTelefoonnummer();
-	}
-	 controleerVoorwaardenBericht()
-	if (allesCorrectIngevuld) {
-		document.write("Naam is correct ingevuld");
-
-		let link = "mailto:" + encodeURIComponent("jasmine_juvyns@hotmail.com")
-		+ "&subject=" + encodeURIComponent("Reservatieformulier validatie")
-		+ "&body=" 
-		+ "selectie:" 
-		+ encodeURIComponent(selectieTxt) 
-		+ encodeURIComponent("\r\n\n")
-		+ "aantal:" 
-		+ encodeURIComponent(aantalTxt) 
-		+ encodeURIComponent("\r\n\n") 
-		+ "datum:" 
-		+ encodeURIComponent(datumTxt) 
-		+ encodeURIComponent("\r\n\n")
-		+ "uur:" 
-		+ encodeURIComponent(uurTxt) 
-		+ encodeURIComponent("\r\n\n") 
-		+ "voornaam:"
-		+ encodeURIComponent(voornaamTxt)
-		+ encodeURIComponent("\r\n\n")
-		+ "achternaam:" 
-		+ encodeURIComponent(achternaamTxt) 
-		+ encodeURIComponent("\r\n\n") 
-		+ "email:"
-		+ encodeURIComponent(emailTxt)
-		+ encodeURIComponent("\r\n\n")
-		+ "telefoonnummer:" 
-		+ encodeURIComponent(telefoonnummerTxt) 
-		+ encodeURIComponent("\r\n\n") 
-		+ "bericht:"
-		+ encodeURIComponent(berichtTxt)
-=======
 	if (allesCorrectIngevuld) {
 		document.write("alles is correct ingevuld");
 		//deze if altijd op het einde zetten 	
@@ -262,7 +202,6 @@ function verstuur() {
 			+ encodeURIComponent("\r\n\n")
 			+ "bericht:"
 			+ encodeURIComponent(berichtTxt);
->>>>>>> Stashed changes
 		window.location.href = link;
 	}
 
