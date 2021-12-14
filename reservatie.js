@@ -14,7 +14,7 @@ let allesCorrectIngevuld=true;
 
 //-------FUNCTIE  AANTAL PERSONEN --------------------------------------------------------
 function controleerVoorwaardenAantal(){
-	if( aantalTxt.length > 5){
+	if( aantalTxt > 5){
 		document.getElementById("aantal_error").innerHTML="Max 5 personen";
 		allesCorrectIngevuld = false;
 	}
@@ -175,10 +175,11 @@ function verstuur() {
 	else{
 		controleerVoorwaardenTelefoonnummer();
 	}
+	 controleerVoorwaardenBericht()
 	if (allesCorrectIngevuld) {
 		document.write("Naam is correct ingevuld");
 
-		let link = "mailto:" + encodeURIComponent("jasmine_juvyns@hotmail.com")
+		/* let link = "mailto:" + encodeURIComponent("jasmine_juvyns@hotmail.com")
 		+ "&subject=" + encodeURIComponent("Reservatieformulier validatie")
 		+ "&body=" 
 		+ "selectie:" 
@@ -208,6 +209,6 @@ function verstuur() {
 		+ "bericht:"
 		+ encodeURIComponent(berichtTxt)
 		window.location.href = link;
-	}
+	}*/
 	
 }
