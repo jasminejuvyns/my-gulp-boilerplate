@@ -8,7 +8,6 @@ let uurTxt;
 let voornaamTxt;
 let achternaamTxt;
 let emailTxt;
-let telefoonnummerTxt;
 let berichtTxt;
 let allesCorrectIngevuld=true;
 
