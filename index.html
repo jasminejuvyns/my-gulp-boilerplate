@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="style_header_footer.css">
     <link rel="stylesheet" href="style_body.css">
     <link rel="shortcut icon" href="images/favicon.png">
-    <script type="text/javascript" src="script.js"></script>
-
+    <script src="slideshow.js"></script>
+    <script src="scroll_button.js"></script>
     <title>Home</title>
 </head>
 
@@ -49,7 +49,7 @@
             </div>
         </div>
     </header>
-    <div class="container2 cf">
+    <main class="container2 cf">
         <!-------------------------KERST MENU BLOK--------------------------------------->
         <div class="cf">
             <section class="christmas_container centreren cf">
@@ -128,15 +128,15 @@
             <div class="space">
                 <hr>
             </div>
-            <!-------------------------SLIDESHOW--------------------------------------->
+            <!-----------SLIDESHOW------------------->
             <div class="space">
                 <section class="centreren">
                     <div class="slideshow">
-                        <img class="slides centreren" src="images/slide1.jpg">
-                        <img class="slides centreren hiddenSlides" src="images/slide2.jpg">
-                        <img class="slides centreren hiddenSlides" src="images/slide3.jpg">
-                        <img class="slides centreren hiddenSlides" src="images/slide4.jpg">
-                        <img class="slides centreren hiddenSlides" src="images/slide5.jpg">
+                        <img class="slides centreren" src="images/slide1.jpg" alt="foto van hapjes">
+                        <img class="slides centreren hiddenSlides" src="images/slide2.jpg" alt="foto van broodjes">
+                        <img class="slides centreren hiddenSlides" src="images/slide3.jpg" alt="foto van de keuken">
+                        <img class="slides centreren hiddenSlides" src="images/slide4.jpg" alt="foto van hapjes">
+                        <img class="slides centreren hiddenSlides" src="images/slide5.jpg" alt="foto van een hapje">
                     </div>
                 </section>
             </div>
@@ -144,7 +144,7 @@
                 <hr>
             </div>
 
-            <!-------------------------REVIEWS STARS--------------------------------------->
+            <!-------------REVIEWS STARS------------>
             <section class="reviews centreren cf">
                 <h1 class="reviews_titel">
                     REVIEWS
@@ -203,7 +203,7 @@
         </div>
         <button onclick="topFunction()" id="myBtn" title="Go to top" class="fa fa-caret-up"></button>
 
-    </div>
+    </main>
 
 
     <!-------------------------FOOTER--------------------------------------->
@@ -272,12 +272,12 @@
                 <div class="cf">
                     <div class="nieuwsbrief_naam">
                         <label for="naam"></label>
-                        <input type="text" id="naam" name="newsletter" placeholder="Naam" required>
+                        <input type="text" id="naam" name="newsletter" placeholder="Naam">
                     </div>
 
                     <div class="nieuwsbrief_email">
                         <label for="email"></label>
-                        <input type="email" id="email" name="email-visitor" placeholder="E-mail" required>
+                        <input type="email" id="email" name="email-visitor" placeholder="E-mail">
                     </div>
 
                     <div class="nieuwsbrief_verzendknop">
