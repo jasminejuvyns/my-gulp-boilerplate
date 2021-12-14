@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="style_header_footer.css">
     <link rel="stylesheet" href="style_body.css">
     <link rel="shortcut icon" href="images/favicon.ico">
+    <script src="contactc.js"></script>
+    
     <title>Contact</title>
 </head>
 
@@ -96,7 +98,7 @@
                 </div>
                 <div class="cont-phone">
                     <div>
-                        <input type="tel" id="Telefoonnummer" class="input-contact" name="telefoonnummer"
+                        <input type="tel" id="telefoonnummer" class="input-contact" name="telefoonnummer"
                             placeholder="Telefoonnummer">
                     </div>
                 </div>
@@ -112,7 +114,8 @@
                     </div>
                 </div>
                 <div id="contact-btn">
-                    <button onclick="sendMail();" class="button-body">SEND</button>
+                   
+                    <input type="button" value="SEND" class="button-body" onclick="verstuur()"/>
                 </div>
             </form>
 
