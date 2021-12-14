@@ -39,25 +39,25 @@
     </header>
     <!-------------------------RESERVATIE TEKST EN IMAGE-------------------------->
     <main class="container2 cf">
-        <section class="reservatie_container centreren">
+        <section class="reservatie_container centreren" id="anchor-reserveren">
             <h1>
                 RESERVEREN
             </h1>
             <hr>
             <p>
-                Indien het online reserveren niet lukt, gelieve een mail te sturen naar<a id="mail"
-                    href="mailto:info@sabor.be">info@sabor.be</a>met vermelding van uw naam, telefoonnummer, de gewenste
-                datum en uur van reservatie. Dan contacteren wij u om uw reservatie te voltooien.</p>
-            <p>Tot gauw, Het Sabor-Team!</p>
+                Hier kan je online een reservatie maken of een gemaakte reservatie annuleren. 
+                Indien het online reserveren niet lukt, kan je steeds een mailtje sturen naar<a id="mail"
+                    href="mailto:info@sabor.be">info@sabor.be</a>met vermelding van je naam, telefoonnummer, de gekozen 
+                datum en het gekozen uur van reservatie. Dan contacteren wij u zo snel als mogelijk om je reservatie te bevestigen.</p>
             </p>
             <br><br>
             <p>
-                U kan een reservatie kosteloos annuleren tot 12 uur voor het gereserveerde tijdstip. Hierna kan er een
+                Je kan een reservatie kosteloos annuleren tot 12 uur voor het gereserveerde tijdstip. Hierna kan er een
                 supplement aangerekend worden.
             </p>
             <div class="space">
                 <a href="annuleringsvoorwaarden.html#anchor-annulatie"
-                    class="button_reservatie">ANNULATIEVOORWAARDEN</a>
+                    class="button_reservatie">LEES DE ANNULATIEVOORWAARDEN</a>
             </div>
         </section>
 
@@ -68,27 +68,27 @@
                 <div class="groep-keuze">
                     <select id="selectie" name="keuze">
                         <option value="">Maak je keuze:</option>
-                        <option value="kerstmenu">Kerstmenu</option>
-                        <option value="Tapastafel">Reserveer je tapastafel</option>
+                        <option value="kerstmenu">Kerstmenu reserveren (alleen van 23 t.e.m. 26 dec)</option>
+                        <option value="Tapastafel">Tapastafel reserveren</option>
                         <option value="annulatie">Reservatie annuleren</option>
                     </select>
                     <span class="error" id="selectie_error"></span>
                 </div>
 
                 <div class="groep-aantal">
-                    <label for="aantal">Aantal personen:</label>
-                    <input type="number" id="aantal" name="totaal_aantal" placeholder="Kies je aantal">
+                    <label for="aantal"></label>
+                    <input type="number" id="aantal" name="totaal_aantal" placeholder="Kies het aantal personen">
                     <span class="error" id="aantal_error"></span>
                 </div>
 
                 <div class="groep-datum">
-                    <label for="datum">Datum:</label>
+                    <label for="datum"></label>
                     <input type="date" id="datum" name="datum">
                     <span class="error" id="datum_error"></span>
                 </div>
 
                 <div class="groep-uur">
-                    <label for="uur">Kies je uur:</label>
+                    <label for="uur"></label>
                     <select id="uur" name="uur">
                         <option value="">Kies je uur</option>
                         <option value="17:00">17:00</option>
@@ -121,17 +121,15 @@
                     <span class="error" id="email_error"></span>
                 </div>
 
-                
-
-                <hr class="space">
+                <hr>
 
                 <label for="bericht"></label>
-                <textarea id="bericht" name="bericht" placeholder="Heb je nog vragen of opmerkingen? Laat hier je bericht achter"></textarea>
+                <textarea id="bericht" name="bericht" placeholder="Heb je nog vragen of opmerkingen? Wij horen het graag! Laat hier je bericht achter"></textarea>
                 <span class="error" id="bericht_error"></span>
 
                 <div class="centreren">
 
-                    <input type="button" value="VERZENDEN" id="knop_verstuur" onclick="verstuur()" />
+                    <input type="button" value="VERZENDEN" class="verzend-button" onclick="verstuur()" />
                  </div>
             </form>
         </div>
@@ -142,9 +140,10 @@
     </main>
     <!----------------------FOOTER-------------------------->
 
+    
     <footer class="container cf" id="anchor-openingsuren">
         <div class="container2 centreren cf">
-            <section class="cf">
+            <section class="space2 cf">
                 <div class="openinghours-blok">
                     <h1 class="centreren">
                         OPENINGSUREN
@@ -197,28 +196,37 @@
             </section>
 
         </div>
+
+        <!-------------------------MAILCHIMP SIGN-UP FORM--------------------------------------->
         <div class="container2 centreren cf">
             <hr class="nieuwsbrief">
             <h1 class="menutitel">NIEUWSBRIEF</h1>
-            <p>Wees als eerste op de hoogte van onze speciale menu's en reservatiemogelijkheden.</p>
 
-            <form action="login.php" method="post">
-                <div class="cf">
-                    <div class="nieuwsbrief_naam">
-                        <label for="naam"></label>
-                        <input type="text" id="naam" name="newsletter" placeholder="Naam" required>
+            <div id="mc_embed_signup" class="centreren cf">
+                <form
+                    action="https://neletintel.us20.list-manage.com/subscribe/post?u=c0deeaa50eab0d940cba46a6b&amp;id=2d58607c8b"
+                    method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+                    target="_blank" novalidate>
+                    <div id="mc_embed_signup_scroll cf">
+                        <label for="mce-EMAIL">Wees als eerste op de hoogte van onze speciale menu's en
+                            reservatiemogelijkheden</label>
+                        <div class="centreren">
+                            <div class="nieuwsbrief_email">
+                                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL"
+                                    placeholder="Email" required>
+                            </div>
+                            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                                <input type="text" name="b_c0deeaa50eab0d940cba46a6b_2d58607c8b" tabindex="-1" value="">
+                            </div>
+                            <div class="nieuwsbrief_verzend">
+                                <input type="submit" value="INSCHRIJVEN" name="subscribe" id="mc-embedded-subscribe">
+                            </div>
+                        </div>
                     </div>
+                </form>
+            </div>
 
-                    <div class="nieuwsbrief_email">
-                        <label for="email"></label>
-                        <input type="email" id="email" name="email-visitor" placeholder="E-mail" required>
-                    </div>
-
-                    <div class="nieuwsbrief_verzendknop">
-                        <input type="submit" value="VERSTUUR">
-                    </div>
-                </div>
-            </form>
+            <!------------------------- EINDE MAILCHIMP SIGN-UP FORM--------------------------------------->
 
             <hr>
 

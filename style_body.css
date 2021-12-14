@@ -375,26 +375,32 @@ h3 {
 }
 
 /*formulier reserveren*/
-.groep-name, .groep-contactgegevens, .groep-uur {
+.groep-name, .groep-contactgegevens, .groep-uur, .groep-datum {
 	margin: 10px 0;
 	display: inline-block;
 	width: 100%;
+	font-size: 13px;;
 }
 
 #uur, #selectie, #datum, #aantal, #telefoonnummer, #bericht {
 	color: white;
-	font-size: 14px;
+	font-size: 13px;
 }
 
-#selectie, #uur{
-	background-color: #333;
+#selectie {
+	margin: 10px 0;
+}
+
+#knop_verstuur{
+	border: 1px solid #766749;
+
 }
 
 input, select, textarea, select, option {
 	border-radius: 2px;
 	border: 1px solid #766749;
 	box-sizing: border-box;
-	font-size: 14px;
+	font-size: 13px;
 	font-family: 'Quicksand';
 	width: 100%;
 	padding: 10px;
@@ -411,15 +417,20 @@ textarea {
 	font-size: 13px;
 }
 
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
 .verzend-button {
-	border: 0.7px solid #DABC7D;
-	color: #DABC7D;
+	border: 0.7px solid #766749;;
+	color: white;
 	cursor: pointer;
 	font-family: Rosario;
 	padding: 10px 20px;
 	text-decoration: none;
-	background-image: url(images/backgroundformfields.jpg);
+	width: 30%;
 	text-transform: uppercase;
+	margin-top: 20px;
 }
 
 .verzend-button:hover{
@@ -449,10 +460,6 @@ textarea {
 
 /* ----------CONTACTFORM-------- */
 
-.contact_titel  {
-	text-align: center;
-	
-}
 #form hr {
 	width: 100px;;
 }
@@ -489,11 +496,6 @@ textarea {
 	text-align: right;
 }
 
-.contactgegevens{
-	text-align: center;
-	margin-top: 50px;	
-}
-
 .contactgegevens i {
 	color: #DABC7D;
 }
@@ -510,11 +512,7 @@ textarea {
 
 #contact-btn {
 	float: right;
-	margin:50px -10px 50px 0;
-}
-
-#contact-btn .button-body {
-	margin: 0 0 0 0;
+	margin:30px -10px 50px 0;
 }
 
 .input-contact{

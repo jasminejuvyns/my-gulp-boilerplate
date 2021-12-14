@@ -177,22 +177,19 @@ aside{
 	cursor:pointer;
 }
 
-.nieuwsbrief_naam{
+.nieuwsbrief_email{
 	margin: 20px 0px 50px 100px;
 	width: 50%;
 	float:left;
+	outline:none;
 }
 
-.nieuwsbrief_email{	
+.nieuwsbrief_verzend{	
 	margin: 20px 0px 50px 10px;
 	width: 20%;
 	float:left;
-}
-
-.nieuwsbrief_verzendknop{
-	float:left;
-	padding: 8px 10px;
-	color: white;
+	outline:none;
+	cursor:pointer;
 }
 
 #mc_embed_signup {
@@ -202,15 +199,18 @@ aside{
 }
 
 input[type=text]{
-	border: 1px solid #766749 ;
-	background-image: url(images/chalkboard.jpg);
+	border: 1px solid #766749;
 	color: white;
 	outline: none;
 }
 
+input[type=text]:focus {
+	border: 2px solid #766749;
+  }
+
 input[type=email]{
 	border: 1px solid #766749;
-	background-image: url(images/chalkboard.jpg);
+	
 	color: white;
 	outline: none;
 }

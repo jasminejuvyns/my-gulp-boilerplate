@@ -99,9 +99,10 @@
 
     <!-------------------------FOOTER--------------------------------------->
 
+    
     <footer class="container cf" id="anchor-openingsuren">
         <div class="container2 centreren cf">
-            <section class="cf">
+            <section class="space2 cf">
                 <div class="openinghours-blok">
                     <h1 class="centreren">
                         OPENINGSUREN
@@ -146,7 +147,7 @@
                     </table>
                     <div class="centreren">
                         <div class="space">
-                            <a href="../Sabor/reservatie.html" class="button-body">RESERVEREN</a>
+                            <a href="../sabor/reservatie.html" class="button-body">RESERVEREN</a>
                         </div>
                     </div>
                 </div>
@@ -154,28 +155,37 @@
             </section>
 
         </div>
+
+        <!-------------------------MAILCHIMP SIGN-UP FORM--------------------------------------->
         <div class="container2 centreren cf">
             <hr class="nieuwsbrief">
             <h1 class="menutitel">NIEUWSBRIEF</h1>
-            <p>Wees als eerste op de hoogte van onze speciale menu's en reservatiemogelijkheden.</p>
 
-            <form action="login.php" method="post">
-                <div class="cf">
-                    <div class="nieuwsbrief_naam">
-                        <label for="naam"></label>
-                        <input type="text" id="naam" name="newsletter" placeholder="Naam" required>
+            <div id="mc_embed_signup" class="centreren cf">
+                <form
+                    action="https://neletintel.us20.list-manage.com/subscribe/post?u=c0deeaa50eab0d940cba46a6b&amp;id=2d58607c8b"
+                    method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+                    target="_blank" novalidate>
+                    <div id="mc_embed_signup_scroll cf">
+                        <label for="mce-EMAIL">Wees als eerste op de hoogte van onze speciale menu's en
+                            reservatiemogelijkheden</label>
+                        <div class="centreren">
+                            <div class="nieuwsbrief_email">
+                                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL"
+                                    placeholder="Email" required>
+                            </div>
+                            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                                <input type="text" name="b_c0deeaa50eab0d940cba46a6b_2d58607c8b" tabindex="-1" value="">
+                            </div>
+                            <div class="nieuwsbrief_verzend">
+                                <input type="submit" value="INSCHRIJVEN" name="subscribe" id="mc-embedded-subscribe">
+                            </div>
+                        </div>
                     </div>
+                </form>
+            </div>
 
-                    <div class="nieuwsbrief_email">
-                        <label for="email"></label>
-                        <input type="email" id="email" name="email-visitor" placeholder="E-mail" required>
-                    </div>
-
-                    <div class="nieuwsbrief_verzendknop">
-                        <input type="submit" value="VERSTUUR">
-                    </div>
-                </div>
-            </form>
+            <!------------------------- EINDE MAILCHIMP SIGN-UP FORM--------------------------------------->
 
             <hr>
 
