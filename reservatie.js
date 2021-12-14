@@ -154,7 +154,7 @@ function verstuur() {
 	}
 	if (allesCorrectIngevuld) {
 		document.write("Naam is correct ingevuld");
-		//deze if altijd op het einde zetten 	
+
 		
 		let link = "mailto:" + encodeURIComponent("jasmine_juvyns@hotmail.com")
 		+ "&subject=" + encodeURIComponent("Reservatieformulier validatie")
