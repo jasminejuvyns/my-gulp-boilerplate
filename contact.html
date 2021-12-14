@@ -53,17 +53,15 @@
     <!-------------CONTACTGEGEVENS + CONTACTFORMULIER ----------->
     <main class="container2 cf">
         <div class="contact-container">
-            <h1 class="centreren">
-                CONTACT
-            </h1>
-            <hr class="contact_line">
-            <section class="gegevens space">
-                
+            <div class="gegevens">
+                <h1 class="contactgegevens_titel">
+                    CONTACTGEGEVENS
+                </h1>
                 <hr class="contact_line">
-                <div class="contactgegevens centreren">
+                <div class="contactgegevens">
                     <div class="left">
                         <i class="far fa-envelope"></i>
-                        <div class="cont-geg">
+                       <div class="cont-geg">
                             <a href="mailto:info@sabor.be">info@sabor.be</a><br>
                         </div>
                         <i class="fas fa-phone-square-alt"></i>
@@ -72,61 +70,68 @@
                         </div>
                         <i class="fas fa-map-marker-alt"></i>
                         <div class="cont-geg">
-                            <p>Tapaslaan 78 - 3500 Hasselt</p>
+                             <p>Tapaslaan 78 - 5670 Calamares</p>
                         </div>
                     </div>
                 </div>
                 <hr class="contact_line">
-            </section>
+            </div>
 
-            <form id="form" class="contact-form space" method="post" action="">
-                
-                
-                <div class="contact-lastname">
-                    <div class="names">
-                        <div class="cont-name">
-                            <input type="text" id="voornaam" name="voornaam" class="input-contact"
-                                placeholder="Voornaam">
-                        </div>
-                    </div>
-                    <div class="contact-lastname">
-                        <div class="cont-lastname">
-                            <input type="text" id="achternaam" name="achternaam" class="input-contact"
-                                placeholder="Achternaam">
-                        </div>
+            <form id="form" class="contact-form" method="post" action="">
+                <h1 class="contact_titel">
+                    CONTACT
+            </h1>
+            <hr class="contact_line">
+            <div class="contact-lastname">
+                <div class="names">
+                    <div class="cont-name">
+                        <label for="voornaam"></label>
+                        <input type="text" id="voornaam" name="voornaam" class="input-contact" placeholder="Voornaam">
+                        <span class="error" id="voornaam_error"></span>
                     </div>
                 </div>
-                <div class="cont-phone">
-                    <div>
-                        <input type="tel" id="telefoonnummer" class="input-contact" name="telefoonnummer"
-                            placeholder="Telefoonnummer">
+                 <div class="contact-lastname">
+                    <div class="cont-lastname">
+                        <label for="achternaam"></label>
+                        <input type="text" id="achternaam" name="achternaam" class="input-contact" placeholder="Achternaam">
+                        <span class="error" id="achternaam_error"></span>
                     </div>
                 </div>
-                <div class="contact-email">
-                    <div>
-                        <input type="email" id="email" name="email" class="input-contact" placeholder="Email">
-                    </div>
+            </div>
+            <div class="cont-phone">
+                <div>
+                    <label for="telefoonnummer"></label>
+                    <input type="tel" id="telefoonnummer" class="input-contact" name="telefoonnummer" placeholder="Telefoonnummer">
+                    <span class="error" id="telefoonnummer_error"></span>
                 </div>
-                <div class="contact-message">
-                    <div>
-                        <textarea id="bericht" name="bericht" class="input-contact" rows="6" maxlength="3000"
-                            placeholder="Laat hier jouw opmerkingen achter:"></textarea>
-                    </div>
+            </div>
+            <div class="contact-email">
+                <div>
+                    <label for="email"></label>
+                    <input type="email" id="email" name="email" class="input-contact" placeholder="Email">
+                    <span class="error" id="email_error"></span>
                 </div>
-                <div id="contact-btn">
-                   
-                    <input type="button" value="SEND" class="button-body" onclick="verstuur()"/>
+            </div>
+            <div class="contact-message">
+                <div>
+                    <label for="bericht"></label>
+                    <textarea id="bericht" name="bericht" class="input-contact" rows="6" maxlength="3000" placeholder="Laat hier jouw opmerkingen achter:"></textarea>
+                    <span class="error" id="bericht_error"></span>
                 </div>
-            </form>
+            </div>
+            <div id="contact-btn">
+                <input type="button" value="SEND" id="knop_verstuur" onclick="verstuur()" class="button-body"/>  
+            </div>
+        </form>
 
-            <section class="map" id="anchor-map">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d528.6354921564275!2d5.335275478376897!3d50.93059154755132!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbe!4v1639212629568!5m2!1sen!2sbe">
-                </iframe>
-            </section>
+        <div class="map" id="anchor-map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d528.6354921564275!2d5.335275478376897!3d50.93059154755132!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbe!4v1639212629568!5m2!1sen!2sbe">
+            </iframe>
         </div>
-        <button onclick="topFunction()" id="myBtn" title="Go to top" class="fa fa-caret-up"></button>
-    </main>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top" class="fa fa-caret-up"></button>
+</main>
     <!-------------------------FOOTER--------------------------------------->
 
 

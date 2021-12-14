@@ -528,3 +528,7 @@ textarea {
 .contactgegevens p {
 	margin-top: 10px;
 }
+.error {
+	color: rgb(167,95,95);
+	font-size: 12px;
+}
