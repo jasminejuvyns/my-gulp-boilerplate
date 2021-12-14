@@ -1,16 +1,49 @@
 "use strict"
 //hoofdscript
-let voornaamTxt;
-let achternaamTxt;
-let emailTxt;
-let telefoonnummerTxt;
-let berichtTxt;
 let selectieTxt;
 let geselecteerdeKeuze;
 let aantalTxt;
 let datumTxt;
 let uurTxt;
+let voornaamTxt;
+let achternaamTxt;
+let emailTxt;
+let telefoonnummerTxt;
+let berichtTxt;
 let allesCorrectIngevuld=true;
+
+//-------FUNCTIE  AANTAL PERSONEN --------------------------------------------------------
+function controleerVoorwaardenAantal(){
+	if( aantalTxt.length > 5){
+		document.getElementById("aantal_error").innerHTML="Max 5 personen";
+		allesCorrectIngevuld = false;
+	}
+	else{
+		document.getElementById("aantal_error").innerHTML="";
+	}
+}
+
+//-------FUNCTIE  DATUM --------------------------------------------------------
+function controleerVoorwaardenDatum(){
+	if( datumTxt.length < 1){
+		document.getElementById("datum_error").innerHTML="Gelieve een datum aan te duiden.";
+		allesCorrectIngevuld = false;
+	}
+	else{
+		document.getElementById("datum_error").innerHTML="";
+	}
+}
+
+//-------FUNCTIE  UUR --------------------------------------------------------
+function controleerVoorwaardenUur(){
+	if( uurTxt.length < 1){
+		document.getElementById("uur_error").innerHTML="Gelieve een uur aan te duiden.";
+		allesCorrectIngevuld = false;
+	}
+	else{
+		document.getElementById("uur_error").innerHTML="";
+	}
+}
 
 //-------FUNCTIE  VOORNAAM --------------------------------------------------------
 function controleerVoorwaardenVoornaam() {
@@ -68,16 +101,6 @@ function controleerVoorwaardenBericht(){
 	}
 }
 
-//-------FUNCTIE  AANTAL PERSONEN --------------------------------------------------------
-function controleerVoorwaardenAantal(){
-	if( aantalTxt.length > 5){
-		document.getElementById("aantal_error").innerHTML="Max 5 personen";
-		allesCorrectIngevuld = false;
-	}
-	else{
-		document.getElementById("aantal_error").innerHTML="";
-	}
-}
 
 
 
@@ -96,7 +119,7 @@ function verstuur() {
 	allesCorrectIngevuld=true;
 
 	
-	if(geselecteerdeKeuze==0){
+	if(geselecteerdeKeuze == 0){
 		document.getElementById("selectie_error").innerHTML="Kies a.u.b.";
 		allesCorrectIngevuld = false;
 	}
@@ -124,7 +147,7 @@ function verstuur() {
 	else{
 		controleerVoorwaardenUur();
 	}
-	if (voornaamTxt.length==0){
+	if(voornaamTxt.length==0){
 		document.getElementById("voornaam_error").innerHTML="Vul in a.u.b.";
 		allesCorrectIngevuld = false;
 	}
@@ -155,7 +178,6 @@ function verstuur() {
 	if (allesCorrectIngevuld) {
 		document.write("Naam is correct ingevuld");
 
-		
 		let link = "mailto:" + encodeURIComponent("jasmine_juvyns@hotmail.com")
 		+ "&subject=" + encodeURIComponent("Reservatieformulier validatie")
 		+ "&body=" 
