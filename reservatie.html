@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="style_header_footer.css">
     <link rel="stylesheet" href="style_body.css">
     <link rel="shortcut icon" href="images/favicon.png">
-    <script type="text/javascript" src="scroll_button.js"></script>
-    <title>Home</title>
+    <script src="scroll_button.js"></script>
+    <script src="reservatie.js"></script>
+    <title>Reservatie</title>
 </head>
 
 <body>
@@ -129,11 +130,11 @@
                 <hr class="space">
 
                 <label for="bericht"></label>
-                <textarea id="bericht" name="bericht"
-                    placeholder="Heb je nog vragen of opmerkingen? Laat hier je bericht achter"></textarea>
+                <textarea id="bericht" name="bericht" placeholder="Heb je nog vragen of opmerkingen? Laat hier je bericht achter"></textarea>
                 <span class="error" id="bericht_error"></span>
+
                 <div class="centreren">
-                    <button class="button-body space" type="submit">Verzenden</button>
+                    <button onclick="verstuur();" id="knop_verstuur" class="button-body">VERZENDEN</button>
                 </div>
             </form>
         </div>
