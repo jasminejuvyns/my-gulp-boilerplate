@@ -179,7 +179,7 @@ function verstuur() {
 	if (allesCorrectIngevuld) {
 		document.write("Naam is correct ingevuld");
 
-		/* let link = "mailto:" + encodeURIComponent("jasmine_juvyns@hotmail.com")
+		let link = "mailto:" + encodeURIComponent("jasmine_juvyns@hotmail.com")
 		+ "&subject=" + encodeURIComponent("Reservatieformulier validatie")
 		+ "&body=" 
 		+ "selectie:" 
@@ -209,6 +209,6 @@ function verstuur() {
 		+ "bericht:"
 		+ encodeURIComponent(berichtTxt)
 		window.location.href = link;
-	}*/
+	}
 	
 }
