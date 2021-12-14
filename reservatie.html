@@ -63,21 +63,25 @@
 
         <!--------------------------- FORMULIER----------------------------------->
         <div class="container3">
+<<<<<<< Updated upstream
             <form action="reservatie.html" method="post">
+=======
+            <form method="post">
+>>>>>>> Stashed changes
 
                 <div class="groep-keuze">
                     <select id="selectie" name="keuze">
                         <option value="">Maak je keuze:</option>
-                        <option value="connecting">Kerst-menu</option>
-                        <option value="adjoining">Reserveer je tapatafel</option>
-                        <option value="adjacent">Reservatie annuleren</option>
+                        <option value="kerstmenu">Kerstmenu</option>
+                        <option value="Tapastafel">Reserveer je tapastafel</option>
+                        <option value="annulatie">Reservatie annuleren</option>
                     </select>
                     <span class="error" id="selectie_error"></span>
                 </div>
 
                 <div class="groep-aantal">
                     <label for="aantal">Aantal personen:</label>
-                    <input type="number" id="aantal" name="totaal_aantal" placeholder="2" min="1">
+                    <input type="number" id="aantal" name="totaal_aantal" placeholder="Kies je aantal">
                     <span class="error" id="aantal_error"></span>
                 </div>
 
@@ -91,12 +95,12 @@
                     <label for="uur">Kies je uur:</label>
                     <select id="uur" name="uur">
                         <option value="">Kies je uur</option>
-                        <option value="connecting">17:00</option>
-                        <option value="adjoining">18:00</option>
-                        <option value="adjacent">19:00</option>
-                        <option value="adjoining">20:00</option>
-                        <option value="adjacent">21:00</option>
-                        <option value="adjacent">22:00</option>
+                        <option value="17:00">17:00</option>
+                        <option value="18:00">18:00</option>
+                        <option value="19:00">19:00</option>
+                        <option value="20:00">20:00</option>
+                        <option value="21:00">21:00</option>
+                        <option value="22:00">22:00</option>
                     </select>
                     <span class="error" id="uur_error"></span>
                 </div>
@@ -121,11 +125,7 @@
                     <span class="error" id="email_error"></span>
                 </div>
 
-                <div class="groep-contactgegevens">
-                    <label for="telefoonnummer"></label>
-                    <input type="tel" id="telefoonnummer" name="phone-visitor" placeholder="Telefoonnummer">
-                    <span class="error" id="telefoonnummer_error"></span>
-                </div>
+                
 
                 <hr class="space">
 
@@ -134,8 +134,13 @@
                 <span class="error" id="bericht_error"></span>
 
                 <div class="centreren">
+<<<<<<< Updated upstream
                     <button onclick="verstuur()" id="knop_verstuur" class="button-body">VERZENDEN</button>
                 </div>
+=======
+                    <input type="button" value="VERZENDEN" id="knop_verstuur" onclick="verstuur()" />
+                 </div>
+>>>>>>> Stashed changes
             </form>
         </div>
         <br>
