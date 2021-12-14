@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="nl">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,12 +8,13 @@
     <link rel="stylesheet" href="style_header_footer.css">
     <link rel="stylesheet" href="style_body.css">
     <link rel="shortcut icon" href="images/favicon.ico">
-    <script type="text/javascript" src="scroll_button.js"></script>
-    <title>Home</title>
+    <script src="scroll_button.js"></script>
+    
+    <title>Contact</title>
 </head>
 
 <body>
-    <!-------------------------HEADER IMAGE + MENU + RESERVATIE TEKST & KNOP -------->
+    <!---------HEADER IMAGE + MENU + RESERVATIE TEKST & KNOP -------->
     <header class="container centreren cf">
         <div class="navigatie">
             <ul>
@@ -49,16 +49,14 @@
             </div>
         </div>
     </header>
-    <!-------------------------CONTACTGEGEVENS + CONTACTFORM --------------------------------------->
+    <!-------------CONTACTGEGEVENS + CONTACTFORMULIER ----------->
     <main class="container2 cf">
         <div class="contact-container">
-
             <div class="gegevens">
                 <h1 class="contactgegevens_titel">
                     CONTACTGEGEVENS
                 </h1>
                 <hr class="contact_line">
-
                 <div class="contactgegevens">
                     <div class="left">
                         <i class="far fa-envelope"></i>
@@ -77,54 +75,48 @@
                 </div>
                 <hr class="contact_line">
             </div>
+
             <form id="form" class="contact-form" method="post" action="">
                 <h1 class="contact_titel">
                     CONTACT
                 </h1>
                 <hr class="contact_line">
                 <div class="contact-lastname">
-            <div class="names">
-                
-                <div class="cont-name">
-                    <input type="text" id="Name" name="Name" class="input-contact" required placeholder="First Name">
+                    <div class="names">
+                        <div class="cont-name">
+                            <input type="text" id="voornaam" name="voornaam" class="input-contact" placeholder="Voornaam">
+                        </div>
+                    </div>
+                     <div class="contact-lastname">
+                        <div class="cont-lastname">
+                            <input type="text" id="achternaam" name="achternaam" class="input-contact" placeholder="Achternaam">
+                        </div>
+                    </div>
                 </div>
-                </div>
-                 <div class="contact-lastname">
-
-                <div class="cont-lastname">
-                    <input type="text" id="name" name="lastName" class="input-contact" required
-                        placeholder="Last Name">
-                </div>
-            </div>
-            </div>
-                            <div class="cont-phone">
-
+                <div class="cont-phone">
                     <div>
-                        <input type="tel" id="Telefoon" class="input-contact" name="phone" placeholder="Telephone Number" required>
+                        <input type="tel" id="Telefoonnummer" class="input-contact" name="telefoonnummer" placeholder="Telefoonnummer">
                     </div>
                 </div>
                 <div class="contact-email">
-
                     <div>
-                        <input type="email" id="email" name="Email" class="input-contact" required
-                            placeholder="Email Address">
+                        <input type="email" id="email" name="email" class="input-contact" placeholder="Email">
                     </div>
                 </div>
-
                 <div class="contact-message">
                     <div>
-                        <textarea id="Message" name="Message" class="input-contact" rows="6" maxlength="3000" required
-                            placeholder="Your Message"></textarea>
+                        <textarea id="bericht" name="Message" class="input-contact" rows="6" maxlength="3000" placeholder="Laat hier jouw opmerkingen achter:"></textarea>
                     </div>
                 </div>
-
                 <div id="contact-btn">
-                    <button class="button-body">SEND</button>
+                    <button onclick="sendMail();" class="button-body">SEND</button>  
                 </div>
             </form>
+
             <div class="map" id="anchor-map">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d528.6354921564275!2d5.335275478376897!3d50.93059154755132!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbe!4v1639212629568!5m2!1sen!2sbe"></iframe>
+                    src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d528.6354921564275!2d5.335275478376897!3d50.93059154755132!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbe!4v1639212629568!5m2!1sen!2sbe">
+                </iframe>
             </div>
         </div>
         <button onclick="topFunction()" id="myBtn" title="Go to top" class="fa fa-caret-up"></button>
@@ -229,6 +221,33 @@
             </div>
         </section>
     </footer>
+
+<script type="text/javascript">
+aantal = controleAantal(aantal);
+"use strict"
+function sendMail() {
+    let link = "mailto:" + encodeURIComponent("jasmine_juvyns@hotmail.com;")
+    + encodeURIComponent(document.getElementById('email').value)
+    + "&subject=" + encodeURIComponent("Onderwerp van het bericht")
+    + "&body="
+    + "voornaam:"
+    + encodeURIComponent(document.getElementById('voornaam').value)
+    + encodeURIComponent("\r\n\n")
+    + "achternaam:"
+    + encodeURIComponent(document.getElementById('achternaam').value)
+    + encodeURIComponent("\r\n\n")
+    + "telefoonnummer:"
+    + encodeURIComponent(document.getElementById('telefoonnummer').value)
+    + encodeURIComponent("\r\n\n")
+    + "email:"
+    + encodeURIComponent(document.getElementById('email').value)
+    + encodeURIComponent("\r\n\n")
+    + "bericht:"
+    + encodeURIComponent(document.getElementById('bericht').value);
+    window.location.href = link;
+}
+</script>
+
 
 </body>
 
