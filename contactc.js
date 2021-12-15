@@ -92,10 +92,7 @@ function verstuur() {
     } else {
         controleerVoorwaardenEmail();
     }
-    if (berichtTxt.length == 0){
-        document.getElementById("bericht_error").innerHTML = "Vul hier uw bericht in a.u.b.";
-        allesCorrectIngevuld = false;
-    }
+    
     if (allesCorrectIngevuld) {
         document.write("alles is correct ingevuld");
         //deze if altijd op het einde zetten 	
