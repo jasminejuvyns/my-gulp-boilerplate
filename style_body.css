@@ -12,7 +12,6 @@
 }
 
 h1 {
-	font-style: bold;
 	font-size: 22px;
 	font-family: Rosario;
 	color: white;
@@ -136,7 +135,6 @@ hr{
 	width: 35%;
 }
 
-
 .openinghours-blok {
 	float: left;
 	width: 60%;
@@ -207,7 +205,7 @@ hr{
 }
 
 .review_text {
-	font-style: 13px;
+	font-size: 13px;
 }
 
 /*---------------EINDE INDEX PAGINA-------------------------*/
@@ -374,8 +372,8 @@ h3 {
 }
 
 /*formulier reserveren*/
-.groep-name, .groep-contactgegevens, .groep-uur, .groep-datum {
-	margin: 10px 0;
+.groep-name, .groep-contactgegevens, .groep-uur, .groep-datum, .groep-keuze, .groep-aantal {
+	margin: 2% 0;
 	display: inline-block;
 	width: 100%;
 	font-size: 13px;;
@@ -387,16 +385,14 @@ h3 {
 }
 
 #selectie, #uur {
-	margin: 10px 0;
 	background-color: #333;
 }
 
 #knop_verstuur{
 	border: 1px solid #766749;
-
 }
 
-input, select, textarea, select, option {
+input, select, textarea, option {
 	border-radius: 2px;
 	border: 1px solid #766749;
 	box-sizing: border-box;
@@ -419,6 +415,17 @@ textarea {
 
 ::-webkit-calendar-picker-indicator {
     filter: invert(1);
+}
+
+.error{
+	color: #DABC7D;
+	font-size: 13px;
+}
+
+#verplicht{
+	color: #DABC7D;
+	font-size: 13px;
+	float:right;
 }
 
 .verzend-button {

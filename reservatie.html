@@ -37,6 +37,8 @@
         </div>
     </div>
     </header>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top" class="fa fa-caret-up"></button>
     <!-------------------------RESERVATIE TEKST EN IMAGE-------------------------->
     <main class="container2 cf">
         <section class="reservatie_container centreren" id="anchor-reserveren">
@@ -105,19 +107,19 @@
 
                 <div class="groep-name">
                     <label for="voornaam"></label>
-                    <input type="text" id="voornaam" name="name-visitor" placeholder="Voornaam">
+                    <input type="text" id="voornaam" name="name-visitor" placeholder="Voornaam*">
                     <span class="error" id="voornaam_error"></span>
                 </div>
 
                 <div class="groep-name">
                     <label for="achternaam"></label>
-                    <input type="text" id="achternaam" name="name-visitor" placeholder="Achternaam">
+                    <input type="text" id="achternaam" name="name-visitor" placeholder="Achternaam*">
                     <span class="error" id="achternaam_error"></span>
                 </div>
 
                 <div class="groep-contactgegevens">
                     <label for="email"></label>
-                    <input type="email" id="email" name="email-visitor" placeholder="E-mail">
+                    <input type="email" id="email" name="email-visitor" placeholder="E-mail*">
                     <span class="error" id="email_error"></span>
                 </div>
 
@@ -127,6 +129,8 @@
                 <textarea id="bericht" name="bericht" placeholder="Heb je nog vragen of opmerkingen? Wij horen het graag! Laat hier je bericht achter"></textarea>
                 <span class="error" id="bericht_error"></span>
 
+                <p id="verplicht">Vakjes met een * zijn verplicht</p>
+
                 <div class="centreren">
 
                     <input type="button" value="VERZENDEN" class="verzend-button" onclick="verstuur()" />
@@ -135,7 +139,7 @@
         </div>
         <br>
 
-        <button onclick="topFunction()" id="myBtn" title="Go to top" class="fa fa-caret-up"></button>
+        
 
     </main>
     <!----------------------FOOTER-------------------------->
@@ -207,7 +211,7 @@
                     action="https://neletintel.us20.list-manage.com/subscribe/post?u=c0deeaa50eab0d940cba46a6b&amp;id=2d58607c8b"
                     method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
                     target="_blank" novalidate>
-                    <div id="mc_embed_signup_scroll cf">
+                    <div id="mc_embed_signup_scroll">
                         <label for="mce-EMAIL">Wees als eerste op de hoogte van onze speciale menu's en
                             reservatiemogelijkheden</label>
                         <div class="centreren">
@@ -215,8 +219,8 @@
                                 <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL"
                                     placeholder="Email" required>
                             </div>
-                            <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                                <input type="text" name="b_c0deeaa50eab0d940cba46a6b_2d58607c8b" tabindex="-1" value="">
+                            <div class="positie_knop">
+                                <input type="text" name="positie" tabindex="-1" value="">
                             </div>
                             <div class="nieuwsbrief_verzend">
                                 <input type="submit" value="INSCHRIJVEN" name="subscribe" id="mc-embedded-subscribe">

@@ -91,8 +91,8 @@ function controleerVoorwaardenTelefoonnummer() {
 
 //-------FUNCTIE  BERICHT --------------------------------------------------------
 function controleerVoorwaardenBericht() {
-	if (berichtTxt.length > 1000) {
-		document.getElementById("bericht_error").innerHTML = "Je bericht is te lang, gebruik max 1000 tekens";
+	if (berichtTxt.length > 10) {
+		document.getElementById("bericht_error").innerHTML = "Je bericht is te lang, gebruik max 10 tekens";
 		allesCorrectIngevuld = false;
 	}
 	else {
@@ -170,10 +170,11 @@ function verstuur() {
 	else {
 		controleerVoorwaardenEmail();
 	}
-	if (allesCorrectIngevuld) {
-		document.write("alles is correct ingevuld");
-		//deze if altijd op het einde zetten 	
 
+	controleerVoorwaardenBericht();
+	
+	if (allesCorrectIngevuld) {
+		document.write("Bedankt voor je reservatie. Je ontvangt zo meteen een bevestingsmail.");
 		let link = "mailto:" + encodeURIComponent("neletintel@hotmail.com")
 			+ "?cc=" + encodeURIComponent("jasmine_juvyns@hotmail.com")
 			+ "&subject=" + encodeURIComponent("Reservatieformulier validatie")
