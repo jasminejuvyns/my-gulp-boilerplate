@@ -464,7 +464,7 @@ textarea {
 	opacity: 0.7;
 }
 
-#mail, #mail2{
+#mail, #mail2, #voorwaarden, #voorWaarden{
 	color: white;
 	text-decoration:underline;
 	margin: 0 -5px;
