@@ -27,6 +27,7 @@ h1 {
 	padding: 10px 20px;
 	text-decoration: none;
 	background: url(images/chalkboard.jpg);
+
 }
 
 .button-body:hover{
@@ -47,7 +48,7 @@ h1 {
 /*scroll to top knop rechterzijde*/
 
 #myBtn {
-	display:none;
+	
 	position: fixed;
 	bottom: 50px;
 	right: 30px;
@@ -108,12 +109,6 @@ h1 {
 .christmas_dishes {
 	font-size: 14px;
 	padding: 0 8%;
-}
-
-#prijs{
-	color: #DABC7D;
-	font-size: 14px;
-	font-style:italic;
 }
 
 /*line*/
@@ -400,7 +395,7 @@ h3 {
 	margin: 2% 0;
 	display: inline-block;
 	width: 100%;
-	font-size: 13px;
+	font-size: 13px;;
 }
 
 #uur, #selectie, #datum, #aantal, #telefoonnummer, #bericht {
@@ -501,7 +496,7 @@ textarea {
 }
 
 .input-contact {
-	margin: 10px 10px 10px 0;
+	margin: 10px 0 10px 0;
 }
 
 .cont-name {
