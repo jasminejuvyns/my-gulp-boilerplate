@@ -65,20 +65,17 @@ function verstuur() {
     emailTxt = document.getElementById('email').value;
     berichtTxt = document.getElementById('bericht').value;
     
-
     allesCorrectIngevuld = true;
-    
-
 
     if (voornaamTxt.length == 0) {
-        document.getElementById("voornaam_error").innerHTML = "Vul hier uw voornaam in a.u.b.";
+        document.getElementById("voornaam_error").innerHTML = "Vul hier je voornaam in a.u.b.";
         allesCorrectIngevuld = false;
     } 
     else {
         controleerVoorwaardenVoornaam();
     }
     if (achternaamTxt.length == 0) {
-        document.getElementById("achternaam_error").innerHTML = "Vul hier uw achternaam in a.u.b.";
+        document.getElementById("achternaam_error").innerHTML = "Vul hier je achternaam in a.u.b.";
         allesCorrectIngevuld = false;
     } 
     else {
@@ -92,11 +89,15 @@ function verstuur() {
         controleerVoorwaardenTelefoonnummer();
     }
     if (emailTxt.length == 0) {
-        document.getElementById("email_error").innerHTML = "Vul hier uw E-mail in a.u.b.";
+        document.getElementById("email_error").innerHTML = "Vul hier je E-mail in a.u.b.";
         allesCorrectIngevuld = false;
     } 
     else {
         controleerVoorwaardenEmail();
+    }
+    if (berichtTxt.length == 0){
+        document.getElementById("bericht_error").innerHTML = "Vul hier je bericht in a.u.b.";
+        allesCorrectIngevuld = false;
     }
     if (allesCorrectIngevuld) {
         let link = "mailto:" + encodeURIComponent("neletintel@hotmail.com") 
