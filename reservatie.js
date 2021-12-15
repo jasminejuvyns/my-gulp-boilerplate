@@ -11,6 +11,8 @@ let voornaamTxt;
 let achternaamTxt;
 let emailTxt;
 let berichtTxt;
+let annulatieGeaccepteerd;
+let voorwaardenGeaccepteerd;
 let allesCorrectIngevuld=true;
 
 //-------FUNCTIE  AANTAL PERSONEN --------------------------------------------------------
@@ -128,7 +130,8 @@ function verstuur() {
 	berichtTxt = document.getElementById("bericht").value;
 	aantalTxt = document.getElementById("aantal").value;
 	datumTxt = document.getElementById("datum").value;
-	
+	annulatieGeaccepteerd = document.getElementById('AnnulatieVoorwaardenCheckbox').checked;
+    voorwaardenGeaccepteerd = document.getElementById('AlgemeneVoorwaardenCheckbox').checked;
 	allesCorrectIngevuld = true;
 
 
@@ -186,6 +189,15 @@ function verstuur() {
 	}
 
 	controleerVoorwaardenBericht();
+	if(!annulatieGeaccepteerd){
+        document.getElementById("AlgemeneVoorwaardenError").innerHTML = "accepteer de algemene voorwaarden aub";
+        allesCorrectIngevuld = false;
+    }
+    
+    if(!voorwaardenGeaccepteerd){
+        document.getElementById("AnnulatieVoorwaardenError").innerHTML = "accepteer de annulatie voorwaarden aub";
+        allesCorrectIngevuld = false;
+    }
 	
 	if (allesCorrectIngevuld) {
 		document.write("Bedankt voor je reservatie. Je ontvangt zo meteen een bevestingsmail.");

@@ -5,7 +5,8 @@ let achternaamTxt;
 let telefoonnummerTxt;
 let emailTxt;
 let berichtTxt;
-let vakjeTxt;
+let annulatieGeaccepteerd;
+let voorwaardenGeaccepteerd;
 let allesCorrectIngevuld = true;
 
 
@@ -64,7 +65,8 @@ function verstuur() {
     telefoonnummerTxt = document.getElementById('telefoonnummer').value;
     emailTxt = document.getElementById('email').value;
     berichtTxt = document.getElementById('bericht').value;
-    vakjeTxt = document.getElementById('vakje').value;
+    annulatieGeaccepteerd = document.getElementById('AnnulatieVoorwaardenCheckbox').checked;
+    voorwaardenGeaccepteerd = document.getElementById('AlgemeneVoorwaardenCheckbox').checked;
     allesCorrectIngevuld = true;
 
     if (voornaamTxt.length == 0) {
@@ -100,6 +102,17 @@ function verstuur() {
         document.getElementById("bericht_error").innerHTML = "Vul hier je bericht in a.u.b.";
         allesCorrectIngevuld = false;
     }
+
+    if(!annulatieGeaccepteerd){
+        document.getElementById("AlgemeneVoorwaardenError").innerHTML = "accepteer de algemene voorwaarden aub";
+        allesCorrectIngevuld = false;
+    }
+    
+    if(!voorwaardenGeaccepteerd){
+        document.getElementById("AnnulatieVoorwaardenError").innerHTML = "accepteer de annulatie voorwaarden aub";
+        allesCorrectIngevuld = false;
+    }
+
     if (allesCorrectIngevuld) {
         let link = "mailto:" + encodeURIComponent("neletintel@hotmail.com") 
         + "?cc=" + encodeURIComponent("jasmine_juvyns@hotmail.com") 
