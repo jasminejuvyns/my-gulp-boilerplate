@@ -10,12 +10,12 @@
     <link rel="stylesheet" href="style_body.css">
     <link rel="shortcut icon" href="images/favicon.ico">
     <script src="contactc.js"></script>
-    
+    <script src="scroll_button.js"></script> 
     <title>Contact</title>
 </head>
 
 <body>
-    <!---------HEADER IMAGE + MENU + RESERVATIE TEKST & KNOP -------->
+    <!--HEADER IMAGE + MENU + RESERVATIE TEKST & KNOP-->
     <header class="container centreren cf">
         <div class="navigatie">
             <ul>
@@ -50,7 +50,7 @@
             </div>
         </div>
     </header>
-    <!-------------CONTACTGEGEVENS + CONTACTFORMULIER ----------->
+    <!--CONTACTGEGEVENS + CONTACTFORMULIER-->
     <main class="container2 cf">
         <div class="contact-container">
             <div class="gegevens">
@@ -77,46 +77,55 @@
                 <hr class="contact_line">
             </div>
 
-            <form id="form" class="contact-form" method="post" action="">
-                <h1 class="contact_titel">
-                    CONTACT
-            </h1>
-            <hr class="contact_line">
-            <div class="contact-lastname">
-                <div class="names">
-                    <div class="cont-name">
-                        <label for="voornaam"></label>
-                        <input type="text" id="voornaam" name="voornaam" class="input-contact" placeholder="Voornaam">
-                        <span class="error" id="voornaam_error"></span>
+            <form class="contact-form space cf" method="post">
+                
+                
+                <div class="contact-lastname">
+                    <div class="names">
+                        <div class="cont-name">
+                            <input type="text" id="voornaam" name="voornaam" class="input-contact"
+                                placeholder="Voornaam">
+                            <span class="error" id="voornaam_error"></span>
+                        </div>
+                    </div>
+                    <div class="contact-lastname">
+                        <div class="cont-lastname">
+                            <input type="text" id="achternaam" name="achternaam" class="input-contact"
+                                placeholder="Achternaam">
+                             <span class="error" id="achternaam_error"></span>
+                        </div>
                     </div>
                 </div>
-                 <div class="contact-lastname">
-                    <div class="cont-lastname">
-                        <label for="achternaam"></label>
-                        <input type="text" id="achternaam" name="achternaam" class="input-contact" placeholder="Achternaam">
-                        <span class="error" id="achternaam_error"></span>
+                <div class="cont-phone">
+                    <div>
+                        <input type="tel" id="telefoonnummer" class="input-contact" name="telefoonnummer"
+                            placeholder="Telefoonnummer">
+                         <span class="error" id="telefoonnummer_error"></span>
                     </div>
                 </div>
-            </div>
-            <div class="cont-phone">
-                <div>
-                    <label for="telefoonnummer"></label>
-                    <input type="tel" id="telefoonnummer" class="input-contact" name="telefoonnummer" placeholder="Telefoonnummer">
-                    <span class="error" id="telefoonnummer_error"></span>
+                <div class="contact-email">
+                    <div>
+                        <input type="email" id="email" name="email" class="input-contact" placeholder="Email">
+                         <span class="error" id="email_error"></span>
+                    </div>
                 </div>
-            </div>
-            <div class="contact-email">
-                <div>
-                    <label for="email"></label>
-                    <input type="email" id="email" name="email" class="input-contact" placeholder="Email">
-                    <span class="error" id="email_error"></span>
+                <div class="contact-message">
+                    <div>
+                        <textarea id="bericht" name="bericht" class="input-contact" rows="6" maxlength="3000"
+                            placeholder="Laat hier jouw opmerkingen achter:"></textarea>
+                         <span class="error" id="bericht_error"></span>
+                    </div>
                 </div>
-            </div>
-            <div class="contact-message">
-                <div>
-                    <label for="bericht"></label>
-                    <textarea id="bericht" name="bericht" class="input-contact" rows="6" maxlength="3000" placeholder="Laat hier jouw opmerkingen achter:"></textarea>
-                    <span class="error" id="bericht_error"></span>
+                <div class="selectievakje cf">
+                    <input class="vakje2" type="checkbox" id="vakje" name="vakje" value="vakje">
+                    <label class="vakje1" for="vakje">Ik accepteer<a id="mail" href="annuleringsvoorwaarden.html#annuleringsvoorwaarden">de algemene voorwaarden</a></label><br>
+                    
+                    <input class="vakje2" type="checkbox" id="vakje" name="vakje" value="vakje">
+                    <label class="vakje1" for="vakje"> Ik accepteer <a id="mail" href="annuleringsvoorwaarden.html#annuleringsvoorwaarden">de annulatie voorwaarden</a></label><br>
+                </div>
+
+                <div id="contact-btn">
+                    <input type="button" value="SEND" class="button-body" onclick="verstuur()"/>
                 </div>
             </div>
             <div id="contact-btn">
@@ -191,7 +200,7 @@
 
         </div>
 
-        <!-------------------------MAILCHIMP SIGN-UP FORM--------------------------------------->
+        <!--MAILCHIMP SIGN-UP FORM-->
         <div class="container2 centreren cf">
             <hr class="nieuwsbrief">
             <h1 class="menutitel">NIEUWSBRIEF</h1>
@@ -201,7 +210,7 @@
                     action="https://neletintel.us20.list-manage.com/subscribe/post?u=c0deeaa50eab0d940cba46a6b&amp;id=2d58607c8b"
                     method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
                     target="_blank" novalidate>
-                    <div id="mc_embed_signup_scroll cf">
+                    <div id="mc_embed_signup_scroll">
                         <label for="mce-EMAIL">Wees als eerste op de hoogte van onze speciale menu's en
                             reservatiemogelijkheden</label>
                         <div class="centreren">
@@ -220,7 +229,7 @@
                 </form>
             </div>
 
-            <!------------------------- EINDE MAILCHIMP SIGN-UP FORM--------------------------------------->
+            <!--EINDE MAILCHIMP SIGN-UP FORM-->
 
             <hr>
 
