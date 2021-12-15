@@ -5,7 +5,8 @@ let achternaamTxt;
 let telefoonnummerTxt;
 let emailTxt;
 let berichtTxt;
-
+let annulatieGeaccepteerd;
+let voorwaardenGeaccepteerd;
 let allesCorrectIngevuld = true;
 
 
@@ -62,7 +63,8 @@ function verstuur() {
     telefoonnummerTxt = document.getElementById('telefoonnummer').value;
     emailTxt = document.getElementById('email').value;
     berichtTxt = document.getElementById('bericht').value;
-    
+    annulatieGeaccepteerd = document.getElementById('AnnulatieVoorwaardenCheckbox').checked;
+    voorwaardenGeaccepteerd = document.getElementById('AlgemeneVoorwaardenCheckbox').checked;
     allesCorrectIngevuld = true;
 
     if (voornaamTxt.length == 0) {
@@ -89,8 +91,14 @@ function verstuur() {
     } else {
         controleerVoorwaardenEmail();
     }
-    if (berichtTxt.length == 0){
-        document.getElementById("bericht_error").innerHTML = "Vul hier je bericht in a.u.b.";
+    controleerVoorwaardenBericht();
+    if(!annulatieGeaccepteerd){
+        document.getElementById("AlgemeneVoorwaardenError").innerHTML = "accepteer de algemene voorwaarden aub";
+        allesCorrectIngevuld = false;
+    }
+    
+    if(!voorwaardenGeaccepteerd){
+        document.getElementById("AnnulatieVoorwaardenError").innerHTML = "accepteer de annulatie voorwaarden aub";
         allesCorrectIngevuld = false;
     }
     if (allesCorrectIngevuld) {
