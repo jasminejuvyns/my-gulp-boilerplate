@@ -4,6 +4,8 @@ let selectieTxt;
 let geselecteerdeKeuze;
 let aantalTxt;
 let datumTxt;
+let vandaag;
+let geselecteerdeDatum;
 let uurTxt;
 let voornaamTxt;
 let achternaamTxt;
@@ -23,7 +25,7 @@ function controleerVoorwaardenAantal(){
 }
 
 //-------FUNCTIE  DATUM --------------------------------------------------------
-function controleerVoorwaardenDatum(){
+/*function controleerVoorwaardenDatum(){
 	if( datumTxt.length < 1){
 		document.getElementById("datum_error").innerHTML="Gelieve een datum aan te duiden.";
 		allesCorrectIngevuld = false;
@@ -32,10 +34,13 @@ function controleerVoorwaardenDatum(){
 		document.getElementById("datum_error").innerHTML="";
 	}
 }
+*/
+
+
 
 //-------FUNCTIE  UUR --------------------------------------------------------
 function controleerVoorwaardenUur(){
-	if( uurTxt.length < 1){
+	if( uurTxt.length == 0){
 		document.getElementById("uur_error").innerHTML="Gelieve een uur aan te duiden.";
 		allesCorrectIngevuld = false;
 	}
@@ -137,6 +142,7 @@ function verstuur() {
 	if (aantalTxt.length == 0) {
 		document.getElementById("aantal_error").innerHTML = "Gelieve het aantal in te geven.";
 		allesCorrectIngevuld = false;
+		
 	}
 	else {
 		controleerVoorwaardenAantal();
@@ -147,6 +153,14 @@ function verstuur() {
 	}
 	else {
 		document.getElementById("datum_error").innerHTML = "";
+	}
+
+	if (uurTxt == 0) {
+		document.getElementById("uur_error").innerHTML = "Kies a.u.b.";
+		allesCorrectIngevuld = false;
+	}
+	else {
+		document.getElementById("uur_error").innerHTML = "";
 	}
 	
 	if (voornaamTxt.length == 0) {
@@ -170,8 +184,6 @@ function verstuur() {
 	else {
 		controleerVoorwaardenEmail();
 	}
-	if (allesCorrectIngevuld) {
-		document.write("alles is correct ingevuld");	
 
 	controleerVoorwaardenBericht();
 	
@@ -181,28 +193,28 @@ function verstuur() {
 			+ "?cc=" + encodeURIComponent("jasmine_juvyns@hotmail.com")
 			+ "&subject=" + encodeURIComponent("Reservatieformulier validatie")
 			+ "&body="
-			+ "selectie:"
+			+ "Je maakte volgende reservatiekeuze: "
 			+ encodeURIComponent(selectieTxt)
 			+ encodeURIComponent("\r\n\n")
-			+ "aantal:"
+			+ "Aantal gereserveerde plaatsen: "
 			+ encodeURIComponent(aantalTxt)
 			+ encodeURIComponent("\r\n\n")
-			+ "datum:"
+			+ "Gereserveerde datum: "
 			+ encodeURIComponent(datumTxt)
 			+ encodeURIComponent("\r\n\n")
-			+ "uur:"
+			+ "Gereserveerde uur: "
 			+ encodeURIComponent(uurTxt)
 			+ encodeURIComponent("\r\n\n")
-			+ "voornaam:"
+			+ "Jouw gegevens:<br>Voornaam:"
 			+ encodeURIComponent(voornaamTxt)
 			+ encodeURIComponent("\r\n\n")
-			+ "achternaam:"
+			+ "Achternaam: "
 			+ encodeURIComponent(achternaamTxt)
 			+ encodeURIComponent("\r\n\n")
-			+ "email:"
+			+ "Email: "
 			+ encodeURIComponent(emailTxt)
 			+ encodeURIComponent("\r\n\n")
-			+ "bericht:"
+			+ "Je bericht: "
 			+ encodeURIComponent(berichtTxt);
 		window.location.href = link;
 	}
