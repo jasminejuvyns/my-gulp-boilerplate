@@ -397,7 +397,7 @@ h3 {
 }
 
 /*formulier reserveren*/
-.groep-name, .groep-contactgegevens, .groep-uur, .groep-datum, .groep-keuze, .groep-aantal {
+.groep-name, .groep-contactgegevens, .groep-uur, .groep-datum, .groep-keuze, .groep-aantal, .groep-telefoonnummer{
 	margin: 2% 0;
 	display: inline-block;
 	width: 100%;

@@ -4,9 +4,8 @@ let selectieTxt;
 let geselecteerdeKeuze;
 let aantalTxt;
 let datumTxt;
-let vandaag;
-let geselecteerdeDatum;
 let uurTxt;
+let telefoonnummerTxt;
 let voornaamTxt;
 let achternaamTxt;
 let emailTxt;
@@ -25,20 +24,6 @@ function controleerVoorwaardenAantal(){
 		document.getElementById("aantal_error").innerHTML="";
 	}
 }
-
-//-------FUNCTIE  DATUM --------------------------------------------------------
-/*function controleerVoorwaardenDatum(){
-	if( datumTxt.length < 1){
-		document.getElementById("datum_error").innerHTML="Gelieve een datum aan te duiden.";
-		allesCorrectIngevuld = false;
-	}
-	else{
-		document.getElementById("datum_error").innerHTML="";
-	}
-}
-*/
-
-
 
 //-------FUNCTIE  UUR --------------------------------------------------------
 function controleerVoorwaardenUur(){
@@ -86,14 +71,13 @@ function controleerVoorwaardenEmail() {
 
 //-------FUNCTIE  TELEFOONNUMMER --------------------------------------------------------
 function controleerVoorwaardenTelefoonnummer() {
-	let regExp = /^[+]*[(]{0,1}[0-9]{1,3}[)]{0,1}[-\s\./0-9]*$/;
-	if (regExp.test(telefoonnummerTxt) == false) {
-		document.getElementById("telefoonnummer_error").innerHTML = "Dit is niet correct!";
-		allesCorrectIngevuld = false;
-	}
-	else {
-		document.getElementById("telefoonnummer_error").innerHTML = "";
-	}
+    let regExp =/^\+[0-9]{2}\s?[0]?(\d{3})\s?\d{2}\s?\d{2}\s?\d{2}\s?$/;
+    if (regExp.test(telefoonnummerTxt) == false) {
+        document.getElementById("telefoonnummer_error").innerHTML = "Dit is niet correct. Voorbeeld: +32 467 89 78 67";
+        allesCorrectIngevuld = false;
+    } else {
+        document.getElementById("telefoonnummer_error").innerHTML = "";
+    }
 }
 
 //-------FUNCTIE  BERICHT --------------------------------------------------------
@@ -130,6 +114,7 @@ function verstuur() {
 	berichtTxt = document.getElementById("bericht").value;
 	aantalTxt = document.getElementById("aantal").value;
 	datumTxt = document.getElementById("datum").value;
+	telefoonnummerTxt = document.getElementById('telefoonnummer').value;
 	annulatieGeaccepteerd = document.getElementById('AnnulatieVoorwaardenCheckbox').checked;
     voorwaardenGeaccepteerd = document.getElementById('AlgemeneVoorwaardenCheckbox').checked;
 	allesCorrectIngevuld = true;
@@ -188,6 +173,13 @@ function verstuur() {
 		controleerVoorwaardenEmail();
 	}
 
+	if (telefoonnummerTxt.length == 0){
+        document.getElementById("telefoonnummer_error").innerHTML = "Vul hier je telefoonnummer in a.u.b."
+        allesCorrectIngevuld = false;
+    } else {
+        controleerVoorwaardenTelefoonnummer();
+    }
+
 	controleerVoorwaardenBericht();
 	if(!annulatieGeaccepteerd){
         document.getElementById("AlgemeneVoorwaardenError").innerHTML = "accepteer de algemene voorwaarden aub";
@@ -200,15 +192,16 @@ function verstuur() {
     }
 	
 	if (allesCorrectIngevuld) {
-		document.write("Bedankt voor je reservatie. Je ontvangt zo meteen een bevestingsmail.");
+		document.write("Bedankt voor je reservatie. Je ontvangt zo meteen een bevestigingsmail.");
 		let link = "mailto:" + encodeURIComponent("neletintel@hotmail.com")
 			+ "?cc=" + encodeURIComponent("jasmine_juvyns@hotmail.com")
 			+ "&subject=" + encodeURIComponent("Reservatieformulier validatie")
 			+ "&body="
+			+ "Bedankt voor je reservatie!"
 			+ "Je maakte volgende reservatiekeuze: "
 			+ encodeURIComponent(selectieTxt)
 			+ encodeURIComponent("\r\n\n")
-			+ "Aantal gereserveerde plaatsen: "
+			+ "Aantal plaatsen: "
 			+ encodeURIComponent(aantalTxt)
 			+ encodeURIComponent("\r\n\n")
 			+ "Gereserveerde datum: "
@@ -217,12 +210,16 @@ function verstuur() {
 			+ "Gereserveerde uur: "
 			+ encodeURIComponent(uurTxt)
 			+ encodeURIComponent("\r\n\n")
-			+ "Jouw gegevens:<br>Voornaam:"
+			+ "Jouw gegevens: "
+			+ "Voornaam: "
 			+ encodeURIComponent(voornaamTxt)
 			+ encodeURIComponent("\r\n\n")
 			+ "Achternaam: "
 			+ encodeURIComponent(achternaamTxt)
 			+ encodeURIComponent("\r\n\n")
+			+ "telefoonnummer: " 
+        	+ encodeURIComponent(telefoonnummerTxt) 
+       		+ encodeURIComponent("\r\n\n") 
 			+ "Email: "
 			+ encodeURIComponent(emailTxt)
 			+ encodeURIComponent("\r\n\n")
