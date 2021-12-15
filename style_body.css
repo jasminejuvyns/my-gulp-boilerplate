@@ -70,12 +70,13 @@ h1 {
 	margin-left: 3%;
 	margin-top: 2%;
 	font-size: 13px;
-	
+	line-height: 180%;
 }
 
 .vakje1{
-	float: left;
-	width: 70%;
+	width: 100%;
+	color: white;
+
 }
 
 .vakje2{
