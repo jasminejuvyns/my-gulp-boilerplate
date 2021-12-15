@@ -1,6 +1,8 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;900&family=Quicksand:wght@300;400;500;600;700&family=Rosario:wght@400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Yesteryear&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap');
 
 body{
 	background-image: url(images/chalkboard.jpg);
@@ -126,13 +128,13 @@ a:link{
 }
 
 .quote1{
-	font-family: yesteryear;
+	font-family: "Rouge Script";
 	font-size: 24px;
 	opacity: 0.9;
 }
 
 .quote2{
-	font-family: yesteryear;
+	font-family: "Rouge Script";
 	font-size: 32px;
 	opacity: 0.9;
 }
