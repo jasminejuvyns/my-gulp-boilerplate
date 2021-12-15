@@ -5,7 +5,7 @@ let achternaamTxt;
 let telefoonnummerTxt;
 let emailTxt;
 let berichtTxt;
-
+let vakjeTxt;
 let allesCorrectIngevuld = true;
 
 
@@ -64,7 +64,7 @@ function verstuur() {
     telefoonnummerTxt = document.getElementById('telefoonnummer').value;
     emailTxt = document.getElementById('email').value;
     berichtTxt = document.getElementById('bericht').value;
-    
+    vakjeTxt = document.getElementById('vakje').value;
     allesCorrectIngevuld = true;
 
     if (voornaamTxt.length == 0) {
