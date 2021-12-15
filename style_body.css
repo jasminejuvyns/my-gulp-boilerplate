@@ -71,12 +71,13 @@ h1 {
 	margin-left: 3%;
 	margin-top: 2%;
 	font-size: 13px;
-	
+	line-height: 180%;
 }
 
 .vakje1{
-	float: left;
-	width: 70%;
+	width: 100%;
+	color: white;
+
 }
 
 .vakje2{
@@ -391,7 +392,7 @@ h3 {
 }
 
 /*formulier reserveren*/
-.groep-name, .groep-contactgegevens, .groep-uur, .groep-datum, .groep-keuze, .groep-aantal {
+.groep-name, .groep-contactgegevens, .groep-uur, .groep-datum, .groep-keuze, .groep-aantal, .groep-telefoonnummer{
 	margin: 2% 0;
 	display: inline-block;
 	width: 100%;
