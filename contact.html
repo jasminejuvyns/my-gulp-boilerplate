@@ -79,7 +79,7 @@
                 <hr class="contact_line">
             </section>
 
-            <form class="contact-form space" method="post">
+            <form class="contact-form space cf" method="post">
                 
                 
                 <div class="contact-lastname">
@@ -118,8 +118,17 @@
                          <span class="error" id="bericht_error"></span>
                     </div>
                 </div>
+                <div class="selectievakje cf">
+                    <input class="vakje2" type="checkbox" id="vakje" name="vakje" value="vakje">
+                    <label class="vakje1" for="vakje">Ik accepteer<a id="mail" href="annuleringsvoorwaarden.html#annuleringsvoorwaarden">de algemene voorwaarden</a></label><br>
+                    
+                    <input class="vakje2" type="checkbox" id="vakje" name="vakje" value="vakje">
+                    <label class="vakje1" for="vakje"> Ik accepteer <a id="mail" href="annuleringsvoorwaarden.html#annuleringsvoorwaarden">de annulatie voorwaarden</a></label><br>
+                    
+                  
+                </div>
+
                 <div id="contact-btn">
-                   
                     <input type="button" value="SEND" class="button-body" onclick="verstuur()"/>
                 </div>
             </form>
@@ -133,8 +142,6 @@
         <button onclick="topFunction()" id="myBtn" title="Go to top" class="fa fa-caret-up"></button>
     </main>
     <!--FOOTER-->
-
-
     <footer class="container cf" id="anchor-openingsuren">
         <div class="container2 centreren cf">
             <section class="space2 cf">
@@ -209,8 +216,8 @@
                                 <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL"
                                     placeholder="Email" required>
                             </div>
-                            <div class="positie_knop">
-                                <input type="text" name="positie" tabindex="-1" value="">
+                            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                                <input type="text" name="b_c0deeaa50eab0d940cba46a6b_2d58607c8b" tabindex="-1" value="">
                             </div>
                             <div class="nieuwsbrief_verzend">
                                 <input type="submit" value="INSCHRIJVEN" name="subscribe" id="mc-embedded-subscribe">

@@ -95,6 +95,7 @@ function verstuur() {
     else {
         controleerVoorwaardenEmail();
     }
+    controleerVoorwaardenBericht();
     if (berichtTxt.length == 0){
         document.getElementById("bericht_error").innerHTML = "Vul hier je bericht in a.u.b.";
         allesCorrectIngevuld = false;

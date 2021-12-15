@@ -64,6 +64,24 @@ h1 {
 #myBtn:hover {
 	opacity: 0.7;
 }
+.selectievakje{
+	width: 100%;
+	color: #DABC7D;
+	margin-left: 3%;
+	margin-top: 2%;
+	
+	
+}
+
+.vakje1{
+	float: left;
+	width: 70%;
+}
+
+.vakje2{
+	float: left;
+	width: 2%;
+}
 
 
 /*-------INDEX PAGINA-------KERSTMENU----------------*/
@@ -447,7 +465,8 @@ textarea {
 #mail{
 	color: white;
 	text-decoration:underline;
-	margin: 0;
+	margin: 0 -5px;
+	cursor: pointer;
 }
 
 /* ----------CONTACTGEGEVENS + CONTACTFORM-------- */
