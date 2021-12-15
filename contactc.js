@@ -42,7 +42,8 @@ function controleerVoorwaardenTelefoonnummer() {
     if (regExp.test(telefoonnummerTxt) == false) {
         document.getElementById("telefoonnummer_error").innerHTML = "Dit is niet correct!";
         allesCorrectIngevuld = false;
-    } else {
+    } 
+    else {
         document.getElementById("telefoonnummer_error").innerHTML = "";
     }
 }
@@ -51,7 +52,8 @@ function controleerVoorwaardenBericht() {
     if (berichtTxt.length > 1000) {
         document.getElementById("bericht_error").innerHTML = "Je bericht is te lang, gebruik max 1000 tekens";
         allesCorrectIngevuld = false;
-    } else {
+    } 
+    else {
         document.getElementById("bericht_error").innerHTML = "";
     }
 }
@@ -68,39 +70,36 @@ function verstuur() {
     if (voornaamTxt.length == 0) {
         document.getElementById("voornaam_error").innerHTML = "Vul hier je voornaam in a.u.b.";
         allesCorrectIngevuld = false;
-    } else {
+    } 
+    else {
         controleerVoorwaardenVoornaam();
     }
     if (achternaamTxt.length == 0) {
         document.getElementById("achternaam_error").innerHTML = "Vul hier je achternaam in a.u.b.";
         allesCorrectIngevuld = false;
-    } else {
+    } 
+    else {
         controleerVoorwaardenAchternaam();
     }
     if (telefoonnummerTxt.length == 0){
-        document.getElementById("telefoonnummer_error").innerHTML = "Vul hier je telefoonnummer in a.u.b."
+        document.getElementById("telefoonnummer_error").innerHTML = "Vul hier uw telefoonnummer in a.u.b.";
         allesCorrectIngevuld = false;
-    } else {
+    } 
+    else {
         controleerVoorwaardenTelefoonnummer();
     }
     if (emailTxt.length == 0) {
         document.getElementById("email_error").innerHTML = "Vul hier je E-mail in a.u.b.";
         allesCorrectIngevuld = false;
-    } else {
+    } 
+    else {
         controleerVoorwaardenEmail();
     }
-<<<<<<< Updated upstream
-    
-=======
     if (berichtTxt.length == 0){
         document.getElementById("bericht_error").innerHTML = "Vul hier je bericht in a.u.b.";
         allesCorrectIngevuld = false;
     }
->>>>>>> Stashed changes
     if (allesCorrectIngevuld) {
-        document.write("alles is correct ingevuld");
-        //deze if altijd op het einde zetten 	
-
         let link = "mailto:" + encodeURIComponent("neletintel@hotmail.com") 
         + "?cc=" + encodeURIComponent("jasmine_juvyns@hotmail.com") 
         + "?cc=" + encodeURIComponent("chepe@hotmail.ch") 

@@ -170,6 +170,8 @@ function verstuur() {
 	else {
 		controleerVoorwaardenEmail();
 	}
+	if (allesCorrectIngevuld) {
+		document.write("alles is correct ingevuld");	
 
 	controleerVoorwaardenBericht();
 	
