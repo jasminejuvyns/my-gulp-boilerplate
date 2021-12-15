@@ -86,12 +86,14 @@
                         <div class="cont-name">
                             <input type="text" id="voornaam" name="voornaam" class="input-contact"
                                 placeholder="Voornaam">
+                            <span class="error" id="voornaam_error"></span>
                         </div>
                     </div>
                     <div class="contact-lastname">
                         <div class="cont-lastname">
                             <input type="text" id="achternaam" name="achternaam" class="input-contact"
                                 placeholder="Achternaam">
+                             <span class="error" id="achternaam_error"></span>
                         </div>
                     </div>
                 </div>
@@ -99,17 +101,20 @@
                     <div>
                         <input type="tel" id="telefoonnummer" class="input-contact" name="telefoonnummer"
                             placeholder="Telefoonnummer">
+                         <span class="error" id="telefoonnummer_error"></span>
                     </div>
                 </div>
                 <div class="contact-email">
                     <div>
                         <input type="email" id="email" name="email" class="input-contact" placeholder="Email">
+                         <span class="error" id="email_error"></span>
                     </div>
                 </div>
                 <div class="contact-message">
                     <div>
                         <textarea id="bericht" name="bericht" class="input-contact" rows="6" maxlength="3000"
                             placeholder="Laat hier jouw opmerkingen achter:"></textarea>
+                         <span class="error" id="bericht_error"></span>
                     </div>
                 </div>
                 <div id="contact-btn">
