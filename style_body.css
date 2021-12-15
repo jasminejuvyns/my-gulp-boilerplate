@@ -387,8 +387,9 @@ h3 {
 	font-size: 13px;
 }
 
-#selectie {
+#selectie, #uur {
 	margin: 10px 0;
+	background-color: #333;
 }
 
 #knop_verstuur{
