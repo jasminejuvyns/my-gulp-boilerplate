@@ -63,36 +63,40 @@ function verstuur() {
     emailTxt = document.getElementById('email').value;
     berichtTxt = document.getElementById('bericht').value;
     
-
     allesCorrectIngevuld = true;
-    
-
 
     if (voornaamTxt.length == 0) {
-        document.getElementById("voornaam_error").innerHTML = "Vul hier uw voornaam in a.u.b.";
+        document.getElementById("voornaam_error").innerHTML = "Vul hier je voornaam in a.u.b.";
         allesCorrectIngevuld = false;
     } else {
         controleerVoorwaardenVoornaam();
     }
     if (achternaamTxt.length == 0) {
-        document.getElementById("achternaam_error").innerHTML = "Vul hier uw achternaam in a.u.b.";
+        document.getElementById("achternaam_error").innerHTML = "Vul hier je achternaam in a.u.b.";
         allesCorrectIngevuld = false;
     } else {
         controleerVoorwaardenAchternaam();
     }
     if (telefoonnummerTxt.length == 0){
-        document.getElementById("telefoonnummer_error").innerHTML = "Vul hier uw telefoonnummer in a.u.b."
+        document.getElementById("telefoonnummer_error").innerHTML = "Vul hier je telefoonnummer in a.u.b."
         allesCorrectIngevuld = false;
     } else {
         controleerVoorwaardenTelefoonnummer();
     }
     if (emailTxt.length == 0) {
-        document.getElementById("email_error").innerHTML = "Vul hier uw E-mail in a.u.b.";
+        document.getElementById("email_error").innerHTML = "Vul hier je E-mail in a.u.b.";
         allesCorrectIngevuld = false;
     } else {
         controleerVoorwaardenEmail();
     }
+<<<<<<< Updated upstream
     
+=======
+    if (berichtTxt.length == 0){
+        document.getElementById("bericht_error").innerHTML = "Vul hier je bericht in a.u.b.";
+        allesCorrectIngevuld = false;
+    }
+>>>>>>> Stashed changes
     if (allesCorrectIngevuld) {
         document.write("alles is correct ingevuld");
         //deze if altijd op het einde zetten 	
