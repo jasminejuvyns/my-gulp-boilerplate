@@ -171,8 +171,7 @@ function verstuur() {
 		controleerVoorwaardenEmail();
 	}
 	if (allesCorrectIngevuld) {
-		document.write("alles is correct ingevuld");
-		//deze if altijd op het einde zetten 	
+		document.write("alles is correct ingevuld");	
 
 		let link = "mailto:" + encodeURIComponent("neletintel@hotmail.com")
 			+ "?cc=" + encodeURIComponent("jasmine_juvyns@hotmail.com")
