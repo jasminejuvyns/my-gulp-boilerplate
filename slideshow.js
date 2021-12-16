@@ -1,5 +1,5 @@
-//-----------------SLIDESHOW--------------------------
 "use strict";
+
 let myIndex = 0;
 content();
 

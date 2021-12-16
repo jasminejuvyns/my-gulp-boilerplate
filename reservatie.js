@@ -181,6 +181,7 @@ function verstuur() {
     }
 
 	controleerVoorwaardenBericht();
+
 	if(!annulatieGeaccepteerd){
         document.getElementById("AlgemeneVoorwaardenError").innerHTML = "accepteer de algemene voorwaarden aub";
         allesCorrectIngevuld = false;
