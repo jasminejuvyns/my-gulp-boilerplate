@@ -1,0 +1,254 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;900&family=Quicksand:wght@300;400;500;600;700&family=Rosario:wght@400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yesteryear&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap');
+
+body{
+	background-image: url(images/chalkboard.jpg);
+	box-sizing: border-box;
+	font-family: Quicksand;
+	color: white;
+	margin: 0;
+	background-attachment: fixed;
+}
+
+.cf:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+h1{
+    font-size: 18px;
+    font-family: Rosario;
+    color: white;
+	text-transform: uppercase;
+}
+
+/*---------HEADER----------------*/
+header{
+	z-index: -1;
+}
+
+/*container van header-blok*/
+.container{
+	margin: 0;
+}
+
+/*div container rond het menu*/
+.navigatie{
+	margin: 1% 2%;
+	padding: 1% 0;
+	text-align: center;
+	font-family: Rosario;
+	width: 800px;
+	float: right;
+	font-size: 22px;
+	cursor: pointer;
+}
+
+li{
+	display: inline;
+}
+
+a:link{
+	padding: 10px 10px;	
+	text-decoration: none;
+	margin: 0 30px; 
+}
+
+.navigatie a{
+	color: #F5CF80;
+}
+
+.active{
+	border-bottom: 0.3px solid #F5CF80;
+}
+
+/*bewegende streepjes onder hoofdnavigatie bij hover*/
+
+.underline{
+	position: relative;
+  }
+  
+  .underline::before{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 0;
+	height: 2px;
+	background-color: #F5CF80;
+	transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  }
+  
+  @media (hover: hover) and (pointer: fine) {
+	.underline:hover::before{
+	  left: 0;
+	  right: auto;
+	  width: 100%;
+	}
+  }
+
+/*header tapas image*/
+.header_image{
+	float: left;
+	margin-top: -150px;
+	z-index: -1;
+	width: 40%;
+}
+
+.header_image2{
+	float: left;
+	margin-top: -150px;
+	z-index: -1;
+	width: 30%;
+}
+
+/*logo image*/
+.logo{
+	width: 20%;	
+	opacity: 0.9;
+}
+
+.logo2{
+	width: 15%;	
+	opacity: 0.9;
+}
+
+.logospace{
+	margin-top: 30px;
+	margin-bottom: 15px;
+}
+
+.quotespace{
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+
+.quote1{
+	font-family: "Rouge Script";
+	font-size: 24px;
+	opacity: 0.9;
+}
+
+.quote2{
+	font-family: "Rouge Script";
+	font-size: 32px;
+	opacity: 0.9;
+}
+
+/*---------BEGIN FOOTER----------------*/
+
+aside{
+	margin-bottom: 50px;
+}
+
+.fa.icon{
+	margin-right: 10px;
+	padding: 20px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa.fa-facebook {
+	color: white;
+	padding: 10px;
+	font-size: 32px;
+	text-decoration: none;
+	cursor:pointer;
+  }
+    
+.fa.fa-instagram{
+	color:white;
+	padding: 10px;
+	font-size: 32px;
+	text-decoration: none;
+	cursor:pointer;
+}
+
+.fa.fa-envelope{
+	color: white;
+	padding: 10px;
+	font-size: 28px;
+	text-decoration: none;
+	cursor:pointer;
+}
+
+.nieuwsbrief_email{
+	margin: 20px 0px 50px 100px;
+	width: 50%;
+	float:left;
+	outline:none;
+}
+
+.nieuwsbrief_verzend{	
+	margin: 20px 0px 50px 10px;
+	width: 20%;
+	float:left;
+	outline:none;
+	cursor:pointer;
+}
+
+#mc_embed_signup {
+	font: 14px;
+	font-family: Quicksand;
+	width: 80%;
+}
+
+input[type=text]{
+	border: 1px solid #766749;
+	color: white;
+	outline: none;
+}
+
+input[type=text]:focus {
+	border: 2px solid #766749;
+  }
+
+input[type=email]{
+	border: 1px solid #766749;
+	color: white;
+	outline: none;
+}
+
+input[type=submit]{
+	background-color:#766749;
+	font-size: 14px;
+	font-family: Rosario;
+	border: 1px solid #766749;
+	color:white;
+	margin-top: 1px;
+}
+
+input[type=submit]:hover{
+	opacity: 0.7;
+}
+
+.positie_knop{
+	position: absolute; 
+	left: -5000px;
+}
+
+#footernav ul a{
+	color: #fff;
+	text-transform: uppercase;
+	font-family:Rosario;
+}
+
+#footernav ul a:hover{
+	opacity: 0.7;
+}
+
+
+ul{
+	margin-bottom: 50px;
+}
+
+
+
+
+/*---------EINDE FOOTER----------------*/
